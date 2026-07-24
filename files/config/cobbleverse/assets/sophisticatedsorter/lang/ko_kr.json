@@ -1,0 +1,16 @@
+{
+    "key.categories.sophisticatedsorter":  "정교한 분류기",
+    "key.sophisticatedsorter.disable":  "현재 보관함의 버튼 비활성화",
+    "key.sophisticatedsorter.sort":  "보관함 정렬",
+    "text.autoconfig.sophisticatedsorter.option.BLACK_LIST":  "보관함 차단 목록",
+    "text.autoconfig.sophisticatedsorter.option.BLACK_LIST.@Tooltip":  "여기에 등록한 보관함에는 정렬 버튼이 표시되지 않습니다",
+    "text.autoconfig.sophisticatedsorter.option.FILTER":  "보관함 필터 사용",
+    "text.autoconfig.sophisticatedsorter.option.FILTER.@Tooltip":  "활성화되면 사용 가능한 슬롯이 10개 이상인 컨테이너에 대해서만 정렬 버튼이 표시됩니다(플레이어의 인벤토리 제외).",
+    "text.autoconfig.sophisticatedsorter.option.SORT_BY":  "정렬 기준",
+    "text.autoconfig.sophisticatedsorter.option.SORT_BY.@Tooltip":  "보관함 안의 아이템을 어떤 기준으로 정렬할지 정합니다",
+    "text.autoconfig.sophisticatedsorter.option.SORT_BY.COUNT":  "개수",
+    "text.autoconfig.sophisticatedsorter.option.SORT_BY.MOD":  "모드",
+    "text.autoconfig.sophisticatedsorter.option.SORT_BY.NAME":  "이름",
+    "text.autoconfig.sophisticatedsorter.option.SORT_BY.TAGS":  "태그",
+    "text.autoconfig.sophisticatedsorter.title":  "Sophisticated Sorter 설정"
+}

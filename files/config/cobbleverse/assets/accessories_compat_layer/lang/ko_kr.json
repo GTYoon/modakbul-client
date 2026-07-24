@@ -1,0 +1,12 @@
+{
+    "accessories.slot.pocket":  "포켓",
+    "text.config.accessories_compat.option.addPocketSlot":  "포켓 슬롯 추가",
+    "text.config.accessories_compat.option.addPocketSlot.tooltip":  "Curio 슬롯을 에뮬레이트하는 Pocket 슬롯을 추가합니다.",
+    "text.config.accessories_compat.option.dumpDataWhenNullEntries":  "Null 항목이 있을 때 데이터 덤프",
+    "text.config.accessories_compat.option.dumpDataWhenNullEntries.tooltip":  "null 값으로 인해 장신구 내 오류가 발생하고 이러한 동작으로 인해 충돌이 발생할 때 유용합니다.",
+    "text.config.accessories_compat.option.showPocketSlotInTooltip":  "툴팁에 포켓 슬롯 표시",
+    "text.config.accessories_compat.option.showPocketSlotInTooltip.tooltip":  "슬롯에 대해 암시적으로 유효하지 않은 경우 툴팁에 포켓 슬롯을 표시합니다.",
+    "text.config.accessories_compat.option.slotIdRedirects":  "슬롯 ID 리디렉션",
+    "text.config.accessories_compat.option.slotIdRedirects.tooltip":  "장신구 슬롯을 기존 액세서리 슬롯 유형으로 리디렉션해야 할 때 유용합니다.",
+    "text.config.accessories_compat.title":  "액세서리 호환 설정"
+}

@@ -1,0 +1,13 @@
+{
+    "midnightconfig.colorChooser.title":  "색상을 선택하세요",
+    "midnightlib.curseforge":  "저주포지",
+    "midnightlib.midnightconfig.config_screen_list":  "설정 화면 목록 활성화",
+    "midnightlib.midnightconfig.enum.ConfigButton.FALSE":  "§c아니요",
+    "midnightlib.midnightconfig.enum.ConfigButton.MODMENU":  "§bMod메뉴",
+    "midnightlib.midnightconfig.enum.ConfigButton.TRUE":  "§a예",
+    "midnightlib.midnightconfig.title":  "MidnightLib 설정",
+    "midnightlib.modrinth":  "모드린스",
+    "midnightlib.overview.title":  "MidnightConfig 개요",
+    "midnightlib.wiki":  "위키",
+    "modmenu.summaryTranslation.midnightlib":  "쉬운 설정을 위한 공통 라이브러리."
+}

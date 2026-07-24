@@ -1,0 +1,20 @@
+{
+    "respackopts.configure":  "설정",
+    "respackopts.dumpFailed":  "요청한 리소스를 덤프할 수 없습니다. 자세한 내용은 로그를 확인하세요.",
+    "respackopts.dumpSucceeded":  "리소스를 %s에 성공적으로 덤프했습니다.",
+    "respackopts.invalid":  "잘못된 값",
+    "respackopts.invalidId":  "잘못된 식별자",
+    "respackopts.jfconfig.debugCommands":  "디버그 명령",
+    "respackopts.jfconfig.debugLogs":  "디버그 로그",
+    "respackopts.jfconfig.debugLogs.tooltip":  "팩이나 모드 자체를 디버깅하는 데 유용한 일부 정보를 기록합니다. (다시 시작해야 함)",
+    "respackopts.jfconfig.ioLogs":  "IO 로그",
+    "respackopts.jfconfig.ioLogs.tooltip":  "모든 리소스 액세스를 기록합니다. 경고: 이로 인해 거대한 로그 파일이 생성됩니다! (다시 시작해야 함)",
+    "respackopts.jfconfig.title":  "ResPackOpts",
+    "respackopts.loadError":  "리소스팩 설정에 문제가 있습니다. 게임로그를 확인해주세요",
+    "respackopts.loadFailed":  "리소스 팩을 로드하지 못했습니다.",
+    "respackopts.reloadFailed":  "모든 리소스를 다시 로드할 수 없습니다. 자세한 내용은 로그를 확인하세요.",
+    "respackopts.reloadSucceeded":  "리소스 및 데이터를 성공적으로 다시 로드했습니다.",
+    "respackopts.snippet.failed":  "스니펫을 실행할 수 없습니다: %s",
+    "respackopts.snippet.success":  "스니펫을 실행하고 얻은 결과: %s",
+    "respackopts.versionText":  "respackopts 메타 버전 %s를 사용하는 버전 %s"
+}

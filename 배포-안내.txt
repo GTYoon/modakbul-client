@@ -1,0 +1,24 @@
+모닥불 Season 1 자동 업데이트 저장소
+====================================
+
+이 폴더의 manifest.json, distribution.json, fabric 폴더와 files 폴더를 HTTPS 정적 호스팅에 그대로 올립니다.
+그 다음 아래처럼 빌드를 다시 실행하면 모든 클라이언트가 실행 시 업데이트를 확인합니다.
+
+powershell -ExecutionPolicy Bypass -File tools\build-modakbul-client.ps1 `
+  -Version "1.0.0" `
+  -ServerAddress "116.126.112.66:25565" `
+  -UpdateManifestUrl "https://호스트/경로/manifest.json" `
+  -LauncherFilesBaseUrl "https://호스트/경로" `
+  -LauncherServerIconUrl "https://호스트/경로/server-icon.png" `
+  -LauncherNewsRssUrl "https://github.com/GTYoon/modakbul-launcher/releases.atom"
+
+운영 순서:
+1. 서버/클라이언트 파일 수정
+2. 위 빌드 명령 실행
+3. release\update-repository 전체 업로드
+4. 서버 테스트 후 유저에게 실행 안내
+
+주의:
+- manifest.json과 files는 반드시 같은 상대 구조를 유지합니다.
+- HTTPS 사용을 권장합니다.
+- files 폴더에는 공식 CurseForge 주소로 직접 받을 수 없는 파일과 모닥불 전용 설정만 들어갑니다.

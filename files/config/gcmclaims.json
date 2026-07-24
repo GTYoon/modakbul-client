@@ -1,0 +1,12 @@
+{
+  "radius": 12,
+  "minimumCenterDistance": 35,
+  "borderDurationSeconds": 10,
+  "protectExplosions": true,
+  "protectPistons": true,
+  "protectFire": true,
+  "protectFluidBoundaries": true,
+  "allowedDimensions": [
+    "gcmworlds:main_world"
+  ]
+}

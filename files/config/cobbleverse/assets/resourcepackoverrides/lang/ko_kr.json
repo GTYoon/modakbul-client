@@ -1,0 +1,14 @@
+{
+    "packAction.copyId.description":  "복사하려면 %s를 길게 누르세요.",
+    "packAction.copyId.success":  "복사되었습니다!",
+    "packAction.copyId.title":  "팩 ID 복사",
+    "packAction.reloadSettings.description":  "다시 로드하려면 %s를 길게 누르세요.",
+    "packAction.reloadSettings.success":  "리로디드!",
+    "packAction.reloadSettings.title":  "설정 새로고침",
+    "packAction.restoreDefaults.description":  "복원하려면 %s를 길게 누르세요.",
+    "packAction.restoreDefaults.success":  "복원되었습니다!",
+    "packAction.restoreDefaults.title":  "기본 팩 복원",
+    "packAction.toggleDebug.description":  "전환하려면 %s를 길게 누르세요.",
+    "packAction.toggleDebug.success":  "전환됨!",
+    "packAction.toggleDebug.title":  "Toggle 팩 ID"
+}

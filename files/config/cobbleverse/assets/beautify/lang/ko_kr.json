@@ -1,0 +1,9 @@
+{
+    "advancements.beautify.root.title":  "아름답게 하자!",
+    "config.jade.plugin_beautify.hanging_pot.pot_flower":  "심기 식물 표시",
+    "config.jade.plugin_beautify.lamp_jar.glowstone_dust":  "발광석 가루의 양",
+    "config.jade.plugin_beautify.trellis.pot_plant":  "심기 식물 표시",
+    "itemGroup.beautify.group":  "아름답게 하다",
+    "text.autoconfig.beautify.title":  "아름답게 하다",
+    "tooltip.beautify.plantable":  "심을 수 있는 식물:"
+}

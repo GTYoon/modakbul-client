@@ -1,0 +1,11 @@
+{
+    "tim_core.bits.someone_else":  "다른 사람",
+    "tim_core.buckets.common":  "공통",
+    "tim_core.buckets.rare":  "희귀",
+    "tim_core.buckets.ultra_rare":  "울트라 레어",
+    "tim_core.buckets.uncommon":  "흔하지 않은",
+    "tim_core.buckets.unknown":  "알 수 없는 버킷",
+    "tim_core.feedback.reserved":  "%1$s은(는) %2$s 전용으로 예약되어 있습니다.",
+    "tim_core.result.failure":  "실패",
+    "tim_core.result.success":  "성공"
+}

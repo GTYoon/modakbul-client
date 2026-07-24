@@ -1,0 +1,4 @@
+{
+    "globalpacks.source.global":  "[글로벌] %s",
+    "globalpacks.source.global_opt":  "[글로벌(옵션)] %s"
+}

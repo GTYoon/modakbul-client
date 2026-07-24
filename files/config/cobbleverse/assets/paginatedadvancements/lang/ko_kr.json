@@ -1,0 +1,18 @@
+{
+    "text.autoconfig.PaginatedAdvancements.option.FadeOutBackgroundOnAdvancementHover":  "진행 상황 위로 마우스를 가져가면 배경이 약간 회색으로 희미해집니다.",
+    "text.autoconfig.PaginatedAdvancements.option.LastSelectedTab":  "마지막으로 선택한 탭의 식별자",
+    "text.autoconfig.PaginatedAdvancements.option.MaxCriterionEntries":  "최대 표시 승급 기준 항목",
+    "text.autoconfig.PaginatedAdvancements.option.PinnedTabs":  "고정된 탭 목록(루트 발전 식별자)",
+    "text.autoconfig.PaginatedAdvancements.option.PinningEnabled":  "발전 탭 고정 활성화",
+    "text.autoconfig.PaginatedAdvancements.option.SaveLastSelectedTab":  "마지막으로 선택한 탭 저장 및 복원",
+    "text.autoconfig.PaginatedAdvancements.option.ShowAdvancementIDInDebugTooltip":  "디버그 툴팁에 발전 ID 표시",
+    "text.autoconfig.PaginatedAdvancements.option.ShowDebugInfo":  "발전 단계에 마우스를 올리면 디버그 정보 표시",
+    "text.autoconfig.PaginatedAdvancements.option.SpacingBetweenHorizontalTabs":  "가로 탭 사이의 간격",
+    "text.autoconfig.PaginatedAdvancements.option.SpacingBetweenPinnedTabs":  "고정된 탭 사이의 간격",
+    "text.autoconfig.PaginatedAdvancements.title":  "페이지가 매겨진 발전 설정",
+    "text.paginated_advancements.copied_to_clipboard":  "발전 ID를 클립보드에 복사했습니다.",
+    "text.paginated_advancements.copy_to_clipboard":  "(복사하려면 Ctrl+C)",
+    "text.paginated_advancements.expand_debug":  "[시프트] 더...",
+    "text.paginated_advancements.group":  "그룹:",
+    "text.paginated_advancements.scroll_debug":  "[스크롤] 더..."
+}

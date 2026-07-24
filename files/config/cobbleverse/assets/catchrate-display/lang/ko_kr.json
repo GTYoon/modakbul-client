@@ -1,0 +1,20 @@
+{
+    "catchrate.ball.heavy.weight":  "무게: %.1fkg",
+    "catchrate.ball.multiplier_always":  "",
+    "catchrate.ball.quick.consumed":  "퀵볼 보너스가 이미 이 대상에 사용되었습니다.",
+    "catchrate.command.debug.disabled":  "§c[포획률] 이번 접속의 디버그 기록을 §4비활성화§c했습니다.",
+    "catchrate.command.debug.enabled":  "§a[포획률] 이번 접속의 디버그 기록을 §2활성화§a했습니다. 자세한 내용은 latest.log에서 확인하세요.",
+    "catchrate.command.info.debug_active":  "§7  디버그 활성화: §f%s",
+    "catchrate.command.info.debug_config":  "§7  디버그 설정값: §f%s",
+    "catchrate.command.info.debug_session":  "§7  현재 세션 디버그: §f%s",
+    "catchrate.command.info.footer":  "§6============================================",
+    "catchrate.command.info.header":  "§6========== 포획률 표시 정보 ==========",
+    "catchrate.command.info.hide_unencountered":  "§7  미발견 포켓몬 정보 숨기기: §f%s",
+    "catchrate.command.info.hud_enabled":  "§7  포획률 HUD 활성화: §f%s",
+    "catchrate.command.info.show_ooc":  "§7  배틀 밖에서 표시: §f%s",
+    "catchrate.command.info.version":  "§7  버전: §f%s",
+    "catchrate.command.log.failed":  "§c[포획률] 보고서 저장 실패: %s",
+    "catchrate.command.log.saved_locally":  "§a[포획률] 디버그 보고서 저장 위치: §f%s",
+    "catchrate.command.log.uploading":  "§e[포획률] 디버그 보고서 생성 중...",
+    "catchrate.hud.hp":  "HP"
+}

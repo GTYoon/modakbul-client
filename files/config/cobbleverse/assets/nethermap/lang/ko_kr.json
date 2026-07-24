@@ -1,0 +1,16 @@
+{
+    "modmenu.descriptionTranslation.nethermap":  "네더와 다른 모든 동굴 차원에서 지도가 더 잘 작동하도록 만듭니다.",
+    "modmenu.summaryTranslation.nethermap":  "동굴 차원 지도 개선",
+    "text.autoconfig.nethermap.option.creationHeightEntries":  "생성 높이 사용",
+    "text.autoconfig.nethermap.option.creationHeightEntries.@Tooltip":  "이 목록은 기본값을 재정의하며 모든 차원을 포함할 수 있습니다.",
+    "text.autoconfig.nethermap.option.fixedEntries":  "고정 높이 사용",
+    "text.autoconfig.nethermap.option.fixedEntries.@Tooltip":  "이 목록은 기본값을 재정의하며 모든 차원을 포함할 수 있습니다.",
+    "text.autoconfig.nethermap.option.FixedEntry":  "입장",
+    "text.autoconfig.nethermap.option.FixedEntry.dimension":  "차원 ID",
+    "text.autoconfig.nethermap.option.FixedEntry.height":  "신장",
+    "text.autoconfig.nethermap.option.fixedHeight":  "고정 높이 사용",
+    "text.autoconfig.nethermap.option.fixedHeight.@Tooltip":  "동굴 크기에는 고정 높이를 사용합니다.",
+    "text.autoconfig.nethermap.option.useMapCreationHeight":  "지도 생성 높이 사용",
+    "text.autoconfig.nethermap.option.useMapCreationHeight.@Tooltip":  "동굴 차원에서 지도가 생성된 높이를 사용합니다.",
+    "text.autoconfig.nethermap.title":  "더 나은 네더 지도 설정"
+}
