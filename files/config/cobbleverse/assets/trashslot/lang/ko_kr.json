@@ -1,0 +1,7 @@
+{
+    "key.categories.trashslot":  "휴지통",
+    "key.trashslot.delete_all":  "모든 유형의 항목 삭제",
+    "key.trashslot.toggle_lock":  "휴지통 잠금/잠금 해제",
+    "tooltip.trashslot.destroy_item":  "아이템 파괴",
+    "tooltip.trashslot.trash_item":  "쓰레기 항목"
+}

@@ -1,0 +1,6 @@
+{
+    "moreculling.config.option.dontCull":  "선별하지 마세요",
+    "moreculling.config.option.dontCull.tooltip":  "컬링을 방지하려면 여기에 블록 ID를 추가하세요. 예를 들어 마인크래프트:대나무",
+    "moreculling.config.option.paintingCulling":  "페인팅 컬링",
+    "moreculling.config.option.paintingCulling.tooltip":  "그림의 뒷면과 안쪽 면을 컬링합니다."
+}

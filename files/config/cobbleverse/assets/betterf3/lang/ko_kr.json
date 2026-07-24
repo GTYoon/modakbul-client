@@ -1,0 +1,23 @@
+{
+    "config.betterf3.title":  "BetterF3",
+    "format.betterf3.coords":  "%s: %s %s %s",
+    "format.betterf3.default_format":  "%s: %s",
+    "format.betterf3.default_no_colon":  "%s %s",
+    "format.betterf3.fps":  "%sfps / %sfps %s",
+    "format.betterf3.no_format":  "%s",
+    "format.betterf3.total":  "%s %s/%s: %s/%s",
+    "text.betterf3.line.cpu":  "CPU",
+    "text.betterf3.line.fps":  "",
+    "text.betterf3.line.fps_tps":  "FPS/TPS(Alt+F3)",
+    "text.betterf3.line.fps_tps_new":  "FPS / TPS(F3+2)",
+    "text.betterf3.line.gpu":  "GPU",
+    "text.betterf3.line.minecraft":  "마인크래프트",
+    "text.betterf3.line.player_coords":  "",
+    "text.betterf3.line.server_tick":  "",
+    "text.betterf3.line.tick_manager_status.frozen":  "냉동",
+    "text.betterf3.line.tick_manager_status.normal":  "달리기",
+    "text.betterf3.line.tick_manager_status.sprinting":  "전력 질주",
+    "text.betterf3.line.tick_manager_status.stepping":  "냉동 - 스테핑",
+    "text.betterf3.module.fps":  "FPS",
+    "text.betterf3.module.minecraft":  "마인크래프트"
+}

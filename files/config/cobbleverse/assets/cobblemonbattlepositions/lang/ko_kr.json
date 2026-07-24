@@ -1,0 +1,11 @@
+{
+    "block.cobblemonbattlepositions.player_pokemon_position":  "플레이어 포켓몬 위치",
+    "block.cobblemonbattlepositions.player_stand_position":  "플레이어 스탠드 위치",
+    "block.cobblemonbattlepositions.trainer_pokemon_position":  "트레이너 포켓몬 위치",
+    "block.cobblemonbattlepositions.trainer_stand_position":  "트레이너 스탠드 위치",
+    "itemGroup.cobblemonbattlepositions":  "전투 위치",
+    "tooltip.cobblemonbattlepositions.player_pokemon_position":  "§7전투 중 플레이어의 포켓몬이 스폰되는 곳",
+    "tooltip.cobblemonbattlepositions.player_stand_position":  "§7전투 중 플레이어가 순간이동하는 곳(옵션)",
+    "tooltip.cobblemonbattlepositions.trainer_pokemon_position":  "§7배틀 중 트레이너의 포켓몬이 스폰되는 곳",
+    "tooltip.cobblemonbattlepositions.trainer_stand_position":  "§7전투 중 트레이너가 텔레포트하는 곳(옵션)"
+}

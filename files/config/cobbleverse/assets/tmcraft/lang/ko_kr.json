@@ -1,0 +1,9 @@
+{
+    "item.tmcraft.egg_move_item":  "알기술-%1$d: %2$s",
+    "item.tmcraft.move_upgrade_smithing_template.additions_slot_description":  "강화 재료를 넣으세요",
+    "item.tmcraft.move_upgrade_smithing_template.base_slot_description":  "강화할 기술 저장 장치를 넣으세요",
+    "item.tmcraft.star_move_item":  "별기술-%1$d: %2$s",
+    "item.tmcraft.tm_move_item":  "기술머신-%1$d: %2$s",
+    "item.tmcraft.tutor_move_item":  "가르침기술-%1$d: %2$s",
+    "item_group.tmcraft.tmcraft":  "TM크래프트"
+}

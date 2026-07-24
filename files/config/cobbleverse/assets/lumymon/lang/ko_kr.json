@@ -1,0 +1,13 @@
+{
+    "block.lumymon.elevator":  "엘리베이터",
+    "item.lumymon.ancient_dna":  "고대 유전자 표본",
+    "item.lumymon.melodic_tape_vol_1":  "멜로디 테이프 1집",
+    "message.lumymon.elevator.missing_advancement":  "챔피언은 진정으로 가치 있는 사람만을 기다립니다",
+    "message.lumymon.raid.cheers_removed":  "레이드 응원이 삭제되었습니다.",
+    "message.lumymon.raid.cheers_replenished":  "레이드 응원이 보충되었습니다!",
+    "message.lumymon.raid.inventory_full":  "가방이 가득 차 레이드 응원이 바닥에 떨어졌습니다!",
+    "tooltip.lumymon.elevator":  "§e크리에이티브 모드에서 Shift + 우클릭으로 설정하고 레드스톤 신호로 작동시킵니다.",
+    "tooltip.lumymon.legacy_item_warning":  "⚠ 이 항목은 곧 삭제됩니다 ⚠",
+    "tooltip.lumymon.legacy_item_warning.hint":  "지금 제작대에 배치하여 변환하세요!",
+    "tooltip.lumymon.stark_forge":  "§c마그마스톤을 단련할 수 있는 유일한 용암 연료 용광로"
+}

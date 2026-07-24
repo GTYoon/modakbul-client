@@ -1,0 +1,10 @@
+{
+    "text.autoconfig.betterthirdperson.option.aimDuration":  "조준 시간",
+    "text.autoconfig.betterthirdperson.option.aimOnInteract":  "Interact의 조준 플레이어",
+    "text.autoconfig.betterthirdperson.option.followYaw":  "요 각도 따르기",
+    "text.autoconfig.betterthirdperson.option.freeCameraDuringElytraFlight":  "Elytra 비행 중 무료 카메라",
+    "text.autoconfig.betterthirdperson.option.pitchChangeSpeed":  "피치 체인지 사어",
+    "text.autoconfig.betterthirdperson.option.playerRotationSpeed":  "플레이어 로테이션 방식",
+    "text.autoconfig.betterthirdperson.option.skipThirdPersonFrontView":  "3인칭 전면 뷰 건너뛰기",
+    "text.autoconfig.betterthirdperson.title":  "더 나은 3인칭"
+}

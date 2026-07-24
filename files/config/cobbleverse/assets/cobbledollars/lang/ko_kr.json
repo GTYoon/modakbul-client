@@ -1,0 +1,45 @@
+{
+  "item.cobbledollars.cobble_merchant_spawn_egg": "코블 상인 생성 알",
+  "entity.cobbledollars.cobble_merchant": "코블 상인",
+  "entity.minecraft.villager.cobble_merchant": "코블 상인",
+
+  "gui.cobbledollars.add_offer": "클릭하여 %s을(를) 판매 상품으로 추가",
+
+  "screen.cobbledollars.shop": "코블 상점",
+  "screen.cobbledollars.bank": "코블 매입소",
+
+  "option.cobbledollars.overlay_position.disabled": "표시 안 함",
+  "option.cobbledollars.overlay_position.top_left": "왼쪽 위",
+  "option.cobbledollars.overlay_position.top_right": "오른쪽 위",
+  "option.cobbledollars.overlay_position.bottom_left": "왼쪽 아래",
+  "option.cobbledollars.overlay_position.bottom_right": "오른쪽 아래",
+
+  "chat.cobbledollars.offline_earnings": "접속하지 않은 동안 %s을(를) 벌었습니다!",
+
+  "command.cobbledollars.pay.fail": "코블달러가 부족합니다.",
+  "command.cobbledollars.pay.success": "%s을(를) %s님에게 보냈습니다.",
+  "command.cobbledollars.pay.receive": "%s님이 %s을(를) 보냈습니다.",
+  "command.cobbledollars.query.success": "%s님의 보유 코블달러: %s",
+  "command.cobbledollars.give.success.single": "%s을(를) %s님에게 지급했습니다.",
+  "command.cobbledollars.give.success.multiple": "%s을(를) 플레이어 %s명에게 각각 지급했습니다.",
+  "command.cobbledollars.remove.success.single": "%s을(를) %s님에게서 회수했습니다.",
+  "command.cobbledollars.remove.success.multiple": "%s을(를) 플레이어 %s명에게서 각각 회수했습니다.",
+  "command.cobbledollars.set.success.single": "%s(으)로 %s님의 보유 코블달러를 설정했습니다.",
+  "command.cobbledollars.set.success.multiple": "%s(으)로 플레이어 %s명의 보유 코블달러를 각각 설정했습니다.",
+  "command.cobbledollars.reload": "코블달러 설정을 다시 불러왔습니다.",
+  "command.cobbledollars.leaderboard.update": "코블달러 재산 순위를 갱신했습니다.",
+
+  "command.cobbledollars.cobblemerchant.add.category.success.single": "%s 카테고리를 %s 상인에게 추가했습니다.",
+  "command.cobbledollars.cobblemerchant.add.category.success.multiple": "%s 카테고리를 코블 상인 %s명에게 추가했습니다.",
+  "command.cobbledollars.cobblemerchant.add.item.success.single": "%s 상품을 %s 상인에게 추가했습니다.",
+  "command.cobbledollars.cobblemerchant.add.item.success.multiple": "%s 상품을 코블 상인 %s명에게 추가했습니다.",
+  "command.cobbledollars.cobblemerchant.remove.category.success.single": "%s 카테고리를 %s 상인에게서 삭제했습니다.",
+  "command.cobbledollars.cobblemerchant.remove.category.success.multiple": "%s 카테고리를 코블 상인 %s명에게서 삭제했습니다.",
+  "command.cobbledollars.cobblemerchant.remove.item.success.single": "%s 상품을 %s 상인에게서 삭제했습니다.",
+  "command.cobbledollars.cobblemerchant.remove.item.success.multiple": "%s 상품을 코블 상인 %s명에게서 삭제했습니다.",
+
+  "argument.cobbledollars.big_integer.low": "금액은 %s보다 작을 수 없습니다. 입력값: %s",
+  "argument.cobbledollars.big_integer.big": "금액은 %s보다 클 수 없습니다. 입력값: %s",
+
+  "npc.cobbledollars.harmex.name": "하멕스"
+}

@@ -1,0 +1,10 @@
+{
+    "iris.keybind.wireframe":  "와이어프레임(SP에만 해당)",
+    "iris.keybinds":  "아이리스",
+    "iris.load.failure.generic":  "Iris는 셰이더를 로드하는 동안 문제가 발생했습니다. Iris 개발자에게 이 문제를 보고해 주세요.",
+    "iris.load.failure.shader":  "셰이더팩을 로드하지 못했습니다! 셰이더 개발자에게 오류를 보고해 주세요.",
+    "iris.shaders.debug.restartNoDebug":  "셰이더 디버깅이 활성화되었습니다. OpenGL 디버깅은 NeoForge에서 지원되지 않습니다.",
+    "iris.unsupported.iris":  "아이리스",
+    "options.iris.colorSpace":  "색 공간",
+    "options.iris.colorSpace.sodium_tooltip":  "화면을 변신시킬 색 공간입니다. 셰이더 팩 위에서 작동합니다. 확실하지 않은 경우 SRGB를 사용하세요."
+}
