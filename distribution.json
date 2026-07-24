@@ -10,6 +10,11 @@
                         "version":  "1.0.0",
                         "address":  "116.126.112.66:25565",
                         "minecraftVersion":  "1.21.1",
+                        "javaOptions":  {
+                                            "supported":  "\u003e=21 \u003c22",
+                                            "suggestedMajor":  21,
+                                            "distribution":  "TEMURIN"
+                                        },
                         "mainServer":  true,
                         "autoconnect":  true,
                         "modules":  [
