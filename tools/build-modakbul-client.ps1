@@ -173,6 +173,20 @@ Reset-SafeDirectory -Path $RepositoryRoot
 Reset-SafeDirectory -Path $ReleaseAssetsRoot
 New-Item -ItemType Directory -Force -Path $PackRoot, $OverridesRoot, $RepositoryFilesRoot | Out-Null
 
+# GitHub raw downloads must retain the exact bytes used for the distribution
+# checksums. These managed files include JSON, shader and options files, so
+# Git's default text newline normalization would otherwise make their remote
+# hashes differ from the manifest created on Windows.
+$gitAttributes = @'
+/files/** -text
+/fabric/** -text
+'@
+[IO.File]::WriteAllText(
+    (Join-Path $RepositoryRoot ".gitattributes"),
+    $gitAttributes,
+    [Text.UTF8Encoding]::new($false)
+)
+
 Write-Host "[1/8] 본 PC 실사용 클라이언트 자료 복사"
 foreach ($folder in @("config", "datapacks", "defaultconfigs", "resourcepacks", "shaderpacks")) {
     $source = Join-Path $ReferenceClientRoot $folder
@@ -230,6 +244,14 @@ $optionsText = [regex]::Replace(
     '(?m)^key_key\.lumymon\.access_pc:.*$',
     "key_key.lumymon.access_pc:key.keyboard.unknown"
 )
+$optionsText = [regex]::Replace(
+    $optionsText,
+    '(?m)^key_key\.cobblemon_ranked\.open_gui:.*$',
+    "key_key.cobblemon_ranked.open_gui:key.keyboard.o"
+)
+if ($optionsText -notmatch '(?m)^key_key\.cobblemon_ranked\.open_gui:') {
+    $optionsText = $optionsText.TrimEnd("`r", "`n") + "`r`nkey_key.cobblemon_ranked.open_gui:key.keyboard.o`r`n"
+}
 $optionsText = $optionsText.Replace(
     '"file/!Cobbleverse Questsbook Resourcepack.zip"]',
     '"file/!Cobbleverse Questsbook Resourcepack.zip","file/Modakbul-Korean-v1.1.zip"]'
@@ -631,7 +653,9 @@ try {
     $curseForgeArchive.Dispose()
 }
 
+Write-Host "[7/8] 설치 안내 파일 복사"
 Copy-DirectoryContents -Source (Join-Path $Workspace "client-kit\install") -Destination $ReleaseRoot
+Write-Host "[7/8] 설치 안내 파일 복사 완료"
 
 $repositoryGuide = @"
 모닥불 Season 1 자동 업데이트 저장소
@@ -681,6 +705,7 @@ $distributionFileName = if ($LauncherFilesBaseUrl -eq "__CLIENT_FILES_BASE_URL__
 }
 $distributionPath = Join-Path $RepositoryRoot $distributionFileName
 
+Write-Host "[7/8] 런처 배포 매니페스트 생성"
 & $distributionBuilder `
     -Version $Version `
     -ServerAddress $ServerAddress `
@@ -690,8 +715,15 @@ $distributionPath = Join-Path $RepositoryRoot $distributionFileName
     -ReferenceClientRoot $ReferenceClientRoot `
     -UpdateRepositoryRoot $RepositoryRoot `
     -OutputPath $distributionPath | Out-Host
+if ($LASTEXITCODE -ne 0) {
+    throw "런처 배포 매니페스트 생성에 실패했습니다. 종료 코드: $LASTEXITCODE"
+}
 
+Write-Host "[7/8] 런처 배포 매니페스트 검증"
 & $distributionTester -DistributionPath $distributionPath | Out-Host
+if ($LASTEXITCODE -ne 0) {
+    throw "런처 배포 매니페스트 검증에 실패했습니다. 종료 코드: $LASTEXITCODE"
+}
 
 Write-Host "[8/8] 무결성 보고서 생성"
 $mrpackHash = (Get-FileHash -Algorithm SHA256 -LiteralPath $MrpackPath).Hash.ToLowerInvariant()
