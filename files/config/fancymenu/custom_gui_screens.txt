@@ -19,3 +19,12 @@ custom_gui {
   transparent_world_background_overlay = false
   pause_game = true
 }
+
+custom_gui {
+  identifier = modakbul_region_travel
+  title = 지역 이동
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = true
+  pause_game = true
+}

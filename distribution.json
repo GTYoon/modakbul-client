@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.8",
+    "version":  "1.0.9",
     "rss":  "https://github.com/GTYoon/modakbul-launcher/releases.atom",
     "servers":  [
                     {
@@ -7,7 +7,7 @@
                         "name":  "모닥불 Season 1",
                         "description":  "Cobblemon 모닥불 Season 1 · Minecraft 1.21.1 · Fabric 0.19.3",
                         "icon":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/server-icon.png",
-                        "version":  "1.0.8",
+                        "version":  "1.0.9",
                         "address":  "116.126.112.66:25565",
                         "minecraftVersion":  "1.21.1",
                         "javaOptions":  {
@@ -1464,12 +1464,12 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-e8debb1ddd1c0e53:1.0.8",
+                                            "id":  "generated.file:file-e8debb1ddd1c0e53:1.0.9",
                                             "name":  "custom_gui_screens.txt",
                                             "type":  "File",
                                             "artifact":  {
-                                                             "size":  442,
-                                                             "MD5":  "aee0e4dd049421f87938f6175b3a392b",
+                                                             "size":  642,
+                                                             "MD5":  "9db32f8c79db62398756b4240d7851ee",
                                                              "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/custom_gui_screens.txt",
                                                              "path":  "config/fancymenu/custom_gui_screens.txt"
                                                          }
@@ -1508,14 +1508,25 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-7c14d3174b825ec8:1.0.8",
+                                            "id":  "generated.file:file-7c14d3174b825ec8:1.0.9",
                                             "name":  "cobbleverse_pause_menu.txt",
                                             "type":  "File",
                                             "artifact":  {
-                                                             "size":  30555,
-                                                             "MD5":  "34fe3ea8f42b6e661a2ec8d2296a0deb",
+                                                             "size":  30367,
+                                                             "MD5":  "006797b0231d01e374c930e53d74035b",
                                                              "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/customization/cobbleverse_pause_menu.txt",
                                                              "path":  "config/fancymenu/customization/cobbleverse_pause_menu.txt"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-92a2a8a3085e0f96:1.0.9",
+                                            "name":  "modakbul_region_travel.txt",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  17891,
+                                                             "MD5":  "61fea9476fc6fc24e9460ca4dcc1f3b5",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/customization/modakbul_region_travel.txt",
+                                                             "path":  "config/fancymenu/customization/modakbul_region_travel.txt"
                                                          }
                                         },
                                         {

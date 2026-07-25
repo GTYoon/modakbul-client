@@ -90,14 +90,13 @@ element {
 
 element {
   button_element_executable_block_identifier = b1f3050a-3005-4d6b-acb7-46e68917eaf4-1746103635508
-  [executable_action_instance:c1d37810-6adb-4d26-874a-ca1887c79e84-1746103652334][action_type:openlink] = https://discord.lumy.fun
-  [executable_action_instance:e2e67505-8492-4752-b4f9-7f8d7b66e8a7-1746104101768][action_type:openlink] = https://discord.lumy.fun
-  [executable_block:b1f3050a-3005-4d6b-acb7-46e68917eaf4-1746103635508][type:generic] = [executables:c1d37810-6adb-4d26-874a-ca1887c79e84-1746103652334;e2e67505-8492-4752-b4f9-7f8d7b66e8a7-1746104101768;]
+  [executable_action_instance:c1d37810-6adb-4d26-874a-ca1887c79e84-1746103652334][action_type:opengui] = modakbul_region_travel
+  [executable_block:b1f3050a-3005-4d6b-acb7-46e68917eaf4-1746103635508][type:generic] = [executables:c1d37810-6adb-4d26-874a-ca1887c79e84-1746103652334;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = ✉ 디스코드
+  label = ✦ 지역 이동
   navigatable = true
   widget_active_state_requirement_container_identifier = 91f56089-da37-43c1-b694-a9fbdc78b7a6-1746103635508
   [loading_requirement_container_meta:91f56089-da37-43c1-b694-a9fbdc78b7a6-1746103635508] = [groups:][instances:]

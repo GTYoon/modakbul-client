@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.8",
+    "version":  "1.0.9",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-25T14:55:51.5717898Z",
+    "generatedAt":  "2026-07-25T20:57:00Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -624,8 +624,8 @@
                   },
                   {
                       "path":  "config/fancymenu/custom_gui_screens.txt",
-                      "sha256":  "27422fbddb9a4436af370cba7645f4e32b7f9b9252581842b782d92a9309c93d",
-                      "size":  442
+                      "sha256":  "80a8232a3953f4a26c6340b144b1323261db31b7f89cb48589386f8a80cf0656",
+                      "size":  642
                   },
                   {
                       "path":  "config/fancymenu/customizablemenus.txt",
@@ -644,8 +644,13 @@
                   },
                   {
                       "path":  "config/fancymenu/customization/cobbleverse_pause_menu.txt",
-                      "sha256":  "a1a48a063e8040ee1d34db482dfba9be750f4a2bdb9598369267b11cda56c4b4",
-                      "size":  30555
+                      "sha256":  "74e2a3d019d8d639a34a1933372a5f84651065edfbb76b934dd3fa2d6c60f18a",
+                      "size":  30367
+                  },
+                  {
+                      "path":  "config/fancymenu/customization/modakbul_region_travel.txt",
+                      "sha256":  "b849c58ca106f7f67aa77b6ba4fe518cc4cae8557a19134b20c64aaf98fb3e77",
+                      "size":  17891
                   },
                   {
                       "path":  "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget",
