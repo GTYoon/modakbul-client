@@ -1,8 +1,8 @@
 {
     "battle.stat.abbr.accuracy":  "ACC",
-    "battle.stat.abbr.attack":  "공격력",
+    "battle.stat.abbr.attack":  "ATK",
     "battle.stat.abbr.crit":  "브라운관",
-    "battle.stat.abbr.defense":  "데프",
+    "battle.stat.abbr.defense":  "DEF",
     "battle.stat.abbr.evasion":  "에바",
     "battle.stat.abbr.special_attack":  "스파",
     "battle.stat.abbr.special_defense":  "SPD",
