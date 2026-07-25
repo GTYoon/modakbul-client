@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.2",
+    "version":  "1.0.3",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-25T07:41:24.5707079Z",
+    "generatedAt":  "2026-07-25T07:54:30.9670529Z",
     "files":  [
                   {
                       "path":  "config/cobblemon-battle-extras.json",
@@ -899,8 +899,8 @@
                   },
                   {
                       "path":  "datapacks/COBBLEVERSE-DP-v19-CF.zip",
-                      "sha256":  "c1e2773abbbb992d8b6aca03fbb6a0ac35035ba35559ccb718b17688859a74cd",
-                      "size":  4660536
+                      "sha256":  "b9af165a0219dac7fbbe0f69057f6ff834dd943cf77df9adede5edceb3c3cfe0",
+                      "size":  4628169
                   },
                   {
                       "path":  "datapacks/COBBLEVERSE-Loot-DP-v11.zip",
@@ -1919,7 +1919,7 @@
                   },
                   {
                       "path":  "resourcepacks/Modakbul-Korean-v1.1.zip",
-                      "sha256":  "44be1d16e7e234ce117742ebf74a8562f346ace9f89846ca09686b816c760bcc",
+                      "sha256":  "00b07304e5af4e5dc20304c60f58ed51cd6fe7345f399708e3c91bfd4aee0286",
                       "size":  370947
                   },
                   {
