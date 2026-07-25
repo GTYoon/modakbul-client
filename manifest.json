@@ -5,7 +5,7 @@
     "version":  "1.0.8",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-25T14:53:49.5437049Z",
+    "generatedAt":  "2026-07-25T14:55:51.5717898Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
