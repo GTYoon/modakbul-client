@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.11",
+    "version":  "1.0.12",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-25T21:55:35.7093469Z",
+    "generatedAt":  "2026-07-25T22:07:51.7363388Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -669,38 +669,38 @@
                   },
                   {
                       "path":  "config/fancymenu/assets/ui_button.png",
-                      "sha256":  "f36080e09cd12b19e1de0bf1e28f4e5bdd77eca5c937085aef2dc16190f8515d",
-                      "size":  434
+                      "sha256":  "3d19412628ca00dac3e55bd06eb6fe89775986a48647df23c9d3043e25c435cd",
+                      "size":  321
                   },
                   {
                       "path":  "config/fancymenu/assets/ui_button_hover.png",
-                      "sha256":  "1d819254f4299a31ac843081f041f60f921c5f94b669f72be2ffa521026b2781",
-                      "size":  422
+                      "sha256":  "c233543c1b30511306430d52c96af18ddf916e0203bdad42723a1f746c253559",
+                      "size":  311
                   },
                   {
                       "path":  "config/fancymenu/assets/ui_button_inactive.png",
-                      "sha256":  "4edfcec7d97fd66671a4e992a18477b97766eab5d9c50e0f04930eb27e4fe608",
-                      "size":  415
+                      "sha256":  "b298d62b4a4bc8454ff20ae0c986ebb820b4fbd8a5cbd40bcba27ecb35dd106b",
+                      "size":  317
                   },
                   {
                       "path":  "config/fancymenu/assets/ui_button_selected.png",
-                      "sha256":  "bd51aa6e2b13c6c0bee4cf6f32d68bd485f6a4dbdebaf5dea52b27b32419fa1f",
-                      "size":  419
+                      "sha256":  "e991f054c524a6aac51e09635ec58d5b5bdcfb5def2c924423dedd6e0f1ed91f",
+                      "size":  306
                   },
                   {
                       "path":  "config/fancymenu/assets/ui_panel.png",
-                      "sha256":  "4cc59d2a1f86a3c8643b05f218ca0514b361052a0b3c3c847d8835656a157249",
-                      "size":  431
+                      "sha256":  "172938a84876ed882f941f6d4536e78f5cc43919517a7dcb52f5ce0f6552ade8",
+                      "size":  320
                   },
                   {
                       "path":  "config/fancymenu/assets/ui_panel_soft.png",
-                      "sha256":  "956ba17e498a0f80a94bfc3f52a7ac06e05a4cc27464f6202431f21cfeab1b3a",
-                      "size":  424
+                      "sha256":  "103d57fb3df7334ad20251614cd6add6e0e32a354bed26be011c23cb048bf811",
+                      "size":  316
                   },
                   {
                       "path":  "config/fancymenu/custom_gui_screens.txt",
-                      "sha256":  "2969c4947fccf573aac9e5c841137ffef42ebdc1be3472aacb480cede92bb515",
-                      "size":  845
+                      "sha256":  "86fddade41994fb60827c18d8fc64968bf39a97059605b7af05de515dd8fa565",
+                      "size":  807
                   },
                   {
                       "path":  "config/fancymenu/customizablemenus.txt",
@@ -719,18 +719,18 @@
                   },
                   {
                       "path":  "config/fancymenu/customization/cobbleverse_pause_menu.txt",
-                      "sha256":  "cdde15b426e0c28719dd93b9c7837350eaf54add32dd1329786ccd33b5f6aa64",
-                      "size":  61667
+                      "sha256":  "d6f8571fd953e24532250255b0ee4e5b3e6d80c409876f17119843153f8dc3ed",
+                      "size":  69311
                   },
                   {
                       "path":  "config/fancymenu/customization/modakbul_quick_guide.txt",
-                      "sha256":  "a86fee2a26f541e82d2f5e66585f38742ee7c5666b2214e3f97283a62a79fd17",
-                      "size":  40740
+                      "sha256":  "e4854fd956293c17a71f551b03f0609c05e2c334cacfcb57d30d26e4fcab3145",
+                      "size":  40764
                   },
                   {
                       "path":  "config/fancymenu/customization/modakbul_region_travel.txt",
-                      "sha256":  "ff9d96b2d5500427510b1148b14fba98a8714e589664cfe2e19d546e2e2e05e3",
-                      "size":  45996
+                      "sha256":  "bfa3fec00b0e09db2b6a3cce89478c5685d7ecd9fcc5deefbdb52f9429d1ca4b",
+                      "size":  46021
                   },
                   {
                       "path":  "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget",

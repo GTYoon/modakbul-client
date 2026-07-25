@@ -50,16 +50,20 @@ public final class TestModakbulMenus {
             requireAssetsExist(config, path, content);
             requireActionsConnected(path, content);
             requireCustomButtonTextures(path, content);
-            requireFitsDefaultGui(path, content, 408, 214);
+            requireFitsDefaultGui(path, content, 640, 338);
         }
 
         String pause = Files.readString(customization.resolve("cobbleverse_pause_menu.txt"), StandardCharsets.UTF_8);
         require(count(pause, "[action_type:sendmessage] = /spawn") == 1, "pause /spawn action count");
         require(count(pause, "[action_type:sendmessage] = /야생") == 1, "pause /야생 action count");
         require(count(pause, "[action_type:sendmessage] = /home") == 1, "pause /home action count");
-        require(pause.contains("instance_identifier = pause_options_button"), "pause options button missing");
-        require(pause.contains("instance_identifier = pause_return_to_game_button"), "pause resume button missing");
-        require(pause.contains("instance_identifier = pause_disconnect_button"), "pause disconnect button missing");
+        require(pause.contains("[action_type:opengui] = options_screen"), "pause options action missing");
+        require(pause.contains("[action_type:closegui] ="), "pause resume action missing");
+        require(pause.contains("[action_type:disconnect_server_or_world] = join_multiplayer_screen"),
+            "pause disconnect action missing");
+        requireVanillaHidden(pause, "pause_options_button");
+        requireVanillaHidden(pause, "pause_return_to_game_button");
+        requireVanillaHidden(pause, "pause_disconnect_button");
 
         String region = Files.readString(customization.resolve("modakbul_region_travel.txt"), StandardCharsets.UTF_8);
         for (String command : List.of(
@@ -78,6 +82,8 @@ public final class TestModakbulMenus {
         require(braceBalance(customGuis) == 0, "custom_gui_screens.txt: unbalanced braces");
         require(customGuis.contains("identifier = modakbul_region_travel"), "region custom GUI missing");
         require(customGuis.contains("identifier = modakbul_quick_guide"), "guide custom GUI missing");
+        require(!customGuis.contains("title = 지역 이동"), "region native title must stay hidden");
+        require(!customGuis.contains("title = 모닥불 이용 안내"), "guide native title must stay hidden");
         require(!containsMojibake(customGuis), "custom_gui_screens.txt: Korean text contains mojibake");
 
         validatePngAssets(config.resolve("assets"));
@@ -91,6 +97,18 @@ public final class TestModakbulMenus {
             String id = matcher.group(1).trim();
             require(values.add(id), path + ": duplicate instance identifier " + id);
         }
+    }
+
+    private static void requireVanillaHidden(String content, String identifier) {
+        Matcher blockMatcher = ELEMENT_BLOCK.matcher(content);
+        while (blockMatcher.find()) {
+            String block = blockMatcher.group(1);
+            if (block.contains("instance_identifier = " + identifier)) {
+                require(block.contains("is_hidden = true"), "vanilla widget must be hidden: " + identifier);
+                return;
+            }
+        }
+        throw new IllegalStateException("vanilla widget missing: " + identifier);
     }
 
     private static void requireAssetsExist(Path config, Path path, String content) {

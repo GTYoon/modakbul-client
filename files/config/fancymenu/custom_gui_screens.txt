@@ -23,7 +23,7 @@ custom_gui {
 
 custom_gui {
   identifier = modakbul_region_travel
-  title = 지역 이동
+  title =
   allow_esc = true
   transparent_world_background = true
   transparent_world_background_overlay = true
@@ -32,7 +32,7 @@ custom_gui {
 
 custom_gui {
   identifier = modakbul_quick_guide
-  title = 모닥불 이용 안내
+  title =
   allow_esc = true
   transparent_world_background = true
   transparent_world_background_overlay = true

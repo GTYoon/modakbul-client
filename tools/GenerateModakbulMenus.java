@@ -6,12 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class GenerateModakbulMenus {
-    // The distributed client uses GUI scale 5. FancyMenu positions are measured
-    // in the resulting scaled GUI space (roughly 408x214 at 2042x1071), so the
-    // original 820x456 design canvas must be reduced before serialization.
-    private static final double HORIZONTAL_LAYOUT_SCALE = 0.47;
-    private static final double VERTICAL_LAYOUT_SCALE = 0.44;
-    private static final double TEXT_LAYOUT_SCALE = 0.62;
+    // GUI scale 5 is capped by the game window and FancyMenu exposes an effective
+    // canvas of roughly 640x338 in the user's screenshots. Keep a small outer
+    // margin while using almost the full canvas.
+    private static final double HORIZONTAL_LAYOUT_SCALE = 0.74;
+    private static final double VERTICAL_LAYOUT_SCALE = 0.68;
+    private static final double TEXT_LAYOUT_SCALE = 0.72;
+    private static final int VERTICAL_LAYOUT_OFFSET = 6;
     private static final String ASSET_ROOT = "[source:local]/config/fancymenu/assets/";
     private static final String NORMAL_BUTTON = ASSET_ROOT + "ui_button.png";
     private static final String HOVER_BUTTON = ASSET_ROOT + "ui_button_hover.png";
@@ -49,6 +50,7 @@ public final class GenerateModakbulMenus {
         out.append(panel("pause-content-panel", SOFT_PANEL, -208, 90, 598, 324));
         out.append(panel("pause-location-info-panel", PANEL, -190, 218, 272, 158));
         out.append(panel("pause-server-info-panel", PANEL, 96, 218, 276, 158));
+        out.append(panel("pause-footer-panel", SOFT_PANEL, -390, 422, 780, 34));
 
         out.append(image("pause-logo", "icon_pokemon.png", -370, 34, 36, 36, false));
         out.append(text("pause-title", "&f&l모닥불 Season 1", -326, 35, 310, 20, 1.35, "#FFFFFFFF"));
@@ -56,7 +58,7 @@ public final class GenerateModakbulMenus {
 
         out.append(text("pause-navigation-title", "&b&l메인 메뉴", -370, 105, 140, 16, 1.0, "#FFFFFFFF"));
         out.append(button(
-            "pause-guide", "&f포켓몬 · 서버 안내", -372, 130, 134, 32,
+            "pause-guide", "&f이용 안내", -372, 130, 134, 32,
             new Action("opengui", "modakbul_quick_guide")
         ));
         out.append(image("pause-guide-icon", "icon_pokemon.png", -362, 136, 20, 20, false));
@@ -66,12 +68,13 @@ public final class GenerateModakbulMenus {
         ));
         out.append(image("pause-region-icon", "icon_compass.png", -362, 176, 20, 20, false));
 
-        out.append(vanillaButton("pause_options_button", "&f설정", -372, 210, 134, 32, false));
+        out.append(button(
+            "pause-settings", "&f설정", -372, 210, 134, 32,
+            new Action("opengui", "options_screen")
+        ));
         out.append(image("pause-settings-icon", "icon_settings.png", -362, 216, 20, 20, false));
-        out.append(text("pause-navigation-tip-one", "&7ESC를 누르면 언제든", -368, 266, 142, 13, 0.78, "#C8D6E8FF"));
-        out.append(text("pause-navigation-tip-two", "&7이 화면으로 돌아옵니다.", -368, 282, 142, 13, 0.78, "#C8D6E8FF"));
-        out.append(vanillaButton("pause_disconnect_button", "&c서버 나가기", -372, 370, 134, 28, false));
-        out.append(image("pause-exit-icon", "icon_exit.png", -361, 374, 20, 20, false));
+        out.append(text("pause-navigation-tip-one", "&7ESC로 언제든 다시 열기", -368, 266, 142, 13, 0.78, "#C8D6E8FF"));
+        out.append(text("pause-navigation-tip-two", "&7이동 · 안내 · 설정을 한곳에서", -368, 282, 150, 13, 0.72, "#C8D6E8FF"));
 
         out.append(text("pause-quick-title", "&f&l빠른 이동", -190, 106, 170, 17, 1.05, "#FFFFFFFF"));
         out.append(text("pause-quick-subtitle", "&7원하는 장소를 바로 선택하세요.", -80, 108, 250, 14, 0.78, "#C8D6E8FF"));
@@ -106,7 +109,22 @@ public final class GenerateModakbulMenus {
         out.append(text("pause-server-three", "&f건축: 건차 허용 구역에서만", 112, 300, 245, 14, 0.78, "#E8F2FFFF"));
         out.append(text("pause-server-four", "&7자세한 내용은 왼쪽 안내 메뉴", 112, 330, 245, 14, 0.74, "#C1CEE0FF"));
 
-        out.append(vanillaButton("pause_return_to_game_button", "&f게임으로 돌아가기", 242, 39, 126, 28, false));
+        out.append(button(
+            "pause-resume", "&f게임으로 돌아가기", 242, 39, 126, 28,
+            new Action("closegui", "")
+        ));
+        out.append(button(
+            "pause-disconnect", "&c서버 나가기", -372, 425, 134, 26,
+            new Action("disconnect_server_or_world", "join_multiplayer_screen")
+        ));
+        out.append(image("pause-exit-icon", "icon_exit.png", -361, 428, 20, 20, false));
+        out.append(text(
+            "pause-footer-message", "&7모닥불 Season 1 · 편안한 모험 되세요.",
+            -214, 431, 420, 13, 0.72, "#AEBED3FF"
+        ));
+        out.append(hiddenVanilla("pause_options_button"));
+        out.append(hiddenVanilla("pause_return_to_game_button"));
+        out.append(hiddenVanilla("pause_disconnect_button"));
         out.append(hiddenVanilla("pause_advancements_button"));
         out.append(hiddenVanilla("pause_share_to_lan_button"));
         out.append(hiddenVanilla("pause_report_bugs_button"));
@@ -196,8 +214,8 @@ public final class GenerateModakbulMenus {
             "region-back", "&f이전 화면", -390, 416, 124, 28,
             new Action("back_to_last_screen", "")
         ));
-        out.append(text("region-note-one", "&7야생은 마지막으로 머물렀던 야생 좌표로 이동합니다.", -232, 420, 590, 13, 0.76, "#C8D6E8FF"));
-        out.append(text("region-note-two", "&7마을 슬롯의 표시 이름을 바꿔도 /마을1~3 명령은 유지됩니다.", -232, 436, 590, 13, 0.72, "#AEBED3FF"));
+        out.append(text("region-note-one", "&7야생은 마지막으로 머물렀던 야생 좌표로 이동합니다.", -232, 420, 590, 13, 0.84, "#C8D6E8FF"));
+        out.append(text("region-note-two", "&7마을 슬롯의 표시 이름을 바꿔도 /마을1~3 명령은 유지됩니다.", -232, 436, 590, 13, 0.78, "#AEBED3FF"));
 
         return out.toString();
     }
@@ -249,7 +267,7 @@ public final class GenerateModakbulMenus {
             "guide-region", "&f지역 이동 열기", 242, 414, 126, 28,
             new Action("opengui", "modakbul_region_travel")
         ));
-        out.append(text("guide-footer-tip", "&7ESC → 지역 이동에서 모든 목적지를 확인할 수 있습니다.", -232, 420, 450, 13, 0.76, "#C8D6E8FF"));
+        out.append(text("guide-footer-tip", "&7ESC → 지역 이동에서 모든 목적지를 확인할 수 있습니다.", -232, 420, 450, 13, 0.86, "#C8D6E8FF"));
 
         return out.toString();
     }
@@ -281,7 +299,7 @@ public final class GenerateModakbulMenus {
 
             custom_gui {
               identifier = modakbul_region_travel
-              title = 지역 이동
+              title =
               allow_esc = true
               transparent_world_background = true
               transparent_world_background_overlay = true
@@ -290,7 +308,7 @@ public final class GenerateModakbulMenus {
 
             custom_gui {
               identifier = modakbul_quick_guide
-              title = 모닥불 이용 안내
+              title =
               allow_esc = true
               transparent_world_background = true
               transparent_world_background_overlay = true
@@ -352,8 +370,8 @@ public final class GenerateModakbulMenus {
         out.append("  source = ").append(source).append('\n');
         out.append("  repeat_texture = false\n");
         out.append("  nine_slice_texture = ").append(nineSlice).append('\n');
-        out.append("  nine_slice_texture_border_x = 5\n");
-        out.append("  nine_slice_texture_border_y = 5\n");
+        out.append("  nine_slice_texture_border_x = 6\n");
+        out.append("  nine_slice_texture_border_y = 6\n");
         out.append("  image_tint = #FFFFFFFF\n");
         out.append("  element_type = image\n");
         out.append("  instance_identifier = ").append(id).append('\n');
@@ -473,11 +491,11 @@ public final class GenerateModakbulMenus {
         out.append("  backgroundhovered = ").append(HOVER_BUTTON).append('\n');
         out.append("  background_texture_inactive = ").append(INACTIVE_BUTTON).append('\n');
         out.append("  nine_slice_custom_background = true\n");
-        out.append("  nine_slice_border_x = 5\n");
-        out.append("  nine_slice_border_y = 5\n");
+        out.append("  nine_slice_border_x = 6\n");
+        out.append("  nine_slice_border_y = 6\n");
         out.append("  nine_slice_slider_handle = false\n");
-        out.append("  nine_slice_slider_handle_border_x = 5\n");
-        out.append("  nine_slice_slider_handle_border_y = 5\n");
+        out.append("  nine_slice_slider_handle_border_x = 6\n");
+        out.append("  nine_slice_slider_handle_border_y = 6\n");
     }
 
     private static void appendCommon(
@@ -502,7 +520,7 @@ public final class GenerateModakbulMenus {
         out.append("  sticky_anchor = false\n");
         out.append("  anchor_point = ").append(anchor).append('\n');
         out.append("  x = ").append(scaleCoordinate(x, HORIZONTAL_LAYOUT_SCALE)).append('\n');
-        out.append("  y = ").append(scaleCoordinate(y, VERTICAL_LAYOUT_SCALE)).append('\n');
+        out.append("  y = ").append(scaleCoordinate(y, VERTICAL_LAYOUT_SCALE) + VERTICAL_LAYOUT_OFFSET).append('\n');
         out.append("  width = ").append(scaleSize(width, HORIZONTAL_LAYOUT_SCALE)).append('\n');
         out.append("  height = ").append(scaleSize(height, VERTICAL_LAYOUT_SCALE)).append('\n');
         out.append("  stretch_x = false\n");
