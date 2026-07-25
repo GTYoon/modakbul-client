@@ -1,0 +1,1214 @@
+{
+    "queue.version_outdated":  {
+                                   "zh":  "§c您的Cobblemon Ranked客户端版本过低！请升级版本后参与排位。",
+                                   "en":  "§cCobblemon Ranked 클라이언트 버전이 오래되었습니다! 랭크 매치에 참여하려면 최신 버전으로 업데이트하세요."
+                               },
+    "queue.mod_required":  {
+                               "zh":  "§c服务器启用了排位选人预览，请安装 Cobblemon Ranked Mod 后再参与排位。",
+                               "en":  "§c팀 미리보기가 켜져 있습니다. 랭크 매치에 참여하려면 Cobblemon Ranked 모드를 설치하세요."
+                           },
+    "queue.cannot_join":  {
+                              "zh":  "§c无法加入匹配队列：你可能已在队列中、正在战斗或状态异常。",
+                              "en":  "§c대기열에 참가할 수 없습니다. 이미 대기열에 있거나 배틀 중이거나 올바르지 않은 상태일 수 있습니다."
+                          },
+    "battle.team.duplicate_items":  {
+                                        "zh":  "§c队伍中包含重复携带道具，请调整后再试！",
+                                        "en":  "§c팀에 중복된 지닌물건이 있습니다!"
+                                    },
+    "queue.selection_confirmed":  {
+                                      "zh":  "§a已确认出战队伍，等待对手...",
+                                      "en":  "§a팀 선택을 확정했습니다. 상대를 기다리는 중..."
+                                  },
+    "queue.opponent_confirmed":  {
+                                     "zh":  "§e对手已确认出战队伍！",
+                                     "en":  "§e상대가 팀을 확정했습니다!"
+                                 },
+    "queue.selection_timeout":  {
+                                    "zh":  "§c选人超时，系统已自动为您选择默认首发。",
+                                    "en":  "§c선택 시간이 초과되어 기본 팀이 자동 선택되었습니다."
+                                },
+    "battle.turn.start":  {
+                              "zh":  "§e[Ranked] 请在 {seconds} 秒内完成本回合操作。",
+                              "en":  "§e[랭크] {seconds}초 안에 행동을 선택하세요."
+                          },
+    "battle.turn.remaining_actionbar":  {
+                                            "zh":  "§e本回合剩余时间: §6{seconds}§es",
+                                            "en":  "§e턴 남은 시간: §6{seconds}§e초"
+                                        },
+    "battle.turn.timeout_auto_action":  {
+                                            "zh":  "§e[Ranked] 回合超时，系统已自动为你选择行动。",
+                                            "en":  "§e[랭크] 턴 시간이 초과되어 행동이 자동으로 선택되었습니다."
+                                        },
+    "queue.selection_invalid":  {
+                                    "zh":  "§c[Ranked] 队伍选择无效：包含了已无法战斗的宝可梦或数量不符！",
+                                    "en":  "§c[랭크] 잘못된 선택입니다. 사용할 수 없는 포켓몬이 있거나 수가 맞지 않습니다!"
+                                },
+    "battle.VictoryRewards":  {
+                                  "zh":  "§a已发放获胜奖励！",
+                                  "en":  "§a승리 보상이 지급되었습니다!"
+                              },
+    "battle.team.restricted_exceed":  {
+                                          "zh":  "§c队伍中受限宝可梦数量超过{max}只: {names}",
+                                          "en":  "§c팀에 제한 포켓몬이 {max}마리보다 많습니다: {names}"
+                                      },
+    "queue.selection_invalid_team":  {
+                                         "zh":  "§c选人失败：你的队伍不符合对战规则（可能包含禁用或超出数量限制的宝可梦）",
+                                         "en":  "§c선택 실패: 팀이 배틀 조건을 충족하지 않습니다. 금지 포켓몬이 있거나 제한 포켓몬 수가 초과되었을 수 있습니다."
+                                     },
+    "battle.restore_hp":  {
+                              "zh":  "§a已恢复宝可梦血量",
+                              "en":  "§a포켓몬 HP가 회복되었습니다"
+                          },
+    "pokemon_usage.header":  {
+                                 "zh":  "§e===== 赛季 §6{season} {name} §e宝可梦使用统计 (第 §6{page}§e/§6{total}§e 页) =====",
+                                 "en":  "§e===== 시즌 §6{season} {name} §e포켓몬 사용 통계 (페이지 §6{page}§e/§6{total}§e) ====="
+                             },
+    "pokemon_usage.entry":  {
+                                "zh":  "§e#{rank} §a{species} §f- 使用次数: §b{count} §f(使用率: §b{rate}%)",
+                                "en":  "§e#{rank} §a{species} §f- 사용: §b{count} §f(사용률: §b{rate}%)"
+                            },
+    "pokemon_usage.empty":  {
+                                "zh":  "§c赛季 {season} {name} 没有宝可梦使用记录",
+                                "en":  "§c시즌 {season} {name}에는 포켓몬 사용 기록이 없습니다"
+                            },
+    "pokemon_usage.statistics":  {
+                                     "zh":  "§e[宝可梦统计]",
+                                     "en":  "§e[포켓몬 통계]"
+                                 },
+    "queue.global_join":  {
+                              "zh":  "§a玩家 {player} 加入了 {format} 模式的匹配队列！",
+                              "en":  "§a{player}님이 {format} 모드 매칭 대기열에 참가했습니다!"
+                          },
+    "queue.opponent_disconnected":  {
+                                        "zh":  "§c你的对手已断开连接，已重新加入匹配队列",
+                                        "en":  "§c상대가 접속을 끊어 매칭 대기열에 다시 들어갔습니다"
+                                    },
+    "queue.cooldown":  {
+                           "zh":  "§c你刚刚匹配失败，请等待 {seconds} 秒后再尝试加入",
+                           "en":  "§c최근 매칭에 실패했습니다. 다시 시도하려면 {seconds}초 기다려 주세요"
+                       },
+    "queue.invalid_format":  {
+                                 "zh":  "§c禁用的战斗模式: {format}",
+                                 "en":  "§c금지된 배틀 형식: {format}"
+                             },
+    "queue.ban_format":  {
+                             "zh":  "§c模式已被禁用: {format}",
+                             "en":  "§c금지된 형식입니다: {format}"
+                         },
+    "queue.already_in_battle":  {
+                                    "zh":  "§c你正在进行战斗，无法加入匹配队列",
+                                    "en":  "§c이미 배틀 중이라 대기열에 참가할 수 없습니다"
+                                },
+    "queue.join_success_singles":  {
+                                       "zh":  "§a已加入 单打 匹配队列...",
+                                       "en":  "§a싱글 매칭 대기열에 참가했습니다..."
+                                   },
+    "queue.join_success_doubles":  {
+                                       "zh":  "§a已加入 双打 匹配队列...",
+                                       "en":  "§a더블 매칭 대기열에 참가했습니다..."
+                                   },
+    "queue.join_success_unknown":  {
+                                       "zh":  "§a已加入 匹配队列（未知模式）...",
+                                       "en":  "§a매칭 대기열에 참가했습니다(알 수 없는 모드)..."
+                                   },
+    "queue.empty_team":  {
+                             "zh":  "§c你的队伍为空，请先准备至少一只宝可梦再点击加入匹配。",
+                             "en":  "§c팀이 비어 있습니다. 매칭에 참가하기 전에 포켓몬을 최소 1마리 준비하세요."
+                         },
+    "queue.error":  {
+                        "zh":  "§c无法加入队列: {error}",
+                        "en":  "§c대기열 참가 실패: {error}"
+                    },
+    "queue.leave":  {
+                        "zh":  "§c已离开匹配队列",
+                        "en":  "§c매칭 대기열에서 나갔습니다"
+                    },
+    "queue.clear":  {
+                        "zh":  "§c服务器关闭，已清除匹配队列",
+                        "en":  "§c서버 종료로 매칭 대기열이 초기화되었습니다"
+                    },
+    "queue.team_load_fail":  {
+                                 "zh":  "§c无法加载宝可梦队伍，战斗无法开始",
+                                 "en":  "§c포켓몬 팀을 불러오지 못했습니다. 배틀을 시작할 수 없습니다"
+                             },
+    "queue.no_arena":  {
+                           "zh":  "§c没有可用战斗场地（至少2个玩家位置）",
+                           "en":  "§c사용 가능한 배틀 경기장이 없습니다(플레이어 위치가 최소 2개 필요)"
+                       },
+    "queue.waiting_for_arena":  {
+                                    "zh":  "§e当前无空闲场地，您已进入等待队列，排队位置: {position}",
+                                    "en":  "§e사용 가능한 경기장이 없습니다. 대기열 순번: {position}"
+                                },
+    "queue.arena_found":  {
+                              "zh":  "§a已为您分配到空闲场地，正在准备战斗...",
+                              "en":  "§a경기장을 찾았습니다! 배틀 준비 중..."
+                          },
+    "duo.already_in_queue":  {
+                                 "zh":  "§e你已经在匹配队列中。",
+                                 "en":  "§e이미 매칭 대기열에 있습니다."
+                             },
+    "queue.invalid_world":  {
+                                "zh":  "§c世界 ID 无效: {world}",
+                                "en":  "§c잘못된 월드 ID: {world}"
+                            },
+    "queue.world_load_fail":  {
+                                  "zh":  "§c无法加载世界: {world}",
+                                  "en":  "§c월드를 불러오지 못했습니다: {world}"
+                              },
+    "queue.match_success":  {
+                                "zh":  "§e匹配成功！§7将在 §c5秒 §7后开始战斗...",
+                                "en":  "§e매칭 성공! §7배틀이 §c5초§7 후 시작됩니다..."
+                            },
+    "queue.cancel_team_changed":  {
+                                      "zh":  "§c战斗取消：队伍发生变动",
+                                      "en":  "§c배틀 취소: 팀이 변경되었습니다"
+                                  },
+    "duo.disqualified":  {
+                             "zh":  "§c在战斗中更换了非法队伍，判负处理。",
+                             "en":  "§c팀이 변경되어 배틀에서 실격되었습니다"
+                         },
+    "queue.customBattleLevel":  {
+                                    "zh":  "§a已启用自定义等级，强制修改宝可梦等级为: {level}",
+                                    "en":  "§a커스텀 레벨이 켜져 있어 포켓몬 레벨을 {level}(으)로 강제 조정합니다"
+                                },
+    "queue.battle_start_fail":  {
+                                    "zh":  "§c创建战斗失败: {reason}",
+                                    "en":  "§c배틀 시작 실패: {reason}"
+                                },
+    "queue.battle_start":  {
+                               "zh":  "§a战斗开始！对战: §e{opponent}",
+                               "en":  "§a배틀 시작! 상대: §e{opponent}"
+                           },
+    "duo.waiting_for_match":  {
+                                  "zh":  "§a已加入 2v2单打 匹配队列...",
+                                  "en":  "§a2 대 2 싱글배틀 매칭 대기열에 참가했습니다..."
+                              },
+    "duo.match.announce":  {
+                               "zh":  "§a配对成功！§f {t1p1} \u0026 {t1p2} §7VS§f {t2p1} \u0026 {t2p2}",
+                               "en":  "§a매칭 성공!§f {t1p1} \u0026 {t1p2} §7VS§f {t2p1} \u0026 {t2p2}"
+                           },
+    "duo.round.announce":  {
+                               "zh":  "§e本轮对战：§f{p1} §7VS§f {p2}",
+                               "en":  "§e이번 대결: §f{p1} §7VS§f {p2}"
+                           },
+    "duo.cooldown":  {
+                         "zh":  "§c你刚刚匹配失败，请等待 {seconds} 秒后再加入队列",
+                         "en":  "§c최근 매칭에 실패했습니다. {seconds}초 후 다시 시도해 주세요."
+                     },
+    "duo.in_battle":  {
+                          "zh":  "§c你正在进行战斗，无法加入匹配队列",
+                          "en":  "§c이미 배틀 중이라 매칭 대기열에 참가할 수 없습니다."
+                      },
+    "duo.invalid_team_selection":  {
+                                       "zh":  "§c只能选择当前出战队伍（Party）中的宝可梦！",
+                                       "en":  "§c현재 파티에 있는 포켓몬만 선택할 수 있습니다!"
+                                   },
+    "duo.invalid_team":  {
+                             "zh":  "§c队伍不符合对战规则，无法加入匹配",
+                             "en":  "§c파티가 배틀 참가 조건을 충족하지 않습니다."
+                         },
+    "season.start.title":  {
+                               "zh":  "§6新赛季开始!",
+                               "en":  "§6새 시즌이 시작되었습니다!"
+                           },
+    "season.start.subtitle":  {
+                                  "zh":  "§f赛季 #{season} {name} ({start} - {end})",
+                                  "en":  "§f시즌 #{season} {name} ({start} - {end})"
+                              },
+    "reward.not_eligible":  {
+                                "zh":  "§c胜率未达要求（{rate}%），无法领取 {rank} 段位奖励。",
+                                "en":  "§c{rank} 보상을 받으려면 승률이 최소 {rate}% 이상이어야 합니다."
+                            },
+    "reward.broadcast":  {
+                             "zh":  "§6[Cobblemon Rank] §b{player} §f首次晋升到 §e{rank} §f，已发放奖励！",
+                             "en":  "§6[코블몬 랭크] §b{player}§f님이 §e{rank}§f에 처음 도달해 보상을 받았습니다!"
+                         },
+    "reward.not_configured":  {
+                                  "zh":  "§c该段位没有配置奖励！",
+                                  "en":  "§c이 랭크에는 설정된 보상이 없습니다!"
+                              },
+    "reward.granted":  {
+                           "zh":  "§a已为您发放 {rank} 段位奖励！",
+                           "en":  "§a{rank} 보상이 지급되었습니다!"
+                       },
+    "leaderboard.prev_page":  {
+                                  "zh":  "§e« 上一页",
+                                  "en":  "§e« 이전 페이지"
+                              },
+    "leaderboard.next_page":  {
+                                  "zh":  "§e下一页 »",
+                                  "en":  "§e다음 페이지 »"
+                              },
+    "gui.op.cross_start":  {
+                               "zh":  "§c[连接云服]",
+                               "en":  "§c[클라우드 서버 연결]"
+                           },
+    "gui.op.cross_stop":  {
+                              "zh":  "§c[断开云服]",
+                              "en":  "§c[클라우드 서버 연결 해제]"
+                          },
+    "setSeasonName.error":  {
+                                "zh":  "§c找不到编号为 {seasonId} 的赛季记录。",
+                                "en":  "§cID가 {seasonId}인 시즌 기록을 찾을 수 없습니다."
+                            },
+    "setSeasonName.success":  {
+                                  "zh":  "§a已将第 {seasonId} 赛季名称设置为：§f{name}",
+                                  "en":  "§a시즌 이름을 §f{name}§a(으)로 설정했습니다."
+                              },
+    "status.2v2.singles":  {
+                               "zh":  "§a你当前在 §e2v2单打 §a匹配队列中。",
+                               "en":  "§a현재 §e2v2싱글 §a매칭 대기열에 있습니다."
+                           },
+    "command.hint":  {
+                         "zh":  "§e点击执行命令: {command}",
+                         "en":  "§e클릭하여 명령어 실행: {command}"
+                     },
+    "config.reloaded":  {
+                            "zh":  "§a配置已重载并已应用",
+                            "en":  "§a설정을 다시 불러와 적용했습니다"
+                        },
+    "season.ended":  {
+                         "zh":  "§a已手动结束当前赛季并开始新赛季",
+                         "en":  "§a시즌을 수동으로 종료하고 새 시즌을 시작했습니다"
+                     },
+    "format.invalid":  {
+                           "zh":  "§c无效的战斗模式: {format}",
+                           "en":  "§c잘못된 배틀 형식: {format}"
+                       },
+    "player.not_found":  {
+                             "zh":  "§c未找到玩家 {player}",
+                             "en":  "§c플레이어 {player}을/를 찾을 수 없습니다"
+                         },
+    "status.1v1":  {
+                       "zh":  "§a你当前在 §e单打 §a匹配队列中。",
+                       "en":  "§a현재 §e싱글 §a매칭 대기열에 있습니다."
+                   },
+    "status.none":  {
+                        "zh":  "§7你当前未在任何匹配队列中。",
+                        "en":  "§7현재 어떤 매칭 대기열에도 없습니다."
+                    },
+    "status.2v2.solo":  {
+                            "zh":  "§a你当前在 §e双打 §a匹配队列中。",
+                            "en":  "§a현재 §e더블 §a매칭 대기열에 있습니다."
+                        },
+    "reward.invalid_rank":  {
+                                "zh":  "§c无效的段位: {rank}",
+                                "en":  "§c잘못된 랭크입니다: {rank}"
+                            },
+    "reward.valid_ranks":  {
+                               "zh":  "§c可用段位: {ranks}",
+                               "en":  "§c사용 가능한 랭크: {ranks}"
+                           },
+    "reward.granted_to":  {
+                              "zh":  "§a已为 {player} 发放 {format}:{rank} 段位奖励",
+                              "en":  "§a{player}님에게 {format}:{rank} 보상을 지급했습니다."
+                          },
+    "permission.denied":  {
+                              "zh":  "§c你没有权限执行此命令",
+                              "en":  "§c이 명령어를 실행할 권한이 없습니다"
+                          },
+    "rank.none":  {
+                      "zh":  "§7该玩家在 {format} 模式下，赛季 #{season} 无排位数据",
+                      "en":  "§7해당 플레이어는 시즌 #{season}의 {format} 모드 랭크 기록이 없습니다."
+                  },
+    "rank.unranked":  {
+                          "zh":  "未上榜",
+                          "en":  "랭크 없음"
+                      },
+    "rank.summary":  {
+                         "zh":  "§6{player} 的 {format} 数据（赛季 #{season} {name})\\n§f段位: §e{title} §8(ELO: {elo})\\n§f全球排名: §b{rank}\\n§f战绩: §a{wins}§7/§c{losses} §8(胜率: {rate}%)\\n§f连胜: §6{streak} §8(最高: {best})\\n§f断线次数: §c{flee}",
+                         "en":  "§6{player}님의 {format} 전적 (시즌 #{season} {name})\\n§f랭크: §e{title} §8(ELO: {elo})\\n§f전체 순위: §b{rank}\\n§f전적: §a{wins}§7/§c{losses} §8(승률: {rate}%)\\n§f연승: §6{streak} §8(최고: {best})\\n§f접속 종료: §c{flee}"
+                     },
+    "leaderboard.empty":  {
+                              "zh":  "§7暂无更多数据。",
+                              "en":  "§7더 이상 데이터가 없습니다."
+                          },
+    "leaderboard.header":  {
+                               "zh":  "§6[{format} - 赛季 #{season} {name}] 排行榜 ({page}/{total})",
+                               "en":  "§6[{format} - 시즌 #{season} {name}] 순위표 ({page}/{total})"
+                           },
+    "leaderboard.entry":  {
+                              "zh":  "§e{rank}. §f{name} §7- §6ELO: {elo} §7(战绩: §a{wins}§7/§c{losses}§7) §8断线: {flee}",
+                              "en":  "§e{rank}. §f{name} §7- §6ELO: {elo} §7(승/패: §a{wins}§7/§c{losses}§7) §8접속 종료: {flee}"
+                          },
+    "season.info":  {
+                        "zh":  "§6当前赛季: #{season} {name}\\n§f开始时间: §7{start}\\n§f结束时间: §7{end}\\n§f赛季时长: §e{duration}天\\n§f剩余时间: §e{remaining}\\n§f参与玩家: §a{players} 人",
+                        "en":  "§6현재 시즌: #{season} {name}\\n§f시작: §7{start}\\n§f종료: §7{end}\\n§f기간: §e{duration}일\\n§f남은 시간: §e{remaining}\\n§f참가자: §a{players}"
+                    },
+    "rank.reset.success":  {
+                               "zh":  "§a已清除 {player} 在 {format} 模式下的排位数据。",
+                               "en":  "§a{player}님의 {format} 모드 랭크 데이터를 초기화했습니다."
+                           },
+    "rank.reset.fail":  {
+                            "zh":  "§c未找到该玩家在 {format} 模式下的排位数据。",
+                            "en":  "§c해당 플레이어의 {format} 모드 랭크 데이터를 찾을 수 없습니다."
+                        },
+    "gui.main_title":  {
+                           "zh":  "§6§l▶ Cobblemon Rank 系统 - 主菜单",
+                           "en":  "§6§l▶ 코블몬 랭크 시스템 - 메인 메뉴"
+                       },
+    "gui.hover.run_command":  {
+                                  "zh":  "§7点击运行命令: §f{command}",
+                                  "en":  "§7클릭하여 실행: §f{command}"
+                              },
+    "gui.my_info":  {
+                        "zh":  "§a[我的信息]",
+                        "en":  "§a[내 정보]"
+                    },
+    "gui.season_info":  {
+                            "zh":  "§a[赛季信息]",
+                            "en":  "§a[시즌 정보]"
+                        },
+    "gui.rank_info":  {
+                          "zh":  "§a[查看段位]",
+                          "en":  "§a[랭크 정보]"
+                      },
+    "gui.leaderboard":  {
+                            "zh":  "§a[排行榜]",
+                            "en":  "§a[순위표]"
+                        },
+    "gui.queue_join":  {
+                           "zh":  "§b[加入匹配]",
+                           "en":  "§b[대기열 참가]"
+                       },
+    "gui.status":  {
+                       "zh":  "§b[匹配状态]",
+                       "en":  "§b[매칭 상태]"
+                   },
+    "gui.queue_leave":  {
+                            "zh":  "§c[退出匹配]",
+                            "en":  "§c[대기열 나가기]"
+                        },
+    "gui.cross_join_singles":  {
+                                   "zh":  "§a[加入跨服单打匹配]",
+                                   "en":  "§a[서버 간 싱글배틀 매칭 참가]"
+                               },
+    "gui.cross_leave":  {
+                            "zh":  "§a[离开跨服匹配]",
+                            "en":  "§a[서버 간 매칭 나가기]"
+                        },
+    "gui.op.title":  {
+                         "zh":  "§6§l管理员功能：",
+                         "en":  "§6§l관리자 기능:"
+                     },
+    "gui.op.reward":  {
+                          "zh":  "§c[获取奖励]",
+                          "en":  "§c[보상 받기]"
+                      },
+    "gui.op.season_end":  {
+                              "zh":  "§c[结束赛季]",
+                              "en":  "§c[시즌 종료]"
+                          },
+    "gui.op.reload":  {
+                          "zh":  "§c[重载配置]",
+                          "en":  "§c[설정 다시 불러오기]"
+                      },
+    "gui.op.reset":  {
+                         "zh":  "§c[重置玩家]",
+                         "en":  "§c[플레이어 초기화]"
+                     },
+    "gui.top_title":  {
+                          "zh":  "§6§l▶ 排行榜 - 选择赛季",
+                          "en":  "§6§l▶ 순위표 - 선택 시즌"
+                      },
+    "gui.top.1v1":  {
+                        "zh":  "§a[单打 赛季 #{season}]",
+                        "en":  "§a[싱글배틀 시즌 #{season}]"
+                    },
+    "gui.top.2v2singles":  {
+                               "zh":  "§a[2v2单打 赛季 #{season}]",
+                               "en":  "§a[2 대 2 싱글배틀 시즌 #{season}]"
+                           },
+    "gui.top.2v2":  {
+                        "zh":  "§b[双打 赛季 #{season}]",
+                        "en":  "§b[더블배틀 시즌 #{season}]"
+                    },
+    "gui.info_title":  {
+                           "zh":  "§6§l▶ 查看段位 - 选择赛季",
+                           "en":  "§6§l▶ 랭크 정보 - 시즌 선택"
+                       },
+    "gui.info.1v1":  {
+                         "zh":  "§a[单打 赛季 #{season}]",
+                         "en":  "§a[싱글배틀 시즌 #{season}]"
+                     },
+    "gui.info.2v2":  {
+                         "zh":  "§b[双打 赛季 #{season}]",
+                         "en":  "§b[더블배틀 시즌 #{season}]"
+                     },
+    "gui.info.2v2singles":  {
+                                "zh":  "§b[2v2单打 赛季 #{season}]",
+                                "en":  "§b[2 대 2 싱글배틀 시즌 #{season}]"
+                            },
+    "gui.queue_title":  {
+                            "zh":  "§6§l▶ 加入匹配 - 请选择模式",
+                            "en":  "§6§l▶ 랭크 매칭 참가 - 배틀 방식 선택"
+                        },
+    "gui.queue.1v1":  {
+                          "zh":  "§a[加入 单打]",
+                          "en":  "§a[싱글배틀 참가]"
+                      },
+    "gui.queue.2v2":  {
+                          "zh":  "§b[加入 双打]",
+                          "en":  "§b[더블배틀 참가]"
+                      },
+    "gui.queue.2v2singles":  {
+                                 "zh":  "§a[加入 2v2单打]",
+                                 "en":  "§a[2 대 2 싱글배틀 참가]"
+                             },
+    "gui.queue.leave":  {
+                            "zh":  "§c[离开匹配]",
+                            "en":  "§c[매칭 나가기]"
+                        },
+    "gui.reward.top":  {
+                           "zh":  "直接发放可重复领取的奖励-用于测试",
+                           "en":  "재사용 가능 보상을 즉시 지급합니다(테스트용)"
+                       },
+    "gui.reward.title":  {
+                             "zh":  "§6§l▶ 可领取的段位奖励 - {format}",
+                             "en":  "§6§l▶ 사용 가능 보상s - {format}"
+                         },
+    "gui.reward.claim":  {
+                             "zh":  "§a[发放 {rank} 段位奖励]",
+                             "en":  "§a[받기 {rank} 보상]"
+                         },
+    "gui.reset.title":  {
+                            "zh":  "§6§l▶ 重置玩家排位数据（第 {page} 页 / 共 {total} 页）",
+                            "en":  "§6§l▶ 플레이어 랭크 기록 초기화 (페이지 {page} / {total})"
+                        },
+    "gui.reset.1v1":  {
+                          "zh":  "§a[重置 单打]",
+                          "en":  "§a[싱글배틀 초기화]"
+                      },
+    "gui.reset.2v2":  {
+                          "zh":  "§c[重置 双打]",
+                          "en":  "§c[더블배틀 초기화]"
+                      },
+    "gui.reset.2v2singles":  {
+                                 "zh":  "§c[重置 2v2单打]",
+                                 "en":  "§c[2 대 2 싱글배틀 초기화]"
+                             },
+    "gui.reset.tip":  {
+                          "zh":  "§7点击重置按钮清除指定玩家在该模式的段位数据。",
+                          "en":  "§7초기화 버튼을 누르면 해당 배틀 방식의 플레이어 랭크 기록이 삭제됩니다."
+                      },
+    "gui.info_player.title":  {
+                                  "zh":  "§6§l▶ 查看段位 - 玩家选择（第 {page} 页 / 共 {total} 页）",
+                                  "en":  "§6§l▶ 랭크 정보 - 플레이어 선택 (페이지 {page} / {total})"
+                              },
+    "gui.info_player.1v1":  {
+                                "zh":  "§a[单打]",
+                                "en":  "§a[싱글배틀]"
+                            },
+    "gui.info_player.2v2":  {
+                                "zh":  "§b[双打]",
+                                "en":  "§b[더블배틀]"
+                            },
+    "gui.info_player.2v2singles":  {
+                                       "zh":  "§a[2v2单打]",
+                                       "en":  "§a[2 대 2 싱글배틀]"
+                                   },
+    "gui.info_target.title":  {
+                                  "zh":  "§6§l▶ {player} 的段位 - {format} - 选择赛季",
+                                  "en":  "§6§l▶ {player}\u0027s 랭크 - {format} - 선택 시즌"
+                              },
+    "gui.info_target.season":  {
+                                   "zh":  "§a[赛季 #{season} {name}]",
+                                   "en":  "§a[시즌 #{season} {name}]"
+                               },
+    "gui.myinfo.1v1":  {
+                           "zh":  "§b[查看单打]",
+                           "en":  "§b[싱글배틀 전적 보기]"
+                       },
+    "gui.myinfo.2v2":  {
+                           "zh":  "§a[查看双打]",
+                           "en":  "§a[더블배틀 전적 보기]"
+                       },
+    "gui.myinfo.2v2singles":  {
+                                  "zh":  "§b[查看2v2单打]",
+                                  "en":  "§b[2 대 2 싱글배틀 전적 보기]"
+                              },
+    "battle.team.not_base_form":  {
+                                      "zh":  "§c{name}不是最初形态！只允许使用最初形态的宝可梦",
+                                      "en":  "§c{name}은(는) 진화 전 모습이 아닙니다! 진화 전 포켓몬만 참가할 수 있습니다."
+                                  },
+    "battle.team.cannot_evolve":  {
+                                      "zh":  "§c{name}无法进化！只允许使用能够进化的最初形态",
+                                      "en":  "§c{name}은(는) 진화할 수 없습니다! 진화 가능한 포켓몬의 진화 전 모습만 참가할 수 있습니다."
+                                  },
+    "battle.team.usage_too_low":  {
+                                      "zh":  "§c{name}的使用率过低（{rate}）！最低要求：{threshold}",
+                                      "en":  "§c{name}의 사용률이 너무 낮습니다({rate})! 최소 사용률: {threshold}"
+                                  },
+    "battle.team.usage_too_high":  {
+                                       "zh":  "§c{name}的使用率过高（{rate}）！最高限制：{threshold}",
+                                       "en":  "§c{name}의 사용률이 너무 높습니다({rate})! 최대 사용률: {threshold}"
+                                   },
+    "battle.team.in_top_used":  {
+                                    "zh":  "§c{name}的使用排名为第{rank}位！禁止使用前{limit}名宝可梦",
+                                    "en":  "§c{name}은(는) 사용률 {rank}위입니다! 사용률 상위 {limit}마리는 참가할 수 없습니다."
+                                },
+    "customBattleLevel.restore":  {
+                                      "zh":  "§a已恢复宝可梦等级",
+                                      "en":  "§a포켓몬 레벨을 원래대로 복구했습니다."
+                                  },
+    "battle.team.banned_nature":  {
+                                      "zh":  "§c队伍中有宝可梦使用了被禁止的性格: {names}",
+                                      "en":  "§c파티에 금지된 성격을 가진 포켓몬이 있습니다: {names}"
+                                  },
+    "battle.team.banned_gender":  {
+                                      "zh":  "§c队伍中有宝可梦使用了被禁止的性别: {names}",
+                                      "en":  "§c파티에 금지된 성별의 포켓몬이 있습니다: {names}"
+                                  },
+    "battle.team.banned_ability":  {
+                                       "zh":  "§c队伍中有宝可梦使用了被禁止的特性: {names}",
+                                       "en":  "§c파티에 금지된 특성을 가진 포켓몬이 있습니다: {names}"
+                                   },
+    "battle.team.banned_moves":  {
+                                     "zh":  "§c队伍中有宝可梦使用了被禁止的招式: {names}",
+                                     "en":  "§c파티에 금지된 기술을 배운 포켓몬이 있습니다: {names}"
+                                 },
+    "battle.team.banned_shiny":  {
+                                     "zh":  "§c队伍中有宝可梦使用了被禁止的闪光个体: {names}",
+                                     "en":  "§c파티에 참가할 수 없는 이로치 포켓몬이 있습니다: {names}"
+                                 },
+    "battle.player.banned_items":  {
+                                       "zh":  "§c你的背包中含有被禁止的物品: {items}",
+                                       "en":  "§c인벤토리에 반입 금지 아이템이 있습니다: {items}"
+                                   },
+    "battle.disconnect.broadcast":  {
+                                        "zh":  "§c玩家 {player} 断线，所在队伍判负。",
+                                        "en":  "§c{player}님이 접속을 종료해 패배 처리됐으며, 해당 팀은 탈락했습니다."
+                                    },
+    "battle.flee.forbidden":  {
+                                  "zh":  "§c你不能在排位战中逃跑！",
+                                  "en":  "§c랭크 배틀에서는 도망칠 수 없습니다."
+                              },
+    "battle.team.banned_held_items":  {
+                                          "zh":  "§c队伍中有宝可梦携带了被禁止的物品: {names}",
+                                          "en":  "§c파티에 금지된 지닌도구를 가진 포켓몬이 있습니다: {names}"
+                                      },
+    "battle.team.banned_abilities":  {
+                                         "zh":  "§c队伍中有宝可梦使用了被禁止的特性: {names}",
+                                         "en":  "§c파티에 금지된 특성을 가진 포켓몬이 있습니다: {names}"
+                                     },
+    "battle.team.banned_natures":  {
+                                       "zh":  "§c队伍中有宝可梦使用了被禁止的性格: {names}",
+                                       "en":  "§c파티에 금지된 성격의 포켓몬이 있습니다: {names}"
+                                   },
+    "battle.disconnect.loser":  {
+                                    "zh":  "§c你断线导致失败。",
+                                    "en":  "§c접속을 종료해 패배 처리됐습니다."
+                                },
+    "battle.disconnect.winner":  {
+                                     "zh":  "§a对手断线，你获得了胜利。",
+                                     "en":  "§a상대가 접속을 종료해 승리했습니다."
+                                 },
+    "battle.invalid_team_selection":  {
+                                          "zh":  "§c只能使用当前出战队伍中的宝可梦！",
+                                          "en":  "§c현재 배틀 팀에 있는 포켓몬만 사용할 수 있습니다!"
+                                      },
+    "battle.team.too_small":  {
+                                  "zh":  "§c队伍至少需要{min}只宝可梦",
+                                  "en":  "§c파티에는 포켓몬이 최소 {min}마리 필요합니다."
+                              },
+    "battle.team.too_large":  {
+                                  "zh":  "§c队伍最多只能有{max}只宝可梦",
+                                  "en":  "§c파티에는 포켓몬을 최대 {max}마리까지 넣을 수 있습니다."
+                              },
+    "battle.team.banned_pokemon":  {
+                                       "zh":  "§c队伍包含禁用宝可梦: {names}",
+                                       "en":  "§c파티에 금지된 포켓몬이 있습니다: {names}"
+                                   },
+    "battle.team.overleveled":  {
+                                    "zh":  "§c宝可梦等级超过{max}级: {names}",
+                                    "en":  "§c레벨 {max}을(를) 초과한 포켓몬이 있습니다: {names}"
+                                },
+    "battle.team.duplicates":  {
+                                   "zh":  "§c队伍包含重复宝可梦: {names}",
+                                   "en":  "§c파티에 같은 종류의 포켓몬이 중복되어 있습니다: {names}"
+                               },
+    "battle.status.egg":  {
+                              "zh":  "蛋",
+                              "en":  "알"
+                          },
+    "battle.status.fainted":  {
+                                  "zh":  "濒死",
+                                  "en":  "기절"
+                              },
+    "battle.status.unknown":  {
+                                  "zh":  "未知状态",
+                                  "en":  "알 수 없음"
+                              },
+    "battle.team.invalid":  {
+                                "zh":  "§c队伍包含无效宝可梦: {entries}",
+                                "en":  "§c파티에 참가할 수 없는 포켓몬이 있습니다: {entries}"
+                            },
+    "battle.flee.loser":  {
+                              "zh":  "§c你在战斗中逃跑，ELO 双倍扣分！当前ELO: §e{elo}",
+                              "en":  "§c배틀에서 도망쳐 레이팅이 두 배로 차감됩니다! 현재 레이팅: §e{elo}"
+                          },
+    "battle.flee.winner":  {
+                               "zh":  "§a对手逃跑，你的分数未变化。当前ELO: §e{elo}",
+                               "en":  "§a상대가 도망쳤습니다. 내 레이팅은 변하지 않습니다. 현재 레이팅: §e{elo}"
+                           },
+    "battle.teleport.back":  {
+                                 "zh":  "§a战斗结束，你已被传送回原来的位置。",
+                                 "en":  "§a배틀이 끝나 이전 위치로 돌아왔습니다."
+                             },
+    "battle.result.header":  {
+                                 "zh":  "§6===== 对战结果 =====",
+                                 "en":  "§6===== 배틀 결과 ====="
+                             },
+    "battle.result.rank":  {
+                               "zh":  "§f当前段位: §b{rank}",
+                               "en":  "§f현재 랭크: §b{rank}"
+                           },
+    "battle.result.change":  {
+                                 "zh":  "§fELO变化: {change}",
+                                 "en":  "§f레이팅 변동: {change}"
+                             },
+    "battle.result.elo":  {
+                              "zh":  "§f当前ELO: §e{elo}",
+                              "en":  "§f현재 ELO: §e{elo}"
+                          },
+    "battle.result.record":  {
+                                 "zh":  "§f战绩: §a{wins}§f胜 §c{losses}§f败",
+                                 "en":  "§f전적: §a{wins}승 §c{losses}패"
+                             },
+    "duo.next_round.ready":  {
+                                 "zh":  "§e轮到你上场迎战 §c{opponent}！",
+                                 "en":  "§e§c{opponent}§e님과 대결할 차례입니다!"
+                             },
+    "duo.next_round.win_continue":  {
+                                        "zh":  "§a你击败了对手，继续战斗！",
+                                        "en":  "§a상대를 쓰러뜨렸습니다. 다음 상대와 계속 배틀합니다!"
+                                    },
+    "duo.next_round.start.title":  {
+                                       "zh":  "§a下一轮战斗开始！",
+                                       "en":  "§a다음 대결 시작!"
+                                   },
+    "duo.next_round.start.subtitle":  {
+                                          "zh":  "§f你的对手是 §e{opponent}",
+                                          "en":  "§f상대는 §e{opponent}§f님입니다."
+                                      },
+    "duo.next_round.alert.title":  {
+                                       "zh":  "§c队友落败！",
+                                       "en":  "§c팀원이 패배했습니다!"
+                                   },
+    "duo.next_round.alert.subtitle":  {
+                                          "zh":  "§f你将对战 §e{opponent}",
+                                          "en":  "§e{opponent}§f님과 배틀합니다."
+                                      },
+    "duo.rematch.failed":  {
+                               "zh":  "§c重新对战失败: {error}",
+                               "en":  "§c다음 대결을 시작하지 못했습니다: {error}"
+                           },
+    "duo.end.victory.title":  {
+                                  "zh":  "§a你们赢得了胜利！",
+                                  "en":  "§a배틀에서 승리했습니다!"
+                              },
+    "duo.end.victory.subtitle":  {
+                                     "zh":  "§f击败了 {loser}",
+                                     "en":  "§f{loser} 팀을 쓰러뜨렸습니다."
+                                 },
+    "duo.end.defeat.title":  {
+                                 "zh":  "§c你们被击败了",
+                                 "en":  "§c배틀에서 패배했습니다."
+                             },
+    "duo.end.defeat.subtitle":  {
+                                    "zh":  "§f胜者是 {winner}",
+                                    "en":  "§f승리 팀: {winner}"
+                                },
+    "duo.end.rank_display":  {
+                                 "zh":  "§7[双打] 当前段位: §e{rank} §8(ELO: {elo})",
+                                 "en":  "§7[더블배틀] 현재 랭크: §e{rank} §8(레이팅: {elo})"
+                             },
+    "duo.rule":  {
+                     "zh":  "§e[提示] 本次为 2v2 轮战模式：每队每次出战一人，胜者留场，败者轮换，直到全员战败！",
+                     "en":  "§e[안내] 2 대 2 연승전입니다. 각 팀에서 한 명씩 배틀하며 승자는 남고 패자는 다음 팀원과 교대합니다. 한 팀의 포켓몬이 모두 쓰러지면 배틀이 끝납니다."
+                 },
+    "rank.not_found":  {
+                           "zh":  "§c未找到您的战绩数据。",
+                           "en":  "§c내 랭크 기록을 찾을 수 없습니다."
+                       },
+    "season.not_found":  {
+                             "zh":  "§c未找到赛季信息。",
+                             "en":  "§c시즌 정보를 찾을 수 없습니다."
+                         },
+    "leaderboard.entry2":  {
+                               "zh":  "§e{rank}. §f{name} §7- §6ELO: {elo} §7(战绩: §a{wins}§7/§c{losses}§7) §7断线: {flees}\n",
+                               "en":  "§e{rank}. §f{name} §7- §6ELO: {elo} §7(전적: §a{wins}§7/§c{losses}§7) §7도주: {flees}"
+                           },
+    "season.info2":  {
+                         "zh":  "§6当前赛季: #{season} {name}\n§f开始时间: §7{start}\n§f结束时间: §7{end}\n§f赛季时长: §e{duration}天\n§f剩余时间: §e{remaining}\n§f参与玩家: §a{players} 人",
+                         "en":  "§6현재 시즌: #{season} {name}\\n§f시작: §7{start}\\n§f종료: §7{end}\\n§f기간: §e{duration}일\\n§f남은 시간: §e{remaining}\\n§f참가자: §a{players}명"
+                     },
+    "cross.cross_server_disabled":  {
+                                        "zh":  "§c跨服匹配未启用",
+                                        "en":  "§c서버 간 매칭이 비활성화되어 있습니다."
+                                    },
+    "cross.unknown":  {
+                          "zh":  "§7未知",
+                          "en":  "§7알 수 없음"
+                      },
+    "cross.unknown_opponent":  {
+                                   "zh":  "§7未知对手",
+                                   "en":  "§7알 수 없는 상대"
+                               },
+    "cross.error.unknown":  {
+                                "zh":  "§c未知错误",
+                                "en":  "§c알 수 없는 오류"
+                            },
+    "cross.status.normal":  {
+                                "zh":  "§a正常",
+                                "en":  "§a정상"
+                            },
+    "cross.status.par":  {
+                             "zh":  "§e麻痹",
+                             "en":  "§e마비"
+                         },
+    "cross.status.brn":  {
+                             "zh":  "§6灼伤",
+                             "en":  "§6화상"
+                         },
+    "cross.status.psn":  {
+                             "zh":  "§d中毒",
+                             "en":  "§d독"
+                         },
+    "cross.status.badpsn":  {
+                                "zh":  "§5剧毒",
+                                "en":  "§5맹독"
+                            },
+    "cross.status.slp":  {
+                             "zh":  "§9睡眠",
+                             "en":  "§9잠듦"
+                         },
+    "cross.status.frz":  {
+                             "zh":  "§b冰冻",
+                             "en":  "§b얼음"
+                         },
+    "cross.direction.up":  {
+                               "zh":  "§a提升",
+                               "en":  "§a상승"
+                           },
+    "cross.direction.down":  {
+                                 "zh":  "§c下降",
+                                 "en":  "§c하락"
+                             },
+    "cross.log.heartbeat_start":  {
+                                      "zh":  "§8开始心跳",
+                                      "en":  "§8연결 유지 신호 전송을 시작했습니다."
+                                  },
+    "cross.log.heartbeat_failed":  {
+                                       "zh":  "§c发送心跳失败: {error}",
+                                       "en":  "§c연결 유지 신호를 보내지 못했습니다: {error}"
+                                   },
+    "cross.log.connected":  {
+                                "zh":  "§a连接成功",
+                                "en":  "§a연결되었습니다."
+                            },
+    "cross.log.message_received":  {
+                                       "zh":  "§7收到服务器消息: {message}...",
+                                       "en":  "§7서버 메시지 수신: {message}..."
+                                   },
+    "cross.log.unknown_message_type":  {
+                                           "zh":  "§e未知消息类型: {type}",
+                                           "en":  "§e알 수 없는 메시지 유형: {type}"
+                                       },
+    "cross.log.parse_failed":  {
+                                   "zh":  "§c解析失败: {error} | 原始消息: {raw}",
+                                   "en":  "§c메시지 해석 실패: {error} | 원문: {raw}"
+                               },
+    "cross.log.closing":  {
+                              "zh":  "§e连接正在关闭: code={code}, reason={reason}",
+                              "en":  "§e연결 종료 중: 코드={code}, 사유={reason}"
+                          },
+    "cross.log.connection_failed":  {
+                                        "zh":  "§cWebSocket连接失败: {error}",
+                                        "en":  "§cWebSocket 연결 실패: {error}"
+                                    },
+    "cross.log.connection_closed":  {
+                                        "zh":  "§eWebSocket连接已关闭: {code} - {reason}",
+                                        "en":  "§eWebSocket 연결 종료: {code} - {reason}"
+                                    },
+    "cross.log.reconnect_attempt":  {
+                                        "zh":  "§6尝试重连 (尝试次数: {attempts})",
+                                        "en":  "§6재연결 시도 중(시도 횟수: {attempts})"
+                                    },
+    "cross.log.reconnect_stop":  {
+                                     "zh":  "§6已达到最大重连次数次)，停止重连",
+                                     "en":  "§6최대 재연결 횟수에 도달해 재연결을 중단합니다."
+                                 },
+    "cross.log.request_battle_state":  {
+                                           "zh":  "§7请求战斗状态更新: {battleId}",
+                                           "en":  "§7배틀 상태 갱신 요청: {battleId}"
+                                       },
+    "cross.log.send_battle_command":  {
+                                          "zh":  "§7发送战斗指令: battle_id = {battleId}, player_id = {playerId}, command = {command}",
+                                          "en":  "§7배틀 명령 전송: 배틀 ID={battleId}, 플레이어 ID={playerId}, 명령={command}"
+                                      },
+    "cross.log.disconnected":  {
+                                   "zh":  "§e连接已断开",
+                                   "en":  "§e연결이 끊어졌습니다."
+                               },
+    "cross.log.missing_opponent_team":  {
+                                            "zh":  "§c匹配成功消息中缺少对手队伍信息",
+                                            "en":  "§c매칭 완료 메시지에 상대 팀 정보가 없습니다."
+                                        },
+    "cross.log.player_not_found":  {
+                                       "zh":  "§c未找到玩家 {playerId}，无法发送 Elo 更新消息",
+                                       "en":  "§c플레이어 {playerId}을/를 찾지 못해 레이팅 정보를 보낼 수 없습니다."
+                                   },
+    "cross.log.auto_forfeit":  {
+                                   "zh":  "§e玩家 {player} 断线，自动发送投降指令: battle_id = {battleId}",
+                                   "en":  "§e플레이어 {player} 접속 종료로 자동 기권 전송: 배틀 ID={battleId}"
+                               },
+    "cross.queue.already_in_queue":  {
+                                         "zh":  "§e[跨服匹配]你已在匹配队列中",
+                                         "en":  "§e[서버 간] 이미 매칭 대기열에 있습니다."
+                                     },
+    "cross.queue.join_success":  {
+                                     "zh":  "§a[跨服匹配]你已成功加入 {mode} 匹配队列",
+                                     "en":  "§a[서버 간] {mode} 매칭 대기열에 참가했습니다."
+                                 },
+    "cross.queue.join_failed":  {
+                                    "zh":  "§c[跨服匹配]加入匹配失败：{error}",
+                                    "en":  "§c[서버 간] 매칭 대기열 참가 실패: {error}"
+                                },
+    "cross.queue.leave_success":  {
+                                      "zh":  "§a[跨服匹配]你已成功离开匹配队列",
+                                      "en":  "§a[서버 간] 매칭 대기열에서 나갔습니다."
+                                  },
+    "cross.queue.leave_failed":  {
+                                     "zh":  "§c[跨服匹配]离开匹配失败：{error}",
+                                     "en":  "§c[서버 간] 매칭 대기열 나가기 실패: {error}"
+                                 },
+    "cross.queue.join_failed.authenticated_only":  {
+                                                       "zh":  "§c[跨服匹配]仅限正版玩家参与匹配",
+                                                       "en":  "§c[서버 간] 정품 인증을 완료한 플레이어만 매칭에 참가할 수 있습니다."
+                                                   },
+    "cross.queue.join_failed.battles_exceeds":  {
+                                                    "zh":  "§c[跨服匹配]当前战斗数量超出了限制，请稍后再试。",
+                                                    "en":  "§c[서버 간] 현재 진행 중인 배틀이 너무 많습니다. 잠시 후 다시 시도해 주세요."
+                                                },
+    "cross.battle.match_found":  {
+                                     "zh":  "§6===== §a匹配成功! §6=====",
+                                     "en":  "§6===== §a매칭 성공! §6====="
+                                 },
+    "cross.battle.opponent":  {
+                                  "zh":  "§c对手: {name}",
+                                  "en":  "§c상대: {name}"
+                              },
+    "cross.battle.opponent_team":  {
+                                       "zh":  "§c对手队伍:",
+                                       "en":  "§c상대 팀:"
+                                   },
+    "cross.lead":  {
+                       "zh":  "§c首发: ",
+                       "en":  "§c선봉:"
+                   },
+    "cross.battle.your_team":  {
+                                   "zh":  "§a你的首发:",
+                                   "en":  "§a내 팀:"
+                               },
+    "cross.battle.pokemon_info":  {
+                                      "zh":  "§7宝可梦: {name} | §cHP: {hp}/{maxHp}",
+                                      "en":  "§7포켓몬: {name} | §cHP: {hp}/{maxHp}"
+                                  },
+    "cross.battle.current_moves":  {
+                                       "zh":  "§b当前宝可梦技能:",
+                                       "en":  "§b사용 가능한 기술:"
+                                   },
+    "cross.battle.move_pp":  {
+                                 "zh":  "§e{index}§r: {name} §7(PP: {currentPP}/{maxPP})",
+                                 "en":  "§e{index}§r: {name} §7(PP: {currentPP}/{maxPP})"
+                             },
+    "cross.battle.click_hint":  {
+                                    "zh":  "§7点击§e[数字]§7可直接使用技能，悬浮查看描述",
+                                    "en":  "§7§e[숫자]§7를 클릭해 기술을 사용하세요. 기술 설명은 아직 지원되지 않습니다."
+                                },
+    "cross.move.type":  {
+                            "zh":  "类型: {type}",
+                            "en":  "타입: {type}"
+                        },
+    "cross.move.power":  {
+                             "zh":  "威力: {power}",
+                             "en":  "위력: {power}"
+                         },
+    "cross.move.accuracy":  {
+                                "zh":  "命中: {accuracy}%",
+                                "en":  "명중률: {accuracy}%"
+                            },
+    "cross.move.accuracy.sure_hit":  {
+                                         "zh":  "命中: 必中",
+                                         "en":  "명중률: 필중"
+                                     },
+    "cross.move.category":  {
+                                "zh":  "类别: {category}",
+                                "en":  "분류: {category}"
+                            },
+    "cross.battle.move_info":  {
+                                   "zh":  "§7{index}. {name} (§d{pp}/{pp}§7)",
+                                   "en":  "§7{index}. {name} (§d{pp}/{pp}§7)"
+                               },
+    "cross.battle.switch_options":  {
+                                        "zh":  "§b更换宝可梦:",
+                                        "en":  "§b교체할 포켓몬:"
+                                    },
+    "command.battle.invalid_switch_slot":  {
+                                               "zh":  "§c无效的宝可梦槽位，请输入1-6之间的数字",
+                                               "en":  "§c잘못된 포켓몬 번호입니다. 1~6 사이의 숫자를 입력하세요."
+                                           },
+    "cross.battle.forfeit_command":  {
+                                         "zh":  "§c投降: /rank cross battle forfeit",
+                                         "en":  "§c기권: /rank cross battle forfeit"
+                                     },
+    "cross.battle.chat":  {
+                              "zh":  "§7与对手聊天: /rank cross chat \u003cmessage\u003e",
+                              "en":  "§7상대와 채팅: /rank cross chat \u003cmessage\u003e"
+                          },
+    "cross.battle.turn_start":  {
+                                    "zh":  "§e[回合 {turn}] §a开始！请输入你的指令,3分钟内未选将弃权",
+                                    "en":  "§e[턴 {turn}] §a시작! 명령어를 입력하세요. 3분 안에 선택하지 않으면 기권 처리됩니다."
+                                },
+    "cross.battle.start":  {
+                               "zh":  "§6===== §c战斗开始! §6=====",
+                               "en":  "§6===== §c배틀 시작! §6====="
+                           },
+    "cross.battle.players":  {
+                                 "zh":  "§a对战双方: {player1} §fvs §c{player2}",
+                                 "en":  "§a플레이어: {player1} §fvs §c{player2}"
+                             },
+    "cross.battle.lead":  {
+                              "zh":  "§f{player} §7派出了 §e{pokemon}",
+                              "en":  "§f{player} §7이/가 §e{pokemon}§7을/를 내보냈습니다"
+                          },
+    "cross.battle.move_used":  {
+                                   "zh":  "§f{playerName} §7的 §e{pokemon} §7使用了 §b{move}§7!",
+                                   "en":  "§f{playerName}§7의 §e{pokemon} §7이/가 §b{move}§7을/를 사용했습니다!"
+                               },
+    "cross.battle.move_missed":  {
+                                     "zh":  "§7但是没有命中!",
+                                     "en":  "§7하지만 빗나갔습니다!"
+                                 },
+    "cross.battle.damage_dealt":  {
+                                      "zh":  "§7对 §c{targetPlayer} §7的 §e{targetPokemon} §c造成了 {damage} 伤害!",
+                                      "en":  "§c{targetPlayer}§7의 §e{targetPokemon}§7에게 §c{damage} 피해§7를 입혔습니다!"
+                                  },
+    "cross.battle.critical_hit":  {
+                                      "zh":  "§c击中要害!",
+                                      "en":  "§c급소에 맞았다!"
+                                  },
+    "cross.battle.effectiveness.none":  {
+                                            "zh":  "§8没有效果!",
+                                            "en":  "§8효과가 없습니다..."
+                                        },
+    "cross.battle.effectiveness.very_bad":  {
+                                                "zh":  "§7效果非常差...",
+                                                "en":  "§7효과가 별로인 듯합니다..."
+                                            },
+    "cross.battle.effectiveness.bad":  {
+                                           "zh":  "§7效果不太好...",
+                                           "en":  "§7효과가 별로인 듯합니다..."
+                                       },
+    "cross.battle.effectiveness.good":  {
+                                            "zh":  "§a效果不错!",
+                                            "en":  "§a효과가 있었습니다!"
+                                        },
+    "cross.battle.effectiveness.super":  {
+                                             "zh":  "§6效果拔群!",
+                                             "en":  "§6효과가 굉장했습니다!"
+                                         },
+    "cross.battle.effectiveness.very_super":  {
+                                                  "zh":  "§c效果非常拔群!",
+                                                  "en":  "§c효과가 매우 굉장했습니다!"
+                                              },
+    "cross.battle.status_applied":  {
+                                        "zh":  "§e{pokemon} §7陷入了{status} §7状态!",
+                                        "en":  "§e{pokemon}§7이/가 {status}§7 상태가 되었습니다!"
+                                    },
+    "cross.battle.status_damage":  {
+                                       "zh":  "§e{pokemon} §7因{status} §c损失了 {damage} HP!",
+                                       "en":  "§e{pokemon}§7이/가 {status} 때문에 §c{damage} HP§7를 잃었습니다!"
+                                   },
+    "cross.battle.pokemon_fainted":  {
+                                         "zh":  "§8{playerName} §7的 §e{pokemon} §8倒下了!",
+                                         "en":  "§8{playerName}§7의 §e{pokemon}§8이/가 기절했습니다!"
+                                     },
+    "cross.battle.switch_out":  {
+                                    "zh":  "§f{playerName} §7收回了 §e{pokemon}§7!",
+                                    "en":  "§f{playerName} §7이/가 §e{pokemon}§7을/를 불러들였습니다!"
+                                },
+    "cross.battle.switch_in":  {
+                                   "zh":  "§f{playerName} §7派出了 §e{pokemon}§7!",
+                                   "en":  "§f{playerName} §7이/가 §e{pokemon}§7을/를 내보냈습니다!"
+                               },
+    "cross.battle.stat_change":  {
+                                     "zh":  "§e{pokemon} §7的 §6{stat} {direction}§7了!",
+                                     "en":  "§e{pokemon}§7의 §6{stat} {direction}§7!"
+                                 },
+    "cross.battle.ability_triggered":  {
+                                           "zh":  "§e{pokemon} §7触发了特性 §d[{ability}]§7!",
+                                           "en":  "§e{pokemon}§7의 특성 §d[{ability}]§7이/가 발동했습니다!"
+                                       },
+    "cross.battle.move_unusable":  {
+                                       "zh":  "§e{pokemon} §7无法使用 §b{move} §7(PP 不足)",
+                                       "en":  "§e{pokemon}§7은(는) §b{move}§7을(를) 사용할 수 없습니다(PP 부족)."
+                                   },
+    "cross.battle.ended":  {
+                               "zh":  "§6===== §e战斗结束! §6=====",
+                               "en":  "§6===== §e배틀 종료! §6====="
+                           },
+    "cross.battle.forfeit_self":  {
+                                      "zh":  "§c你已投降认输",
+                                      "en":  "§c배틀을 기권했습니다"
+                                  },
+    "cross.battle.win":  {
+                             "zh":  "§a§l恭喜你赢得了对战!",
+                             "en":  "§a§l축하합니다! 배틀에서 승리했습니다!"
+                         },
+    "cross.battle.lose":  {
+                              "zh":  "§c很遗憾，你输掉了对战",
+                              "en":  "§c아쉽지만 배틀에서 패배했습니다"
+                          },
+    "cross.battle.slow_start_ended":  {
+                                          "zh":  "§e{pokemon} §a摆脱了缓慢启动的影响!",
+                                          "en":  "§e{pokemon}§a의 슬로스타트가 끝났습니다!"
+                                      },
+    "cross.battle.your_pokemon":  {
+                                      "zh":  "§a你的宝可梦 {name}",
+                                      "en":  "§a내 포켓몬 {name}"
+                                  },
+    "cross.battle.opponent_pokemon":  {
+                                          "zh":  "§c对手的宝可梦 {name}",
+                                          "en":  "§c상대 포켓몬 {name}"
+                                      },
+    "cross.battle.state_title":  {
+                                     "zh":  "§6===== §e战斗状态 [回合 {turn}] §6=====",
+                                     "en":  "§6===== §e배틀 상태 [턴 {turn}] §6====="
+                                 },
+    "cross.battle.hp":  {
+                            "zh":  "§cHP: {current}/{max}",
+                            "en":  "§cHP: {current}/{max}"
+                        },
+    "cross.battle.status":  {
+                                "zh":  "§d状态: {status}",
+                                "en":  "§d상태: {status}"
+                            },
+    "cross.battle.current_pp":  {
+                                    "zh":  "§b当前技能:(§7点击§e[数字]§7可直接使用，悬浮查看描述)",
+                                    "en":  "§b현재 기술: (§7사용하려면 §e[번호]§7를 클릭하세요)"
+                                },
+    "cross.battle.hp_percent":  {
+                                    "zh":  "§cHP: {percent}%",
+                                    "en":  "§cHP: {percent}%"
+                                },
+    "cross.battle.no_active":  {
+                                   "zh":  "§e你当前没有进行中的对战",
+                                   "en":  "§e진행 중인 배틀이 없습니다"
+                               },
+    "cross.battle.command_sent":  {
+                                      "zh":  "§a指令已发送: {command}",
+                                      "en":  "§a명령어 전송됨: {command}"
+                                  },
+    "cross.battle.opponent_action_taken":  {
+                                               "zh":  "§7玩家 {playerName} 已选择行动",
+                                               "en":  "§7플레이어 {playerName}님이 행동을 선택했습니다"
+                                           },
+    "cross.elo.update":  {
+                             "zh":  "§6你的 Elo 分数更新: §f{oldRating} §7→ §e{newRating} §a({change})",
+                             "en":  "§6Elo 레이팅 갱신: §f{oldRating} §7→ §e{newRating} §a({change})"
+                         },
+    "cross.chat.message":  {
+                               "zh":  "§b[跨服匹配消息 {opponentName}] §f{message}",
+                               "en":  "§b[서버 간 배틀 {opponentName}] §f{message}"
+                           },
+    "cross.queue.not_connected":  {
+                                      "zh":  "§c跨服连接尚未建立，请稍后再试或联系管理员",
+                                      "en":  "§c서버 간 연결이 아직 준비되지 않았습니다. 잠시 후 다시 시도하거나 관리자에게 문의하세요"
+                                  },
+    "cross.queue.connection_restored":  {
+                                            "zh":  "§a跨服连接已恢复",
+                                            "en":  "§a서버 간 연결이 복구되었습니다"
+                                        },
+    "cross.queue.connection_lost":  {
+                                        "zh":  "§c云服务器连接已断开，您已从队列中移除",
+                                        "en":  "§c클라우드 서버 연결이 끊어져 대기열에서 제거되었습니다"
+                                    },
+    "cross.battle.no_moves_available":  {
+                                            "zh":  "§c没有可用技能",
+                                            "en":  "§c사용 가능한 기술이 없습니다"
+                                        },
+    "command.only_player":  {
+                                "zh":  "§c[跨服匹配] 命令只能由玩家执行",
+                                "en":  "§c[서버 간] 플레이어만 이 명령어를 사용할 수 있습니다."
+                            },
+    "command.join.authenticated_only":  {
+                                            "zh":  "§c[跨服匹配] 非正版账号玩家不可加入匹配",
+                                            "en":  "§c[서버 간] 정품 인증을 완료한 플레이어만 매칭에 참가할 수 있습니다."
+                                        },
+    "command.join.empty_team":  {
+                                    "zh":  "§c[跨服匹配] 队伍为空，无法加入匹配",
+                                    "en":  "§c[서버 간] 파티가 비어 있어 매칭 대기열에 참가할 수 없습니다."
+                                },
+    "command.join.success":  {
+                                 "zh":  "§a[跨服匹配]你已成功加入 {mode} 匹配队列",
+                                 "en":  "§a[서버 간] {mode} 매칭 대기열에 참가했습니다."
+                             },
+    "command.join.fail":  {
+                              "zh":  "§c[跨服匹配]加入匹配失败：{error}",
+                              "en":  "§c[서버 간] 매칭 대기열 참가 실패: {error}"
+                          },
+    "command.leave.success":  {
+                                  "zh":  "§a[跨服匹配]你已成功离开匹配队列",
+                                  "en":  "§a[서버 간] 매칭 대기열에서 나갔습니다."
+                              },
+    "command.leave.fail":  {
+                               "zh":  "§c[跨服匹配]离开匹配失败：{error}",
+                               "en":  "§c[서버 간] 매칭 대기열 나가기 실패: {error}"
+                           },
+    "command.connect.start":  {
+                                  "zh":  "§e[跨服匹配] 正在尝试连接云服务...",
+                                  "en":  "§e[서버 간] 클라우드 서비스에 연결하는 중..."
+                              },
+    "command.connect.stop":  {
+                                 "zh":  "§e[跨服匹配] 云服务连接已断开",
+                                 "en":  "§e[서버 간] 클라우드 연결을 종료했습니다."
+                             },
+    "command.battle.no_active":  {
+                                     "zh":  "§e[跨服匹配] 你当前没有进行中的对战",
+                                     "en":  "§e[서버 간] 현재 진행 중인 배틀이 없습니다."
+                                 },
+    "command.battle.invalid_move_slot":  {
+                                             "zh":  "§c招式槽位无效，槽位必须在 1 到 4 之间",
+                                             "en":  "§c잘못된 기술 번호입니다(1~4 사이의 숫자를 입력하세요)."
+                                         },
+    "command.battle.sent":  {
+                                "zh":  "§a指令已发送: {command}",
+                                "en":  "§a명령어 전송됨: {command}"
+                            },
+    "command.chat.sent":  {
+                              "zh":  "§a[跨服匹配]聊天消息已发送",
+                              "en":  "§a[서버 간] 채팅 메시지를 보냈습니다."
+                          },
+    "cross.battle.already_chosen":  {
+                                        "zh":  "§c你已在本回合选择过行动，请等待下一回合",
+                                        "en":  "§c이번 턴의 행동을 이미 선택했습니다. 다음 턴까지 기다려 주세요."
+                                    },
+    "cross.log.localize_string_failed":  {
+                                             "zh":  "§c本地化字符串失败: 键={key}, 语言={lang}, 错误={error}",
+                                             "en":  "§c문자열 현지화 실패: 키={key}, 언어={lang}, 오류={error}"
+                                         },
+    "command.join.duplicate_pokemon":  {
+                                           "zh":  "§c无法加入匹配队列：队伍中包含重复宝可梦 - {species}",
+                                           "en":  "§c매칭 대기열에 참가할 수 없습니다. 파티에 같은 포켓몬이 중복되어 있습니다: {species}"
+                                       },
+    "command.not_in_queue":  {
+                                 "zh":  "§c当前不在跨服匹配队列中",
+                                 "en":  "§c현재 서버 간 매칭 대기열에 없습니다."
+                             },
+    "command.battle.in_queue_or_battle":  {
+                                              "zh":  "§c已在跨服队列或战斗中",
+                                              "en":  "§c이미 서버 간 매칭 대기열에 있거나 배틀 중입니다."
+                                          }
+}

@@ -67,7 +67,7 @@ key_key.fightorflight.cmdmode.attack_position:key.keyboard.unknown
 key_key.fightorflight.cmdmode.nocmd:key.keyboard.unknown
 key_key.fightorflight.cmdmode.clear:key.keyboard.unknown
 key_key.interactic.pickup_item:key.keyboard.unknown
-key_key.lumymon.access_pc:key.keyboard.p
+key_key.lumymon.access_pc:key.keyboard.unknown
 key_key.lumymon.dismount:key.keyboard.v
 key_key.modmenu.open_menu:key.keyboard.unknown
 key_key.more_cobblemon_tweaks.open_config:key.keyboard.f9

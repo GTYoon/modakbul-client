@@ -188,15 +188,22 @@ Write-Host "[2/8] 현재 서버 설정을 클라이언트 기준으로 병합"
 $stagedConfig = Join-Path $OverridesRoot "config"
 Copy-DirectoryContents -Source (Join-Path $Workspace "config\cobbleverse") -Destination (Join-Path $stagedConfig "cobbleverse")
 Copy-Item -LiteralPath (Join-Path $Workspace "config\gcmclaims.json") -Destination (Join-Path $stagedConfig "gcmclaims.json") -Force
+Copy-Item -LiteralPath (Join-Path $Workspace "config\cobblemon-battle-extras.json") -Destination (Join-Path $stagedConfig "cobblemon-battle-extras.json") -Force
+Copy-Item -LiteralPath (Join-Path $Workspace "config\limitedlegends.json") -Destination (Join-Path $stagedConfig "limitedlegends.json") -Force
+Copy-Item -LiteralPath (Join-Path $Workspace "config\lumymon.json") -Destination (Join-Path $stagedConfig "lumymon.json") -Force
+New-Item -ItemType Directory -Force -Path (Join-Path $stagedConfig "cobblemon_ranked") | Out-Null
+Copy-Item -LiteralPath (Join-Path $Workspace "config\cobblemon_ranked\messages.json") -Destination (Join-Path $stagedConfig "cobblemon_ranked\messages.json") -Force
+Copy-Item -LiteralPath (Join-Path $Workspace "datapacks\COBBLEVERSE-DP-v19-CF.zip") -Destination (Join-Path $OverridesRoot "datapacks\COBBLEVERSE-DP-v19-CF.zip") -Force
 
-$limitedLegendsConfig = Join-Path $stagedConfig "limitedlegends.json"
-if (Test-Path -LiteralPath $limitedLegendsConfig) {
-    Remove-Item -LiteralPath $limitedLegendsConfig -Force
-}
-$limitedLegendsLang = Join-Path $stagedConfig "cobbleverse\assets\limitedlegends"
-if (Test-Path -LiteralPath $limitedLegendsLang) {
-    Remove-Item -LiteralPath $limitedLegendsLang -Recurse -Force
-}
+$battleExtrasConfigPath = Join-Path $stagedConfig "cobblemon-battle-extras.json"
+$battleExtrasConfig = Get-Content -LiteralPath $battleExtrasConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json
+$battleExtrasConfig.enableMoveDamageRange = $false
+[IO.File]::WriteAllText(
+    $battleExtrasConfigPath,
+    ($battleExtrasConfig | ConvertTo-Json -Depth 20),
+    [Text.UTF8Encoding]::new($false)
+)
+
 $rankedRuntimeDatabase = Join-Path $stagedConfig "cobblemon_ranked\ranked.db"
 if (Test-Path -LiteralPath $rankedRuntimeDatabase) {
     Remove-Item -LiteralPath $rankedRuntimeDatabase -Force
@@ -218,12 +225,18 @@ Copy-Item -LiteralPath (Join-Path $ReferenceClientRoot "options.txt") -Destinati
 $optionsPath = Join-Path $OverridesRoot "options.txt"
 $optionsText = Get-Content -LiteralPath $optionsPath -Raw -Encoding UTF8
 $optionsText = [regex]::Replace($optionsText, '(?m)^lang:.*$', "lang:ko_kr")
+$optionsText = [regex]::Replace(
+    $optionsText,
+    '(?m)^key_key\.lumymon\.access_pc:.*$',
+    "key_key.lumymon.access_pc:key.keyboard.unknown"
+)
 $optionsText = $optionsText.Replace(
     '"file/!Cobbleverse Questsbook Resourcepack.zip"]',
     '"file/!Cobbleverse Questsbook Resourcepack.zip","file/Modakbul-Korean-v1.1.zip"]'
 )
 [IO.File]::WriteAllText($optionsPath, $optionsText, [Text.UTF8Encoding]::new($false))
 Copy-Item -LiteralPath $optionsPath -Destination (Join-Path $stagedDefaultOptions "options.txt") -Force
+Copy-Item -LiteralPath (Join-Path $Workspace "config\defaultoptions\keybindings.txt") -Destination (Join-Path $stagedDefaultOptions "keybindings.txt") -Force
 
 Write-Host "[3/8] 모닥불 이름·서버 목록·한글팩 적용"
 $fancyOptions = Join-Path $stagedConfig "fancymenu\options.txt"
@@ -289,11 +302,28 @@ $localKoreanPack = Join-Path $resourcePackDir "Modakbul-Korean-v1.1.zip"
 Copy-Item -LiteralPath (Join-Path $Workspace "client-update\GCM-Korean-Complete-v1.1.zip") -Destination $localKoreanPack -Force
 $packArchive = [IO.Compression.ZipFile]::Open($localKoreanPack, [IO.Compression.ZipArchiveMode]::Update)
 try {
+    $latestKoreanAssets = Join-Path $Workspace "config\cobbleverse\assets"
+    Get-ChildItem -LiteralPath $latestKoreanAssets -Recurse -File | Sort-Object FullName | ForEach-Object {
+        $suffix = $_.FullName.Substring($latestKoreanAssets.Length).TrimStart("\", "/")
+        $entryName = "assets/" + $suffix.Replace("\", "/")
+        $oldEntry = $packArchive.GetEntry($entryName)
+        if ($null -ne $oldEntry) {
+            $oldEntry.Delete()
+        }
+        [IO.Compression.ZipFileExtensions]::CreateEntryFromFile(
+            $packArchive,
+            $_.FullName,
+            $entryName,
+            [IO.Compression.CompressionLevel]::Optimal
+        ) | Out-Null
+    }
+
     $oldMeta = $packArchive.GetEntry("pack.mcmeta")
     if ($null -ne $oldMeta) {
         $oldMeta.Delete()
     }
     $newMeta = $packArchive.CreateEntry("pack.mcmeta", [IO.Compression.CompressionLevel]::Optimal)
+    $newMeta.LastWriteTime = [DateTimeOffset]::new(2026, 1, 1, 0, 0, 0, [TimeSpan]::Zero)
     $writer = [IO.StreamWriter]::new($newMeta.Open(), [Text.UTF8Encoding]::new($false))
     try {
         $writer.Write("{`n  `"pack`": {`n    `"pack_format`": 34,`n    `"supported_formats`": [34, 34],`n    `"description`": `"모닥불 Season 1 코블몬 한글화 v1.1`"`n  }`n}`n")
@@ -355,9 +385,27 @@ foreach ($addon in @($referenceInstance.installedAddons)) {
 $clientMods = @()
 Get-ChildItem -LiteralPath (Join-Path $ReferenceClientRoot "mods") -File -Filter "*.jar" | Sort-Object Name | ForEach-Object {
     $metadata = Get-JarFabricMetadata -JarPath $_.FullName
-    if ($metadata.environment -ne "server" -and $metadata.id -ne "limitedlegends") {
+    if ($metadata.environment -ne "server" -and $metadata.id -ne "pasture-loot") {
         $clientMods += [pscustomobject]@{
             File = $_
+            Id = $metadata.id
+            Environment = $metadata.environment
+        }
+    }
+}
+
+$workspaceClientJars = @(
+    (Join-Path $Workspace "gcm-client-localization\build\libs\gcm-client-localization-1.0.0.jar")
+)
+foreach ($clientJarPath in $workspaceClientJars) {
+    if (-not (Test-Path -LiteralPath $clientJarPath -PathType Leaf)) {
+        throw "클라이언트 전용 모드를 찾지 못했습니다: $clientJarPath"
+    }
+    $clientJar = Get-Item -LiteralPath $clientJarPath
+    $metadata = Get-JarFabricMetadata -JarPath $clientJar.FullName
+    if (-not @($clientMods | Where-Object Id -eq $metadata.id)) {
+        $clientMods += [pscustomobject]@{
+            File = $clientJar
             Id = $metadata.id
             Environment = $metadata.environment
         }
@@ -438,7 +486,11 @@ Get-ChildItem -LiteralPath (Join-Path $OverridesRoot "shaderpacks") -Directory -
         -ManifestFiles $repositoryManifestFiles
 }
 foreach ($relative in @(
+    "config\cobblemon-battle-extras.json",
+    "config\cobblemon_ranked\messages.json",
     "config\gcmclaims.json",
+    "config\limitedlegends.json",
+    "config\lumymon.json",
     "config\global_packs.toml",
     "config\resourcepackoverrides.json",
     "config\iris.properties"
