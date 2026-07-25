@@ -7,6 +7,9 @@
   "protectFire": true,
   "protectFluidBoundaries": true,
   "allowedDimensions": [
-    "gcmworlds:main_world"
+    "gcmworlds:build_source_2"
+  ],
+  "restrictedBuildDimensions": [
+    "gcmworlds:build_source_2"
   ]
 }

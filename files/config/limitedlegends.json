@@ -1,7 +1,7 @@
 {
-  "SetGlobalLimits": false,
+  "SetGlobalLimits": true,
   "GlobalLimitPerSpecies": 1,
-  "SetLimitsPerPlayer": true,
+  "SetLimitsPerPlayer": false,
   "MaxLimitedPerPlayer": 1,
   "SetCopiesLimit": false,
   "MaxCopiesPerPlayer": 1,
@@ -19,7 +19,7 @@
   "FlatPenalty": 0.05,
   "MinCatchRate": 0.1,
   "EnableSpawnMessage": false,
-  "EnableCaptureMessage": true,
+  "EnableCaptureMessage": false,
   "EnableReleaseMessage": true,
   "LOGGER": false,
   "LimitAllPokemon": false,
@@ -28,6 +28,7 @@
     "cobblemon:zapdos",
     "cobblemon:moltres",
     "cobblemon:mewtwo",
+    "cobblemon:mew",
     "cobblemon:raikou",
     "cobblemon:entei",
     "cobblemon:suicune",
@@ -90,6 +91,7 @@
     "cobblemon:ogerpon",
     "cobblemon:celebi",
     "cobblemon:jirachi",
+    "cobblemon:deoxys",
     "cobblemon:phione",
     "cobblemon:manaphy",
     "cobblemon:darkrai",
@@ -117,8 +119,5 @@
     "cobblemon:cosmoem",
     "cobblemon:enamorus"
   ],
-  "SpecificLimits": [
-    "cobblemon:mew: 3",
-    "cobblemon:deoxys: 4"
-  ]
+  "SpecificLimits": []
 }

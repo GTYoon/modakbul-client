@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.7",
+    "version":  "1.0.8",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-25T12:03:19.4180915Z",
+    "generatedAt":  "2026-07-25T14:51:37.0015990Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -34,8 +34,8 @@
                   },
                   {
                       "path":  "config/cobbleverse/assets/bca/lang/ko_kr.json",
-                      "sha256":  "dc759fb70d9dd9c4c64d59ac036c50fa5d233347b11c46ca185ba3bce8abaecd",
-                      "size":  10014
+                      "sha256":  "e1a21271d2ac410fa4437202c1d35e6e8fd12eaca565ea897b0a2d35d8271df6",
+                      "size":  10006
                   },
                   {
                       "path":  "config/cobbleverse/assets/beautify/lang/ko_kr.json",
@@ -94,13 +94,13 @@
                   },
                   {
                       "path":  "config/cobbleverse/assets/cobblefurnies/lang/ko_kr.json",
-                      "sha256":  "9cf1e540d5bd2aea08eeae73d88e6c54110e600675b71dabab9515a543378a6f",
-                      "size":  31932
+                      "sha256":  "cbeb35cdeacf6ee5674422ec436a0e720d2b87310bcd5ca581cbce5f99424a0f",
+                      "size":  31930
                   },
                   {
                       "path":  "config/cobbleverse/assets/cobblemon/lang/ko_kr.json",
-                      "sha256":  "7e42cbca85faacf37082f712eaa50be280f910d078db6aef5461701ba2990a20",
-                      "size":  11335
+                      "sha256":  "3463a18dc8c886fe9e6d090acb2aa7d537cb415473b6eea1ab3eaf4aa925de83",
+                      "size":  67513
                   },
                   {
                       "path":  "config/cobbleverse/assets/cobblemon_quests/lang/ko_kr.json",
@@ -129,8 +129,8 @@
                   },
                   {
                       "path":  "config/cobbleverse/assets/cobblenav/lang/ko_kr.json",
-                      "sha256":  "83b72cacfdc7af655ef78f408e973a0de46766a4ea21c4a1756cbd794c7addf4",
-                      "size":  37985
+                      "sha256":  "ff3e3a364d22ad919f83ee47e1f2339bb9c3debe8db24ac40b4008fba0375fab",
+                      "size":  38035
                   },
                   {
                       "path":  "config/cobbleverse/assets/cobblespawnalertreforged/lang/ko_kr.json",
@@ -399,8 +399,8 @@
                   },
                   {
                       "path":  "config/cobbleverse/assets/pokeblocks/lang/ko_kr.json",
-                      "sha256":  "f8d4b70abc7b3b9e4615cea28e36c4dc2be4cae9c3430ae942616020b0164250",
-                      "size":  59458
+                      "sha256":  "ebaeece48cc92b5c76a3cc67ea6679e0620c3058dc9810ae7a666d94a834e861",
+                      "size":  58892
                   },
                   {
                       "path":  "config/cobbleverse/assets/rctmod/lang/ko_kr.json",
@@ -544,7 +544,7 @@
                   },
                   {
                       "path":  "config/cobbleverse/pack.mcmeta",
-                      "sha256":  "b563d8e71791e5bebb3b8a066e794c006e198b61be0351c755d14773ba87b321",
+                      "sha256":  "4305b079e958e716b900339141b5ca70cf1f91d72cf4298ba3d4dbb8328c2b8c",
                       "size":  334
                   },
                   {
@@ -554,7 +554,7 @@
                   },
                   {
                       "path":  "config/defaultoptions/options.txt",
-                      "sha256":  "8b69efe6d4c1c2033f65a54166ad0df28823dd48c06d99466ad5f039eddcfc1e",
+                      "sha256":  "8ca1affdec90fba17e450fc323af46304651b4a795f7acfdc9be95f54be2cbc1",
                       "size":  9870
                   },
                   {
@@ -879,8 +879,8 @@
                   },
                   {
                       "path":  "config/gcmclaims.json",
-                      "sha256":  "e96d2553a9a2c275426404d94cfbca55b446a702644b9f5748a68346a0e45029",
-                      "size":  251
+                      "sha256":  "7486c4a51a51b909a23a3cca5d1823d1e01c8850be01807ddef0035e70de3263",
+                      "size":  323
                   },
                   {
                       "path":  "config/global_packs.toml",
@@ -894,8 +894,8 @@
                   },
                   {
                       "path":  "config/limitedlegends.json",
-                      "sha256":  "3966595e984b4def974be7b03bc47125e39e904041ca28f095b870b5902cdb91",
-                      "size":  3113
+                      "sha256":  "afdc835149052f711d6f51dba948769f84ef70f43bd82a4ac57fcf3170486b61",
+                      "size":  3107
                   },
                   {
                       "path":  "config/lumymon.json",
@@ -959,8 +959,8 @@
                   },
                   {
                       "path":  "modakbul-updater/update.ps1",
-                      "sha256":  "d5f1b8bb2f2af5aecd12884d82bdaa8d4f65189f98f3e511d3401d9dd0585f20",
-                      "size":  7443
+                      "sha256":  "ce43abfebc045e2803e3e1817234ab868be565d776f63a1c39b0f48dcec98751",
+                      "size":  7971
                   },
                   {
                       "path":  "mods/accessories_compat_layer-fabric-0.1.12+1.21.1.jar",
@@ -1320,8 +1320,8 @@
                   },
                   {
                       "path":  "mods/gcm-client-localization-1.0.0.jar",
-                      "sha256":  "4837f4a74ca976d3ce080149876256ba58743d53061d7f94d4a33328238cb26d",
-                      "size":  4751
+                      "sha256":  "a12e823bde6eb5f8cde5292f1abb595a5e531f5ccbf68999ebee03fcccac447e",
+                      "size":  6317
                   },
                   {
                       "path":  "mods/geckolib-fabric-1.21.1-4.8.4.jar",
@@ -1387,6 +1387,11 @@
                       "sha256":  "06e912f99d59bf81c0676f1db936150ad4443d5674f59b3c55604540ba620841",
                       "size":  786695,
                       "url":  "https://edge.forgecdn.net/files/5430/434/konkrete_fabric_1.9.9_MC_1.21.jar"
+                  },
+                  {
+                      "path":  "mods/koreanpatch-fabric-1.9.6+mc1.21.jar",
+                      "sha256":  "dd04e88e4dbf607ad297eb228f9570af96ff34c8e1f0a06137bfd35fb69f0f12",
+                      "size":  649989
                   },
                   {
                       "path":  "mods/krypton-0.2.8.jar",
@@ -1900,7 +1905,7 @@
                       "path":  "resourcepacks/COBBLEVERSE Soundtrack.zip",
                       "sha256":  "d6f8f26668d440792b0b2f54931052f98c7a2dc6967202a1c2b0fe80da5bf46e",
                       "size":  155271075,
-                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.7/large-d6f8f26668d44079.zip"
+                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.8/large-d6f8f26668d44079.zip"
                   },
                   {
                       "path":  "resourcepacks/COBBLEVERSE-CCC.zip",
@@ -1944,9 +1949,9 @@
                       "url":  "https://edge.forgecdn.net/files/7402/610/Icon%20Fresh%200.4.zip"
                   },
                   {
-                      "path":  "resourcepacks/Modakbul-Korean-v1.1.zip",
-                      "sha256":  "29960b294c6c53c76412052d51c0968216fe14d0bc21b063fe4f3cffb00c95f1",
-                      "size":  382561
+                      "path":  "resourcepacks/Modakbul-Korean-v1.2.zip",
+                      "sha256":  "54b0b7cbd5c77c0a1f46cc0137c8601128d46a3f662d0cc4a63b64020004e694",
+                      "size":  395912
                   },
                   {
                       "path":  "shaderpacks/COBBLEVERSE - Shaders (High Quality).txt",

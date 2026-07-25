@@ -93,8 +93,16 @@ try {
     }
 
     Write-UpdateLog "업데이트 확인 중: $($channel.displayName)"
-    $headers = @{ "User-Agent" = "ModakbulSeason1Updater/1.0" }
-    $manifest = Invoke-RestMethod -Uri $manifestUri -Headers $headers -TimeoutSec 30
+    # GitHub CDN의 짧은 캐시 때문에 방금 배포한 manifest를 놓치지 않도록
+    # 매 확인마다 캐시 우회용 query를 붙인다. 실제 파일 URL은 manifest 기준으로 유지한다.
+    $headers = @{
+        "User-Agent" = "ModakbulSeason1Updater/1.0"
+        "Cache-Control" = "no-cache"
+        "Pragma" = "no-cache"
+    }
+    $separator = if ([string]::IsNullOrWhiteSpace($manifestUri.Query)) { "?" } else { "&" }
+    $manifestRequestUri = [uri]($manifestUri.AbsoluteUri + $separator + "updateCheck=" + [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds())
+    $manifest = Invoke-RestMethod -Uri $manifestRequestUri -Headers $headers -TimeoutSec 30
     if ([string]$manifest.packId -ne [string]$channel.packId) {
         throw "업데이트 채널의 packId가 일치하지 않습니다."
     }
