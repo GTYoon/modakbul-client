@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.9",
+    "version":  "1.0.10",
     "rss":  "https://github.com/GTYoon/modakbul-launcher/releases.atom",
     "servers":  [
                     {
@@ -7,7 +7,7 @@
                         "name":  "모닥불 Season 1",
                         "description":  "Cobblemon 모닥불 Season 1 · Minecraft 1.21.1 · Fabric 0.19.3",
                         "icon":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/server-icon.png",
-                        "version":  "1.0.9",
+                        "version":  "1.0.10",
                         "address":  "116.126.112.66:25565",
                         "minecraftVersion":  "1.21.1",
                         "javaOptions":  {
@@ -1464,12 +1464,12 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-e8debb1ddd1c0e53:1.0.9",
+                                            "id":  "generated.file:file-e8debb1ddd1c0e53:1.0.10",
                                             "name":  "custom_gui_screens.txt",
                                             "type":  "File",
                                             "artifact":  {
-                                                             "size":  642,
-                                                             "MD5":  "9db32f8c79db62398756b4240d7851ee",
+                                                             "size":  845,
+                                                             "MD5":  "2840ded1f76846dde7bafd5548608da8",
                                                              "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/custom_gui_screens.txt",
                                                              "path":  "config/fancymenu/custom_gui_screens.txt"
                                                          }
@@ -1508,23 +1508,23 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-7c14d3174b825ec8:1.0.9",
+                                            "id":  "generated.file:file-7c14d3174b825ec8:1.0.10",
                                             "name":  "cobbleverse_pause_menu.txt",
                                             "type":  "File",
                                             "artifact":  {
-                                                             "size":  30367,
-                                                             "MD5":  "006797b0231d01e374c930e53d74035b",
+                                                             "size":  61828,
+                                                             "MD5":  "940e52a8f3982d9b2273e96a6d76847d",
                                                              "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/customization/cobbleverse_pause_menu.txt",
                                                              "path":  "config/fancymenu/customization/cobbleverse_pause_menu.txt"
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-92a2a8a3085e0f96:1.0.9",
+                                            "id":  "generated.file:file-78f1f3150a2cf6fc:1.0.10",
                                             "name":  "modakbul_region_travel.txt",
                                             "type":  "File",
                                             "artifact":  {
-                                                             "size":  17891,
-                                                             "MD5":  "61fea9476fc6fc24e9460ca4dcc1f3b5",
+                                                             "size":  46099,
+                                                             "MD5":  "d065653093a1e4476a9c8ea2f758dc51",
                                                              "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/customization/modakbul_region_travel.txt",
                                                              "path":  "config/fancymenu/customization/modakbul_region_travel.txt"
                                                          }
@@ -21921,6 +21921,182 @@
                                                              "MD5":  "b535d194c7115b360860e226c65ae3f2",
                                                              "url":  "https://edge.forgecdn.net/files/7574/260/ComplementaryUnbound_r5.7.1.zip",
                                                              "path":  "shaderpacks/ComplementaryUnbound_r5.7.1.zip"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-2c3e4b5398ca74dd:1.0.10",
+                                            "name":  "icon_arena.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  12409,
+                                                             "MD5":  "0a02daac5067c81cfa712612e803b0ae",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/icon_arena.png",
+                                                             "path":  "config/fancymenu/assets/icon_arena.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-e01a82da30b1a424:1.0.10",
+                                            "name":  "icon_casino.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  14316,
+                                                             "MD5":  "5fd7b65fc341aba461fce4d3a61bc63e",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/icon_casino.png",
+                                                             "path":  "config/fancymenu/assets/icon_casino.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-c172b5174c1b2dff:1.0.10",
+                                            "name":  "icon_compass.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  14396,
+                                                             "MD5":  "690d0c1d3537cb8767ba62a823d03ba1",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/icon_compass.png",
+                                                             "path":  "config/fancymenu/assets/icon_compass.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-875253db10c2bbff:1.0.10",
+                                            "name":  "icon_exit.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  11646,
+                                                             "MD5":  "323341e526d03e0eaff217fff1b8d946",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/icon_exit.png",
+                                                             "path":  "config/fancymenu/assets/icon_exit.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-8de076ea8a9281cb:1.0.10",
+                                            "name":  "icon_home.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  10744,
+                                                             "MD5":  "1d93bed28e68f38f37e8be6f49a82c91",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/icon_home.png",
+                                                             "path":  "config/fancymenu/assets/icon_home.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-866e5ac6b2239283:1.0.10",
+                                            "name":  "icon_market.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  11707,
+                                                             "MD5":  "f0756a1f114facc5cd5d7665f615b3ec",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/icon_market.png",
+                                                             "path":  "config/fancymenu/assets/icon_market.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-eee11a084e57171a:1.0.10",
+                                            "name":  "icon_pokemon.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  11857,
+                                                             "MD5":  "7a258d2c504dc58aa87b95492394ac12",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/icon_pokemon.png",
+                                                             "path":  "config/fancymenu/assets/icon_pokemon.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-1143dbe81f2af7b9:1.0.10",
+                                            "name":  "icon_settings.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  12117,
+                                                             "MD5":  "dc2326ba42163a477a9419ef5f5ff655",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/icon_settings.png",
+                                                             "path":  "config/fancymenu/assets/icon_settings.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-374385e72c9f991f:1.0.10",
+                                            "name":  "icon_village.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  14200,
+                                                             "MD5":  "dd8ca6bcc14723edc646f7acfaae3cc1",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/icon_village.png",
+                                                             "path":  "config/fancymenu/assets/icon_village.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-2aed8b72318562d9:1.0.10",
+                                            "name":  "ui_button.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  434,
+                                                             "MD5":  "52dda51f5443a051920b923773249b1f",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/ui_button.png",
+                                                             "path":  "config/fancymenu/assets/ui_button.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-513d0e1f0966f246:1.0.10",
+                                            "name":  "ui_button_hover.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  422,
+                                                             "MD5":  "a23406b9f4698299a4181cc151c1092f",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/ui_button_hover.png",
+                                                             "path":  "config/fancymenu/assets/ui_button_hover.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-94141a81ee4b2163:1.0.10",
+                                            "name":  "ui_button_inactive.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  415,
+                                                             "MD5":  "bf77a47a2f90af5e63e0934847fd564b",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/ui_button_inactive.png",
+                                                             "path":  "config/fancymenu/assets/ui_button_inactive.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-7185cb724d7b6972:1.0.10",
+                                            "name":  "ui_button_selected.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  419,
+                                                             "MD5":  "4bc0ba12cb9903ea26b35df9a2033da1",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/ui_button_selected.png",
+                                                             "path":  "config/fancymenu/assets/ui_button_selected.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-0bbef690df43db03:1.0.10",
+                                            "name":  "ui_panel.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  431,
+                                                             "MD5":  "1deed014ff8630791211b01bc1bba2ff",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/ui_panel.png",
+                                                             "path":  "config/fancymenu/assets/ui_panel.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-0a17f76aca3b80c7:1.0.10",
+                                            "name":  "ui_panel_soft.png",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  424,
+                                                             "MD5":  "3db2efc0310971c65cdc97e774681b5f",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/assets/ui_panel_soft.png",
+                                                             "path":  "config/fancymenu/assets/ui_panel_soft.png"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.file:file-8b7d93f899238408:1.0.10",
+                                            "name":  "modakbul_quick_guide.txt",
+                                            "type":  "File",
+                                            "artifact":  {
+                                                             "size":  40790,
+                                                             "MD5":  "ae09818d2244de9ce22e08512ec39cf5",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/config/fancymenu/customization/modakbul_quick_guide.txt",
+                                                             "path":  "config/fancymenu/customization/modakbul_quick_guide.txt"
                                                          }
                                         }
                                     ]

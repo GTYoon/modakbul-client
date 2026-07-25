@@ -1,0 +1,206 @@
+import java.awt.image.BufferedImage;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import javax.imageio.ImageIO;
+
+public final class TestModakbulMenus {
+    private static final Pattern INSTANCE =
+        Pattern.compile("(?m)^\\s*instance_identifier\\s*=\\s*([^\\r\\n]+)$");
+    private static final Pattern ASSET =
+        Pattern.compile("\\[source:local\\]/config/fancymenu/assets/([^\\r\\n]+)");
+    private static final Pattern ACTION =
+        Pattern.compile("\\[executable_action_instance:([^]]+)]\\[action_type:([^]]+)]");
+    private static final Pattern BLOCK =
+        Pattern.compile("\\[executable_block:([^]]+)]\\[type:generic]\\s*=\\s*\\[executables:([^]]*)]");
+    private static final Pattern BUTTON_BLOCK =
+        Pattern.compile("(?m)^\\s*button_element_executable_block_identifier\\s*=\\s*([^\\r\\n]+)$");
+
+    private TestModakbulMenus() {
+    }
+
+    public static void main(String[] args) throws Exception {
+        if (args.length != 1) {
+            throw new IllegalArgumentException("Usage: TestModakbulMenus <fancymenu-config-directory>");
+        }
+
+        Path config = Path.of(args[0]).toAbsolutePath().normalize();
+        Path customization = config.resolve("customization");
+        Map<String, String> layouts = new HashMap<>();
+        layouts.put("cobbleverse_pause_menu.txt", "pause_screen");
+        layouts.put("modakbul_region_travel.txt", "modakbul_region_travel");
+        layouts.put("modakbul_quick_guide.txt", "modakbul_quick_guide");
+
+        for (Map.Entry<String, String> entry : layouts.entrySet()) {
+            Path path = customization.resolve(entry.getKey());
+            String content = Files.readString(path, StandardCharsets.UTF_8);
+            require(content.contains("identifier = " + entry.getValue()), path + ": wrong layout identifier");
+            require(braceBalance(content) == 0, path + ": unbalanced braces");
+            require(!containsMojibake(content), path + ": Korean text contains mojibake");
+            requireUniqueInstances(path, content);
+            requireAssetsExist(config, path, content);
+            requireActionsConnected(path, content);
+            requireCustomButtonTextures(path, content);
+        }
+
+        String pause = Files.readString(customization.resolve("cobbleverse_pause_menu.txt"), StandardCharsets.UTF_8);
+        require(count(pause, "[action_type:sendmessage] = /spawn") == 1, "pause /spawn action count");
+        require(count(pause, "[action_type:sendmessage] = /야생") == 1, "pause /야생 action count");
+        require(count(pause, "[action_type:sendmessage] = /home") == 1, "pause /home action count");
+        require(pause.contains("instance_identifier = pause_options_button"), "pause options button missing");
+        require(pause.contains("instance_identifier = pause_return_to_game_button"), "pause resume button missing");
+        require(pause.contains("instance_identifier = pause_disconnect_button"), "pause disconnect button missing");
+
+        String region = Files.readString(customization.resolve("modakbul_region_travel.txt"), StandardCharsets.UTF_8);
+        for (String command : List.of(
+            "/spawn", "/야생", "/home", "/마을1", "/마을2", "/마을3", "/경기장", "/상점가", "/도박장"
+        )) {
+            require(count(region, "[action_type:sendmessage] = " + command) == 1,
+                "region action count for " + command);
+        }
+        require(region.contains("[action_type:back_to_last_screen] ="), "region back action missing");
+
+        String guide = Files.readString(customization.resolve("modakbul_quick_guide.txt"), StandardCharsets.UTF_8);
+        require(guide.contains("[action_type:opengui] = modakbul_region_travel"), "guide region link missing");
+        require(guide.contains("[action_type:back_to_last_screen] ="), "guide back action missing");
+
+        String customGuis = Files.readString(config.resolve("custom_gui_screens.txt"), StandardCharsets.UTF_8);
+        require(braceBalance(customGuis) == 0, "custom_gui_screens.txt: unbalanced braces");
+        require(customGuis.contains("identifier = modakbul_region_travel"), "region custom GUI missing");
+        require(customGuis.contains("identifier = modakbul_quick_guide"), "guide custom GUI missing");
+        require(!containsMojibake(customGuis), "custom_gui_screens.txt: Korean text contains mojibake");
+
+        validatePngAssets(config.resolve("assets"));
+        System.out.println("FancyMenu validation passed: 3 layouts, 9 destinations, 15 UI assets");
+    }
+
+    private static void requireUniqueInstances(Path path, String content) {
+        Matcher matcher = INSTANCE.matcher(content);
+        Set<String> values = new HashSet<>();
+        while (matcher.find()) {
+            String id = matcher.group(1).trim();
+            require(values.add(id), path + ": duplicate instance identifier " + id);
+        }
+    }
+
+    private static void requireAssetsExist(Path config, Path path, String content) {
+        Matcher matcher = ASSET.matcher(content);
+        while (matcher.find()) {
+            String file = matcher.group(1).trim();
+            require(Files.isRegularFile(config.resolve("assets").resolve(file)),
+                path + ": missing local asset " + file);
+        }
+    }
+
+    private static void requireActionsConnected(Path path, String content) {
+        Set<String> actions = new HashSet<>();
+        Matcher actionMatcher = ACTION.matcher(content);
+        while (actionMatcher.find()) {
+            require(actions.add(actionMatcher.group(1)), path + ": duplicate action " + actionMatcher.group(1));
+        }
+
+        Map<String, List<String>> blocks = new HashMap<>();
+        Matcher blockMatcher = BLOCK.matcher(content);
+        while (blockMatcher.find()) {
+            String[] split = blockMatcher.group(2).split(";");
+            blocks.put(blockMatcher.group(1), List.of(split).stream().filter(value -> !value.isBlank()).toList());
+        }
+
+        Matcher buttonMatcher = BUTTON_BLOCK.matcher(content);
+        while (buttonMatcher.find()) {
+            String block = buttonMatcher.group(1).trim();
+            require(blocks.containsKey(block), path + ": button references missing block " + block);
+        }
+
+        Set<String> connected = new HashSet<>();
+        for (Map.Entry<String, List<String>> block : blocks.entrySet()) {
+            for (String action : block.getValue()) {
+                require(actions.contains(action), path + ": block references missing action " + action);
+                require(connected.add(action), path + ": action connected more than once " + action);
+            }
+        }
+        require(connected.equals(actions), path + ": one or more actions are not connected");
+    }
+
+    private static void requireCustomButtonTextures(Path path, String content) {
+        int customButtons = count(content, "element_type = custom_button");
+        int normalTextures = count(content, "backgroundnormal = ");
+        int hoverTextures = count(content, "backgroundhovered = ");
+        int inactiveTextures = count(content, "background_texture_inactive = ");
+        require(normalTextures >= customButtons, path + ": missing normal button texture");
+        require(hoverTextures >= customButtons, path + ": missing hover button texture");
+        require(inactiveTextures >= customButtons, path + ": missing inactive button texture");
+    }
+
+    private static void validatePngAssets(Path assets) throws Exception {
+        List<String> icons = List.of(
+            "icon_arena.png", "icon_casino.png", "icon_compass.png", "icon_exit.png",
+            "icon_home.png", "icon_market.png", "icon_pokemon.png", "icon_settings.png",
+            "icon_village.png"
+        );
+        List<String> textures = List.of(
+            "ui_button.png", "ui_button_hover.png", "ui_button_inactive.png",
+            "ui_button_selected.png", "ui_panel.png", "ui_panel_soft.png"
+        );
+        for (String file : icons) {
+            BufferedImage image = ImageIO.read(assets.resolve(file).toFile());
+            require(image != null, "unreadable PNG " + file);
+            require(image.getWidth() == 128 && image.getHeight() == 128, "wrong icon dimensions " + file);
+            require(((image.getRGB(0, 0) >>> 24) & 0xFF) == 0, "icon corner is not transparent " + file);
+        }
+        for (String file : textures) {
+            BufferedImage image = ImageIO.read(assets.resolve(file).toFile());
+            require(image != null, "unreadable PNG " + file);
+            require(image.getWidth() == 64 && image.getHeight() == 64, "wrong texture dimensions " + file);
+            require(((image.getRGB(0, 0) >>> 24) & 0xFF) == 0, "texture corner is not transparent " + file);
+        }
+        require(!Files.exists(assets.resolve("modakbul_menu_icons_atlas-source.png")),
+            "source atlas must not ship to clients");
+        require(!Files.exists(assets.resolve("modakbul_menu_icons_atlas.png")),
+            "processed atlas must not ship to clients");
+    }
+
+    private static int braceBalance(String content) {
+        int balance = 0;
+        for (int index = 0; index < content.length(); index++) {
+            if (content.charAt(index) == '{') {
+                balance++;
+            } else if (content.charAt(index) == '}') {
+                balance--;
+                require(balance >= 0, "closing brace appeared before opening brace");
+            }
+        }
+        return balance;
+    }
+
+    private static boolean containsMojibake(String content) {
+        return content.contains("\uFFFD")
+            || content.contains("吏")
+            || content.contains("媛")
+            || content.contains("?대")
+            || content.contains("?쒓");
+    }
+
+    private static int count(String content, String needle) {
+        int result = 0;
+        int offset = 0;
+        while ((offset = content.indexOf(needle, offset)) >= 0) {
+            result++;
+            offset += needle.length();
+        }
+        return result;
+    }
+
+    private static void require(boolean condition, String message) {
+        if (!condition) {
+            throw new IllegalStateException(message);
+        }
+    }
+}

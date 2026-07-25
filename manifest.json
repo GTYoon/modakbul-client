@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.9",
+    "version":  "1.0.10",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-25T20:57:00Z",
+    "generatedAt":  "2026-07-25T21:44:37.9559569Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -598,6 +598,51 @@
                       "size":  24230
                   },
                   {
+                      "path":  "config/fancymenu/assets/icon_arena.png",
+                      "sha256":  "c1a5ba27859585c926458ac7977f645909f2d72dca23175d1cc6128d531a6c24",
+                      "size":  12409
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/icon_casino.png",
+                      "sha256":  "c49396c40af8c3332d32dd6b6d2d38644e62e43382f0755b3abeae739f1d93ca",
+                      "size":  14316
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/icon_compass.png",
+                      "sha256":  "7c0f3f0d37f2f227fe001c992165773c609977ec5d8630910ddbc884f7e26316",
+                      "size":  14396
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/icon_exit.png",
+                      "sha256":  "94ac56e49c11fad1603bba4851d44c2e3429511fc92c5fdc7e60b65f3708abfb",
+                      "size":  11646
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/icon_home.png",
+                      "sha256":  "c7035498a86a427eb846e376a7f58ca017483e63966a00bee740544c16349a94",
+                      "size":  10744
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/icon_market.png",
+                      "sha256":  "dbcb8c1871c99d43723c8a1567703fbb68357fd0fb21ca98843132391087385b",
+                      "size":  11707
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/icon_pokemon.png",
+                      "sha256":  "b08ab8abb93b506ba349dff6083f37a762477bcfedbed0c493e14f18eba20a21",
+                      "size":  11857
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/icon_settings.png",
+                      "sha256":  "8b36935a356a520585a71eaa518bc1363f4615e23b70bef546791be915c8ecff",
+                      "size":  12117
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/icon_village.png",
+                      "sha256":  "5358d46e422c74327021fd52076ec25ba0d57068718b73e0368870a37a8d7f2d",
+                      "size":  14200
+                  },
+                  {
                       "path":  "config/fancymenu/assets/latias_latios_background.png",
                       "sha256":  "e70fd43f60909e24e45bc22305f80b159a61ef8ba7f392afe418677014005565",
                       "size":  2913129
@@ -623,9 +668,39 @@
                       "size":  4382
                   },
                   {
+                      "path":  "config/fancymenu/assets/ui_button.png",
+                      "sha256":  "f36080e09cd12b19e1de0bf1e28f4e5bdd77eca5c937085aef2dc16190f8515d",
+                      "size":  434
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/ui_button_hover.png",
+                      "sha256":  "1d819254f4299a31ac843081f041f60f921c5f94b669f72be2ffa521026b2781",
+                      "size":  422
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/ui_button_inactive.png",
+                      "sha256":  "4edfcec7d97fd66671a4e992a18477b97766eab5d9c50e0f04930eb27e4fe608",
+                      "size":  415
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/ui_button_selected.png",
+                      "sha256":  "bd51aa6e2b13c6c0bee4cf6f32d68bd485f6a4dbdebaf5dea52b27b32419fa1f",
+                      "size":  419
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/ui_panel.png",
+                      "sha256":  "4cc59d2a1f86a3c8643b05f218ca0514b361052a0b3c3c847d8835656a157249",
+                      "size":  431
+                  },
+                  {
+                      "path":  "config/fancymenu/assets/ui_panel_soft.png",
+                      "sha256":  "956ba17e498a0f80a94bfc3f52a7ac06e05a4cc27464f6202431f21cfeab1b3a",
+                      "size":  424
+                  },
+                  {
                       "path":  "config/fancymenu/custom_gui_screens.txt",
-                      "sha256":  "80a8232a3953f4a26c6340b144b1323261db31b7f89cb48589386f8a80cf0656",
-                      "size":  642
+                      "sha256":  "2969c4947fccf573aac9e5c841137ffef42ebdc1be3472aacb480cede92bb515",
+                      "size":  845
                   },
                   {
                       "path":  "config/fancymenu/customizablemenus.txt",
@@ -644,13 +719,18 @@
                   },
                   {
                       "path":  "config/fancymenu/customization/cobbleverse_pause_menu.txt",
-                      "sha256":  "74e2a3d019d8d639a34a1933372a5f84651065edfbb76b934dd3fa2d6c60f18a",
-                      "size":  30367
+                      "sha256":  "f31bd4666b6bcfd088dc08835b151d385c809597703be76435493f1c081edb7d",
+                      "size":  61828
+                  },
+                  {
+                      "path":  "config/fancymenu/customization/modakbul_quick_guide.txt",
+                      "sha256":  "9cbf0d46609b86b54648ca1da8734da6fd761c4314405bd1331599639d1db491",
+                      "size":  40790
                   },
                   {
                       "path":  "config/fancymenu/customization/modakbul_region_travel.txt",
-                      "sha256":  "b849c58ca106f7f67aa77b6ba4fe518cc4cae8557a19134b20c64aaf98fb3e77",
-                      "size":  17891
+                      "sha256":  "d9f94d415e473c74bfe6c40956fb74a9c58de52668ce35cf88d7f8c5b1a77b36",
+                      "size":  46099
                   },
                   {
                       "path":  "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget",
