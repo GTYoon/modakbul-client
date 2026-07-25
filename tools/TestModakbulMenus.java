@@ -22,6 +22,8 @@ public final class TestModakbulMenus {
         Pattern.compile("\\[executable_block:([^]]+)]\\[type:generic]\\s*=\\s*\\[executables:([^]]*)]");
     private static final Pattern BUTTON_BLOCK =
         Pattern.compile("(?m)^\\s*button_element_executable_block_identifier\\s*=\\s*([^\\r\\n]+)$");
+    private static final Pattern ELEMENT_BLOCK =
+        Pattern.compile("(?s)(?:element|vanilla_button)\\s*\\{(.*?)\\n}");
 
     private TestModakbulMenus() {
     }
@@ -48,6 +50,7 @@ public final class TestModakbulMenus {
             requireAssetsExist(config, path, content);
             requireActionsConnected(path, content);
             requireCustomButtonTextures(path, content);
+            requireFitsDefaultGui(path, content, 408, 214);
         }
 
         String pause = Files.readString(customization.resolve("cobbleverse_pause_menu.txt"), StandardCharsets.UTF_8);
@@ -137,6 +140,37 @@ public final class TestModakbulMenus {
         require(normalTextures >= customButtons, path + ": missing normal button texture");
         require(hoverTextures >= customButtons, path + ": missing hover button texture");
         require(inactiveTextures >= customButtons, path + ": missing inactive button texture");
+    }
+
+    private static void requireFitsDefaultGui(Path path, String content, int screenWidth, int screenHeight) {
+        Matcher blockMatcher = ELEMENT_BLOCK.matcher(content);
+        while (blockMatcher.find()) {
+            String block = blockMatcher.group(1);
+            if (block.contains("is_hidden = true")) {
+                continue;
+            }
+            String anchor = property(block, "anchor_point");
+            if (!"top-centered".equals(anchor)) {
+                continue;
+            }
+            int x = Integer.parseInt(property(block, "x"));
+            int y = Integer.parseInt(property(block, "y"));
+            int width = Integer.parseInt(property(block, "width"));
+            int height = Integer.parseInt(property(block, "height"));
+            int absoluteX = screenWidth / 2 + x;
+            require(absoluteX >= 0, path + ": element starts left of default GUI: " + property(block, "instance_identifier"));
+            require(y >= 0, path + ": element starts above default GUI: " + property(block, "instance_identifier"));
+            require(absoluteX + width <= screenWidth,
+                path + ": element exceeds default GUI width: " + property(block, "instance_identifier"));
+            require(y + height <= screenHeight,
+                path + ": element exceeds default GUI height: " + property(block, "instance_identifier"));
+        }
+    }
+
+    private static String property(String block, String key) {
+        Matcher matcher = Pattern.compile("(?m)^\\s*" + Pattern.quote(key) + "\\s*=\\s*([^\\r\\n]+)$").matcher(block);
+        require(matcher.find(), "missing element property " + key);
+        return matcher.group(1).trim();
     }
 
     private static void validatePngAssets(Path assets) throws Exception {

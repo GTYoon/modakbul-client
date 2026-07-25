@@ -6,6 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class GenerateModakbulMenus {
+    // The distributed client uses GUI scale 5. FancyMenu positions are measured
+    // in the resulting scaled GUI space (roughly 408x214 at 2042x1071), so the
+    // original 820x456 design canvas must be reduced before serialization.
+    private static final double HORIZONTAL_LAYOUT_SCALE = 0.47;
+    private static final double VERTICAL_LAYOUT_SCALE = 0.44;
+    private static final double TEXT_LAYOUT_SCALE = 0.62;
     private static final String ASSET_ROOT = "[source:local]/config/fancymenu/assets/";
     private static final String NORMAL_BUTTON = ASSET_ROOT + "ui_button.png";
     private static final String HOVER_BUTTON = ASSET_ROOT + "ui_button_hover.png";
@@ -346,8 +352,8 @@ public final class GenerateModakbulMenus {
         out.append("  source = ").append(source).append('\n');
         out.append("  repeat_texture = false\n");
         out.append("  nine_slice_texture = ").append(nineSlice).append('\n');
-        out.append("  nine_slice_texture_border_x = 12\n");
-        out.append("  nine_slice_texture_border_y = 12\n");
+        out.append("  nine_slice_texture_border_x = 5\n");
+        out.append("  nine_slice_texture_border_y = 5\n");
         out.append("  image_tint = #FFFFFFFF\n");
         out.append("  element_type = image\n");
         out.append("  instance_identifier = ").append(id).append('\n');
@@ -372,7 +378,7 @@ public final class GenerateModakbulMenus {
         out.append("  source = ").append(content).append('\n');
         out.append("  source_mode = direct\n");
         out.append("  shadow = true\n");
-        out.append("  scale = ").append(scale).append('\n');
+        out.append("  scale = ").append(roundScale(scale * TEXT_LAYOUT_SCALE)).append('\n');
         out.append("  base_color = ").append(color).append('\n');
         out.append("  text_border = 0\n");
         out.append("  line_spacing = 2\n");
@@ -467,11 +473,11 @@ public final class GenerateModakbulMenus {
         out.append("  backgroundhovered = ").append(HOVER_BUTTON).append('\n');
         out.append("  background_texture_inactive = ").append(INACTIVE_BUTTON).append('\n');
         out.append("  nine_slice_custom_background = true\n");
-        out.append("  nine_slice_border_x = 12\n");
-        out.append("  nine_slice_border_y = 12\n");
+        out.append("  nine_slice_border_x = 5\n");
+        out.append("  nine_slice_border_y = 5\n");
         out.append("  nine_slice_slider_handle = false\n");
-        out.append("  nine_slice_slider_handle_border_x = 12\n");
-        out.append("  nine_slice_slider_handle_border_y = 12\n");
+        out.append("  nine_slice_slider_handle_border_x = 5\n");
+        out.append("  nine_slice_slider_handle_border_y = 5\n");
     }
 
     private static void appendCommon(
@@ -495,10 +501,10 @@ public final class GenerateModakbulMenus {
         out.append("  auto_sizing_base_screen_height = 1080\n");
         out.append("  sticky_anchor = false\n");
         out.append("  anchor_point = ").append(anchor).append('\n');
-        out.append("  x = ").append(x).append('\n');
-        out.append("  y = ").append(y).append('\n');
-        out.append("  width = ").append(width).append('\n');
-        out.append("  height = ").append(height).append('\n');
+        out.append("  x = ").append(scaleCoordinate(x, HORIZONTAL_LAYOUT_SCALE)).append('\n');
+        out.append("  y = ").append(scaleCoordinate(y, VERTICAL_LAYOUT_SCALE)).append('\n');
+        out.append("  width = ").append(scaleSize(width, HORIZONTAL_LAYOUT_SCALE)).append('\n');
+        out.append("  height = ").append(scaleSize(height, VERTICAL_LAYOUT_SCALE)).append('\n');
         out.append("  stretch_x = false\n");
         out.append("  stretch_y = false\n");
         out.append("  stay_on_screen = true\n");
@@ -513,6 +519,18 @@ public final class GenerateModakbulMenus {
         out.append("  load_once_per_session = false\n");
         out.append("  in_editor_color = #45B9FFFF\n");
         out.append("  layer_hidden_in_editor = false\n");
+    }
+
+    private static int scaleCoordinate(int value, double scale) {
+        return (int) Math.round(value * scale);
+    }
+
+    private static int scaleSize(int value, double scale) {
+        return Math.max(1, scaleCoordinate(value, scale));
+    }
+
+    private static double roundScale(double value) {
+        return Math.round(value * 1000.0) / 1000.0;
     }
 
     private static void write(Path path, String content) throws IOException {
