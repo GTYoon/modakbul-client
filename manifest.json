@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.6",
+    "version":  "1.0.7",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-25T10:25:43.7625951Z",
+    "generatedAt":  "2026-07-25T12:03:19.4180915Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -549,13 +549,13 @@
                   },
                   {
                       "path":  "config/defaultoptions/keybindings.txt",
-                      "sha256":  "9ad253cd640720090bc2f65734ea3d0f9e0ed7070f95003854c000610ebe5362",
-                      "size":  6125
+                      "sha256":  "0ceb441719b4d7dacbc838247d47fa4b65d103f36aa1310c3341260edb622084",
+                      "size":  6172
                   },
                   {
                       "path":  "config/defaultoptions/options.txt",
-                      "sha256":  "440c5a32425236190a5fc0b93351a09bb5bcdc7145adfabdb1e4ccce132237d9",
-                      "size":  9871
+                      "sha256":  "8b69efe6d4c1c2033f65a54166ad0df28823dd48c06d99466ad5f039eddcfc1e",
+                      "size":  9870
                   },
                   {
                       "path":  "config/defaultoptions/servers.dat",
@@ -894,13 +894,13 @@
                   },
                   {
                       "path":  "config/limitedlegends.json",
-                      "sha256":  "2123d14b1dbad357c7505da8f082c675539049a528c6de517b9bdbac25c06d69",
-                      "size":  3114
+                      "sha256":  "3966595e984b4def974be7b03bc47125e39e904041ca28f095b870b5902cdb91",
+                      "size":  3113
                   },
                   {
                       "path":  "config/lumymon.json",
-                      "sha256":  "e908a8dd634f239dae2ee461fdc56089a4a4b89d11f746c8ce73011e5cc83898",
-                      "size":  312
+                      "sha256":  "6ab12dc454988e6be6bc77e722f58d45182840451ce4da5bbb532b1254595b8f",
+                      "size":  311
                   },
                   {
                       "path":  "config/resourcepackoverrides.json",
@@ -1900,7 +1900,7 @@
                       "path":  "resourcepacks/COBBLEVERSE Soundtrack.zip",
                       "sha256":  "d6f8f26668d440792b0b2f54931052f98c7a2dc6967202a1c2b0fe80da5bf46e",
                       "size":  155271075,
-                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.6/large-d6f8f26668d44079.zip"
+                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.7/large-d6f8f26668d44079.zip"
                   },
                   {
                       "path":  "resourcepacks/COBBLEVERSE-CCC.zip",

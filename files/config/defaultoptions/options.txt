@@ -141,7 +141,7 @@ key_key.cobblemon.upshiftparty:key.keyboard.up
 key_key.cobblemon.throwpartypokemon:key.keyboard.r
 key_key.cobblemon.ridingfreelook:key.keyboard.left.alt
 key_key.cobblemon-battle-extras.battle_logs:key.keyboard.unknown
-key_key.cobblemon_ranked.open_gui:key.keyboard.x
+key_key.cobblemon_ranked.open_gui:key.keyboard.o
 key_key.cobblemonraiddens.mouse:key.keyboard.right.control
 key_key.cobblemonraiddens.accept:key.keyboard.f6
 key_key.cobblemonraiddens.deny:key.keyboard.f7
