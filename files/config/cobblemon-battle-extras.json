@@ -60,7 +60,7 @@
     "enableSwitchMatchupBorder":  true,
     "enableMoveDamageRange":  false,
     "enableInstantNPCForfeit":  false,
-    "enableBattleLogChatMessages":  true,
+    "enableBattleLogChatMessages":  false,
     "enableInstantWildRun":  true,
     "enableTurnCounter":  false,
     "enablePokemonCount":  true,

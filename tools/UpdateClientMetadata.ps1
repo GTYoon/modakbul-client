@@ -13,6 +13,8 @@ $DistributionPath = Join-Path $RepositoryRoot "distribution.json"
 $Utf8NoBom = [Text.UTF8Encoding]::new($false)
 
 $ManagedPaths = @(
+    "config/cobblemon-battle-extras.json",
+    "config/cobbleverse/assets/cobblemon-battle-extras/lang/ko_kr.json",
     "config/fancymenu/assets/icon_arena.png",
     "config/fancymenu/assets/icon_casino.png",
     "config/fancymenu/assets/icon_compass.png",

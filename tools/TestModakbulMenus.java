@@ -12,6 +12,16 @@ import java.util.regex.Pattern;
 import javax.imageio.ImageIO;
 
 public final class TestModakbulMenus {
+    private record ElementBounds(int x, int y, int width, int height) {
+        int right() {
+            return x + width;
+        }
+
+        int bottom() {
+            return y + height;
+        }
+    }
+
     private static final Pattern INSTANCE =
         Pattern.compile("(?m)^\\s*instance_identifier\\s*=\\s*([^\\r\\n]+)$");
     private static final Pattern ASSET =
@@ -80,6 +90,10 @@ public final class TestModakbulMenus {
         requireVanillaHidden(pause, "pause_options_button");
         requireVanillaHidden(pause, "pause_return_to_game_button");
         requireVanillaHidden(pause, "pause_disconnect_button");
+        requirePauseReadabilityAndPanelContainment(
+            customization.resolve("cobbleverse_pause_menu.txt"),
+            pause
+        );
 
         String region = Files.readString(customization.resolve("modakbul_region_travel.txt"), StandardCharsets.UTF_8);
         for (String command : List.of(
@@ -197,6 +211,126 @@ public final class TestModakbulMenus {
         }
         require(setScaleBlocks == 1, path + ": expected exactly one responsive setscale block");
         require(autoScaleBlocks == 1, path + ": expected exactly one responsive autoscale block");
+    }
+
+    private static void requirePauseReadabilityAndPanelContainment(Path path, String content) {
+        Map<String, String> elements = elementBlocksByIdentifier(path, content);
+
+        for (String id : List.of(
+            "pause-subtitle",
+            "pause-navigation-tip-one",
+            "pause-navigation-tip-two",
+            "pause-quick-subtitle",
+            "pause-location-one",
+            "pause-location-two",
+            "pause-location-three",
+            "pause-location-four",
+            "pause-server-one",
+            "pause-server-two",
+            "pause-server-three",
+            "pause-server-four",
+            "pause-footer-message"
+        )) {
+            double scale = Double.parseDouble(property(elements.get(id), "scale"));
+            require(scale >= 0.68, path + ": readability scale is too small for " + id);
+        }
+
+        requireInside(elements, "pause-header-panel", List.of(
+            "pause-logo", "pause-title", "pause-subtitle", "pause-resume"
+        ));
+        requireInside(elements, "pause-navigation-panel", List.of(
+            "pause-navigation-title",
+            "pause-guide", "pause-guide-icon",
+            "pause-region", "pause-region-icon",
+            "pause-settings", "pause-settings-icon",
+            "pause-navigation-tip-one", "pause-navigation-tip-two"
+        ));
+        requireInside(elements, "pause-content-panel", List.of(
+            "pause-quick-title", "pause-quick-subtitle",
+            "pause-spawn", "pause-spawn-icon",
+            "pause-wild", "pause-wild-icon",
+            "pause-home", "pause-home-icon",
+            "pause-location-info-panel", "pause-server-info-panel"
+        ));
+        requireInside(elements, "pause-location-info-panel", List.of(
+            "pause-location-title",
+            "pause-location-one", "pause-location-two",
+            "pause-location-three", "pause-location-four"
+        ));
+        requireInside(elements, "pause-server-info-panel", List.of(
+            "pause-server-title",
+            "pause-server-one", "pause-server-two",
+            "pause-server-three", "pause-server-four"
+        ));
+        requireInside(elements, "pause-footer-panel", List.of(
+            "pause-disconnect", "pause-exit-icon", "pause-footer-message"
+        ));
+
+        requireNoOverlap(elements, "pause-title", "pause-subtitle");
+        requireNoOverlap(elements, "pause-navigation-tip-one", "pause-navigation-tip-two");
+        requireNoOverlap(elements, "pause-quick-title", "pause-quick-subtitle");
+        requireNoOverlap(elements, "pause-location-one", "pause-location-two");
+        requireNoOverlap(elements, "pause-location-two", "pause-location-three");
+        requireNoOverlap(elements, "pause-location-three", "pause-location-four");
+        requireNoOverlap(elements, "pause-server-one", "pause-server-two");
+        requireNoOverlap(elements, "pause-server-two", "pause-server-three");
+        requireNoOverlap(elements, "pause-server-three", "pause-server-four");
+        requireNoOverlap(elements, "pause-disconnect", "pause-footer-message");
+    }
+
+    private static Map<String, String> elementBlocksByIdentifier(Path path, String content) {
+        Map<String, String> elements = new HashMap<>();
+        Matcher matcher = ELEMENT_BLOCK.matcher(content);
+        while (matcher.find()) {
+            String block = matcher.group(1);
+            String id = property(block, "instance_identifier");
+            require(elements.put(id, block) == null, path + ": duplicate element block " + id);
+        }
+        return elements;
+    }
+
+    private static void requireInside(
+        Map<String, String> elements,
+        String containerId,
+        List<String> childIds
+    ) {
+        ElementBounds container = bounds(elements, containerId);
+        for (String childId : childIds) {
+            ElementBounds child = bounds(elements, childId);
+            require(
+                child.x() >= container.x()
+                    && child.y() >= container.y()
+                    && child.right() <= container.right()
+                    && child.bottom() <= container.bottom(),
+                childId + " exceeds panel boundary " + containerId
+            );
+        }
+    }
+
+    private static void requireNoOverlap(
+        Map<String, String> elements,
+        String firstId,
+        String secondId
+    ) {
+        ElementBounds first = bounds(elements, firstId);
+        ElementBounds second = bounds(elements, secondId);
+        boolean overlaps =
+            first.x() < second.right()
+                && first.right() > second.x()
+                && first.y() < second.bottom()
+                && first.bottom() > second.y();
+        require(!overlaps, firstId + " overlaps " + secondId);
+    }
+
+    private static ElementBounds bounds(Map<String, String> elements, String id) {
+        String block = elements.get(id);
+        require(block != null, "missing element block " + id);
+        return new ElementBounds(
+            Integer.parseInt(property(block, "x")),
+            Integer.parseInt(property(block, "y")),
+            Integer.parseInt(property(block, "width")),
+            Integer.parseInt(property(block, "height"))
+        );
     }
 
     private static void requireFitsDefaultGui(Path path, String content, int screenWidth, int screenHeight) {

@@ -416,7 +416,7 @@ element {
   source = &7포켓몬과 함께 쉬어가는 우리들의 서버
   source_mode = direct
   shadow = true
-  scale = 0.598
+  scale = 0.734
   base_color = #D7E7FFFF
   text_border = 0
   line_spacing = 2
@@ -784,7 +784,7 @@ element {
   source = &7ESC로 언제든 다시 열기
   source_mode = direct
   shadow = true
-  scale = 0.562
+  scale = 0.72
   base_color = #C8D6E8FF
   text_border = 0
   line_spacing = 2
@@ -830,7 +830,7 @@ element {
   source = &7이동 · 안내 · 설정을 한곳에서
   source_mode = direct
   shadow = true
-  scale = 0.518
+  scale = 0.691
   base_color = #C8D6E8FF
   text_border = 0
   line_spacing = 2
@@ -854,7 +854,7 @@ element {
   anchor_point = top-centered
   x = -272
   y = 198
-  width = 111
+  width = 107
   height = 9
   stretch_x = false
   stretch_y = false
@@ -900,7 +900,7 @@ element {
   anchor_point = top-centered
   x = -141
   y = 78
-  width = 126
+  width = 74
   height = 12
   stretch_x = false
   stretch_y = false
@@ -922,7 +922,7 @@ element {
   source = &7원하는 장소를 바로 선택하세요.
   source_mode = direct
   shadow = true
-  scale = 0.562
+  scale = 0.72
   base_color = #C8D6E8FF
   text_border = 0
   line_spacing = 2
@@ -1293,7 +1293,7 @@ element {
   source = &f마을1 · 마을2 · 마을3
   source_mode = direct
   shadow = true
-  scale = 0.59
+  scale = 0.72
   base_color = #E8F2FFFF
   text_border = 0
   line_spacing = 2
@@ -1339,7 +1339,7 @@ element {
   source = &f경기장 · 상점가 · 도박장
   source_mode = direct
   shadow = true
-  scale = 0.59
+  scale = 0.72
   base_color = #E8F2FFFF
   text_border = 0
   line_spacing = 2
@@ -1385,7 +1385,7 @@ element {
   source = &7세부 목적지는 지역 이동에서
   source_mode = direct
   shadow = true
-  scale = 0.547
+  scale = 0.691
   base_color = #C1CEE0FF
   text_border = 0
   line_spacing = 2
@@ -1431,7 +1431,7 @@ element {
   source = &7선택할 수 있습니다.
   source_mode = direct
   shadow = true
-  scale = 0.547
+  scale = 0.691
   base_color = #C1CEE0FF
   text_border = 0
   line_spacing = 2
@@ -1523,7 +1523,7 @@ element {
   source = &f야생: 마지막 야생 위치로 이동
   source_mode = direct
   shadow = true
-  scale = 0.562
+  scale = 0.72
   base_color = #E8F2FFFF
   text_border = 0
   line_spacing = 2
@@ -1569,7 +1569,7 @@ element {
   source = &fPC: 마을의 PC 블록 이용
   source_mode = direct
   shadow = true
-  scale = 0.562
+  scale = 0.72
   base_color = #E8F2FFFF
   text_border = 0
   line_spacing = 2
@@ -1615,7 +1615,7 @@ element {
   source = &f건축: 건차 허용 구역에서만
   source_mode = direct
   shadow = true
-  scale = 0.562
+  scale = 0.72
   base_color = #E8F2FFFF
   text_border = 0
   line_spacing = 2
@@ -1661,7 +1661,7 @@ element {
   source = &7자세한 내용은 왼쪽 안내 메뉴
   source_mode = direct
   shadow = true
-  scale = 0.533
+  scale = 0.691
   base_color = #C1CEE0FF
   text_border = 0
   line_spacing = 2
@@ -1850,7 +1850,7 @@ element {
   source = &7모닥불 Season 1 · 편안한 모험 되세요.
   source_mode = direct
   shadow = true
-  scale = 0.518
+  scale = 0.706
   base_color = #AEBED3FF
   text_border = 0
   line_spacing = 2

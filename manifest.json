@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.13",
+    "version":  "1.0.14",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-26T08:34:37.5100273Z",
+    "generatedAt":  "2026-07-26T19:57:02.3929043Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -14,8 +14,8 @@
                   },
                   {
                       "path":  "config/cobblemon-battle-extras.json",
-                      "sha256":  "ce914835b93dcae34291634517b619cb1b2fa4097f1295a83c17fdedc52e53e4",
-                      "size":  4366
+                      "sha256":  "57027684246bfbd73ba1236202bebe1672de337f314053de2146d5923bb85033",
+                      "size":  4367
                   },
                   {
                       "path":  "config/cobbleverse/assets/accessories/lang/ko_kr.json",
@@ -114,8 +114,8 @@
                   },
                   {
                       "path":  "config/cobbleverse/assets/cobblemon-battle-extras/lang/ko_kr.json",
-                      "sha256":  "6f08f2b32a071b8d36276d9dac1e5c0775e5e1738ecfde8ff5f311733ab211b7",
-                      "size":  9758
+                      "sha256":  "eca97964dca591eec5ef0812b378d221670305df4b261565fd4642de87591f8e",
+                      "size":  9729
                   },
                   {
                       "path":  "config/cobbleverse/assets/cobblemonbattlepositions/lang/ko_kr.json",
@@ -719,8 +719,8 @@
                   },
                   {
                       "path":  "config/fancymenu/customization/cobbleverse_pause_menu.txt",
-                      "sha256":  "036804ee1e541db284e9428fdfff4e48a2d9c1b2ca9f8a9f125ceb220ccda234",
-                      "size":  69441
+                      "sha256":  "472cb89e4f542627da1c989fab18bc89dc85b4e7a2a28ff2e847b49e78da2fee",
+                      "size":  69435
                   },
                   {
                       "path":  "config/fancymenu/customization/modakbul_quick_guide.txt",
@@ -1405,8 +1405,8 @@
                   },
                   {
                       "path":  "mods/gcm-client-localization-1.0.0.jar",
-                      "sha256":  "30cfd30631a18881169aeed3dfcb477cd25df2673b965a5eaa80996f2389b70b",
-                      "size":  785113
+                      "sha256":  "0d13580be4ea650facfb79a1c9ae905a0ff927494be8dbc719c138eae7a0226b",
+                      "size":  785785
                   },
                   {
                       "path":  "mods/geckolib-fabric-1.21.1-4.8.4.jar",

@@ -56,7 +56,7 @@ public final class GenerateModakbulMenus {
 
         out.append(image("pause-logo", "icon_pokemon.png", -370, 34, 36, 36, false));
         out.append(text("pause-title", "&f&l모닥불 Season 1", -326, 35, 310, 20, 1.35, "#FFFFFFFF"));
-        out.append(text("pause-subtitle", "&7포켓몬과 함께 쉬어가는 우리들의 서버", -326, 58, 360, 14, 0.83, "#D7E7FFFF"));
+        out.append(text("pause-subtitle", "&7포켓몬과 함께 쉬어가는 우리들의 서버", -326, 58, 360, 14, 1.02, "#D7E7FFFF"));
 
         out.append(text("pause-navigation-title", "&b&l메인 메뉴", -370, 105, 140, 16, 1.0, "#FFFFFFFF"));
         out.append(button(
@@ -75,11 +75,11 @@ public final class GenerateModakbulMenus {
             new Action("opengui", "options_screen")
         ));
         out.append(image("pause-settings-icon", "icon_settings.png", -362, 216, 20, 20, false));
-        out.append(text("pause-navigation-tip-one", "&7ESC로 언제든 다시 열기", -368, 266, 142, 13, 0.78, "#C8D6E8FF"));
-        out.append(text("pause-navigation-tip-two", "&7이동 · 안내 · 설정을 한곳에서", -368, 282, 150, 13, 0.72, "#C8D6E8FF"));
+        out.append(text("pause-navigation-tip-one", "&7ESC로 언제든 다시 열기", -368, 266, 142, 13, 1.0, "#C8D6E8FF"));
+        out.append(text("pause-navigation-tip-two", "&7이동 · 안내 · 설정을 한곳에서", -368, 282, 145, 13, 0.96, "#C8D6E8FF"));
 
-        out.append(text("pause-quick-title", "&f&l빠른 이동", -190, 106, 170, 17, 1.05, "#FFFFFFFF"));
-        out.append(text("pause-quick-subtitle", "&7원하는 장소를 바로 선택하세요.", -80, 108, 250, 14, 0.78, "#C8D6E8FF"));
+        out.append(text("pause-quick-title", "&f&l빠른 이동", -190, 106, 100, 17, 1.05, "#FFFFFFFF"));
+        out.append(text("pause-quick-subtitle", "&7원하는 장소를 바로 선택하세요.", -80, 108, 250, 14, 1.0, "#C8D6E8FF"));
         out.append(button(
             "pause-spawn", "&f&l마을", -190, 135, 170, 62,
             new Action("sendmessage", "/spawn"),
@@ -100,16 +100,16 @@ public final class GenerateModakbulMenus {
         out.append(image("pause-home-icon", "icon_home.png", 200, 149, 34, 34, false));
 
         out.append(text("pause-location-title", "&b&l지역 이동", -174, 234, 220, 16, 0.98, "#FFFFFFFF"));
-        out.append(text("pause-location-one", "&f마을1 · 마을2 · 마을3", -174, 258, 230, 14, 0.82, "#E8F2FFFF"));
-        out.append(text("pause-location-two", "&f경기장 · 상점가 · 도박장", -174, 279, 240, 14, 0.82, "#E8F2FFFF"));
-        out.append(text("pause-location-three", "&7세부 목적지는 지역 이동에서", -174, 309, 240, 14, 0.76, "#C1CEE0FF"));
-        out.append(text("pause-location-four", "&7선택할 수 있습니다.", -174, 326, 220, 14, 0.76, "#C1CEE0FF"));
+        out.append(text("pause-location-one", "&f마을1 · 마을2 · 마을3", -174, 258, 230, 14, 1.0, "#E8F2FFFF"));
+        out.append(text("pause-location-two", "&f경기장 · 상점가 · 도박장", -174, 279, 240, 14, 1.0, "#E8F2FFFF"));
+        out.append(text("pause-location-three", "&7세부 목적지는 지역 이동에서", -174, 309, 240, 14, 0.96, "#C1CEE0FF"));
+        out.append(text("pause-location-four", "&7선택할 수 있습니다.", -174, 326, 220, 14, 0.96, "#C1CEE0FF"));
 
         out.append(text("pause-server-title", "&d&l이용 안내", 112, 234, 220, 16, 0.98, "#FFFFFFFF"));
-        out.append(text("pause-server-one", "&f야생: 마지막 야생 위치로 이동", 112, 258, 245, 14, 0.78, "#E8F2FFFF"));
-        out.append(text("pause-server-two", "&fPC: 마을의 PC 블록 이용", 112, 279, 245, 14, 0.78, "#E8F2FFFF"));
-        out.append(text("pause-server-three", "&f건축: 건차 허용 구역에서만", 112, 300, 245, 14, 0.78, "#E8F2FFFF"));
-        out.append(text("pause-server-four", "&7자세한 내용은 왼쪽 안내 메뉴", 112, 330, 245, 14, 0.74, "#C1CEE0FF"));
+        out.append(text("pause-server-one", "&f야생: 마지막 야생 위치로 이동", 112, 258, 245, 14, 1.0, "#E8F2FFFF"));
+        out.append(text("pause-server-two", "&fPC: 마을의 PC 블록 이용", 112, 279, 245, 14, 1.0, "#E8F2FFFF"));
+        out.append(text("pause-server-three", "&f건축: 건차 허용 구역에서만", 112, 300, 245, 14, 1.0, "#E8F2FFFF"));
+        out.append(text("pause-server-four", "&7자세한 내용은 왼쪽 안내 메뉴", 112, 330, 245, 14, 0.96, "#C1CEE0FF"));
 
         out.append(button(
             "pause-resume", "&f게임으로 돌아가기", 242, 39, 126, 28,
@@ -122,7 +122,7 @@ public final class GenerateModakbulMenus {
         out.append(image("pause-exit-icon", "icon_exit.png", -361, 428, 20, 20, false));
         out.append(text(
             "pause-footer-message", "&7모닥불 Season 1 · 편안한 모험 되세요.",
-            -214, 431, 420, 13, 0.72, "#AEBED3FF"
+            -214, 431, 420, 13, 0.98, "#AEBED3FF"
         ));
         out.append(hiddenVanilla("pause_options_button"));
         out.append(hiddenVanilla("pause_return_to_game_button"));
