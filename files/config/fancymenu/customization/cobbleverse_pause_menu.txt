@@ -13,6 +13,17 @@ layout-meta {
 }
 
 customization {
+  action = setscale
+  scale = 1.0
+}
+
+customization {
+  action = autoscale
+  basewidth = 640
+  baseheight = 336
+}
+
+customization {
   action = backgroundoptions
   keepaspectratio = false
 }

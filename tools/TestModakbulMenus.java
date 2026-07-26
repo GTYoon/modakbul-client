@@ -24,6 +24,10 @@ public final class TestModakbulMenus {
         Pattern.compile("(?m)^\\s*button_element_executable_block_identifier\\s*=\\s*([^\\r\\n]+)$");
     private static final Pattern ELEMENT_BLOCK =
         Pattern.compile("(?s)(?:element|vanilla_button)\\s*\\{(.*?)\\n}");
+    private static final Pattern CUSTOMIZATION_BLOCK =
+        Pattern.compile("(?ms)^customization\\s*\\{(.*?)\\n}");
+    private static final int RESPONSIVE_BASE_WIDTH = 640;
+    private static final int RESPONSIVE_BASE_HEIGHT = 336;
 
     private TestModakbulMenus() {
     }
@@ -50,7 +54,19 @@ public final class TestModakbulMenus {
             requireAssetsExist(config, path, content);
             requireActionsConnected(path, content);
             requireCustomButtonTextures(path, content);
-            requireFitsDefaultGui(path, content, 640, 338);
+            requireResponsiveLayout(path, content);
+            requireFitsDefaultGui(
+                path,
+                content,
+                RESPONSIVE_BASE_WIDTH,
+                RESPONSIVE_BASE_HEIGHT
+            );
+            requireCanvasCoverage(
+                path,
+                content,
+                RESPONSIVE_BASE_WIDTH,
+                RESPONSIVE_BASE_HEIGHT
+            );
         }
 
         String pause = Files.readString(customization.resolve("cobbleverse_pause_menu.txt"), StandardCharsets.UTF_8);
@@ -160,6 +176,29 @@ public final class TestModakbulMenus {
         require(inactiveTextures >= customButtons, path + ": missing inactive button texture");
     }
 
+    private static void requireResponsiveLayout(Path path, String content) {
+        int setScaleBlocks = 0;
+        int autoScaleBlocks = 0;
+        Matcher matcher = CUSTOMIZATION_BLOCK.matcher(content);
+        while (matcher.find()) {
+            String block = matcher.group(1);
+            String action = property(block, "action");
+            if ("setscale".equals(action)) {
+                require("1.0".equals(property(block, "scale")),
+                    path + ": responsive setscale must be 1.0");
+                setScaleBlocks++;
+            } else if ("autoscale".equals(action)) {
+                require(Integer.toString(RESPONSIVE_BASE_WIDTH).equals(property(block, "basewidth")),
+                    path + ": responsive autoscale basewidth mismatch");
+                require(Integer.toString(RESPONSIVE_BASE_HEIGHT).equals(property(block, "baseheight")),
+                    path + ": responsive autoscale baseheight mismatch");
+                autoScaleBlocks++;
+            }
+        }
+        require(setScaleBlocks == 1, path + ": expected exactly one responsive setscale block");
+        require(autoScaleBlocks == 1, path + ": expected exactly one responsive autoscale block");
+    }
+
     private static void requireFitsDefaultGui(Path path, String content, int screenWidth, int screenHeight) {
         Matcher blockMatcher = ELEMENT_BLOCK.matcher(content);
         while (blockMatcher.find()) {
@@ -183,6 +222,36 @@ public final class TestModakbulMenus {
             require(y + height <= screenHeight,
                 path + ": element exceeds default GUI height: " + property(block, "instance_identifier"));
         }
+    }
+
+    private static void requireCanvasCoverage(Path path, String content, int screenWidth, int screenHeight) {
+        Matcher blockMatcher = ELEMENT_BLOCK.matcher(content);
+        while (blockMatcher.find()) {
+            String block = blockMatcher.group(1);
+            String identifier = property(block, "instance_identifier");
+            if (!identifier.endsWith("-outer-panel")) {
+                continue;
+            }
+            require("top-centered".equals(property(block, "anchor_point")),
+                path + ": outer panel must use top-centered anchoring");
+            int x = Integer.parseInt(property(block, "x"));
+            int y = Integer.parseInt(property(block, "y"));
+            int width = Integer.parseInt(property(block, "width"));
+            int height = Integer.parseInt(property(block, "height"));
+            int left = screenWidth / 2 + x;
+            int right = screenWidth - left - width;
+            int bottom = screenHeight - y - height;
+            require(Math.abs(left - right) <= 1,
+                path + ": outer panel is not horizontally centered");
+            require(width * 10 >= screenWidth * 9,
+                path + ": outer panel does not fill at least 90% of responsive canvas width");
+            require(height * 10 >= screenHeight * 9,
+                path + ": outer panel does not fill at least 90% of responsive canvas height");
+            require(y >= 8 && bottom >= 8,
+                path + ": outer panel needs a small vertical safety margin");
+            return;
+        }
+        throw new IllegalStateException(path + ": outer panel missing");
     }
 
     private static String property(String block, String key) {

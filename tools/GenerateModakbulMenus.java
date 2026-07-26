@@ -6,9 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class GenerateModakbulMenus {
-    // GUI scale 5 is capped by the game window and FancyMenu exposes an effective
-    // canvas of roughly 640x338 in the user's screenshots. Keep a small outer
-    // margin while using almost the full canvas.
+    // FancyMenu temporarily normalizes these layouts to a 640x336 logical canvas.
+    // This keeps the same proportions at Minecraft GUI scales 1 through 5 while
+    // leaving only a small outer margin around the 607x310 main panel.
+    private static final int RESPONSIVE_BASE_WIDTH = 640;
+    private static final int RESPONSIVE_BASE_HEIGHT = 336;
     private static final double HORIZONTAL_LAYOUT_SCALE = 0.74;
     private static final double VERTICAL_LAYOUT_SCALE = 0.68;
     private static final double TEXT_LAYOUT_SCALE = 0.72;
@@ -334,6 +336,17 @@ public final class GenerateModakbulMenus {
             }
 
             customization {
+              action = setscale
+              scale = 1.0
+            }
+
+            customization {
+              action = autoscale
+              basewidth = %d
+              baseheight = %d
+            }
+
+            customization {
               action = backgroundoptions
               keepaspectratio = false
             }
@@ -347,7 +360,12 @@ public final class GenerateModakbulMenus {
               apply_vanilla_background_blur = true
             }
 
-            """.formatted(identifier, identifier);
+            """.formatted(
+                identifier,
+                identifier,
+                RESPONSIVE_BASE_WIDTH,
+                RESPONSIVE_BASE_HEIGHT
+            );
     }
 
     private static String panel(String id, String source, int x, int y, int width, int height) {

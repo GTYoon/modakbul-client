@@ -31,7 +31,8 @@ $ManagedPaths = @(
     "config/fancymenu/custom_gui_screens.txt",
     "config/fancymenu/customization/cobbleverse_pause_menu.txt",
     "config/fancymenu/customization/modakbul_quick_guide.txt",
-    "config/fancymenu/customization/modakbul_region_travel.txt"
+    "config/fancymenu/customization/modakbul_region_travel.txt",
+    "mods/gcm-client-localization-1.0.0.jar"
 )
 
 function Get-TextSha1Prefix {
@@ -104,30 +105,48 @@ foreach ($server in @($distribution.servers)) {
     foreach ($relativePath in $ManagedPaths) {
         $source = Get-SourceFile -RelativePath $relativePath
         $md5 = (Get-FileHash -Algorithm MD5 -LiteralPath $source.FullName).Hash.ToLowerInvariant()
-        $moduleId = "generated.file:file-$(Get-TextSha1Prefix -Text $relativePath):$Version"
+        $isFabricMod = $relativePath.StartsWith("mods/", [StringComparison]::OrdinalIgnoreCase)
+        $moduleId = if ($isFabricMod) {
+            "generated.fabricmod:mod-$(Get-TextSha1Prefix -Text $relativePath):$Version@jar"
+        } else {
+            "generated.file:file-$(Get-TextSha1Prefix -Text $relativePath):$Version"
+        }
+        $artifactPath = if ($isFabricMod) {
+            [IO.Path]::GetFileName($relativePath)
+        } else {
+            $relativePath
+        }
         $rawUrl = "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/$relativePath"
         $matching = @($modules | Where-Object {
-            $null -ne $_.artifact -and [string]$_.artifact.path -eq $relativePath
+            $null -ne $_.artifact -and (
+                [string]$_.artifact.path -eq $relativePath -or (
+                    $isFabricMod -and
+                    [string]$_.type -eq "FabricMod" -and
+                    [string]$_.artifact.path -eq $artifactPath
+                )
+            )
         } | Select-Object -First 1)
 
         if ($matching.Count -eq 0) {
             [void]$modules.Add([pscustomobject][ordered]@{
                 id = $moduleId
                 name = [IO.Path]::GetFileName($relativePath)
-                type = "File"
+                type = if ($isFabricMod) { "FabricMod" } else { "File" }
                 artifact = [pscustomobject][ordered]@{
                     size = [long]$source.Length
                     MD5 = $md5
                     url = $rawUrl
-                    path = $relativePath
+                    path = $artifactPath
                 }
             })
         } else {
             $matching[0].id = $moduleId
             $matching[0].name = [IO.Path]::GetFileName($relativePath)
+            $matching[0].type = if ($isFabricMod) { "FabricMod" } else { "File" }
             $matching[0].artifact.size = [long]$source.Length
             $matching[0].artifact.MD5 = $md5
             $matching[0].artifact.url = $rawUrl
+            $matching[0].artifact.path = $artifactPath
         }
     }
     $server.modules = @($modules)

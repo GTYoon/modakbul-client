@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.12",
+    "version":  "1.0.13",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-25T22:07:51.7363388Z",
+    "generatedAt":  "2026-07-26T08:34:37.5100273Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -719,18 +719,18 @@
                   },
                   {
                       "path":  "config/fancymenu/customization/cobbleverse_pause_menu.txt",
-                      "sha256":  "d6f8571fd953e24532250255b0ee4e5b3e6d80c409876f17119843153f8dc3ed",
-                      "size":  69311
+                      "sha256":  "036804ee1e541db284e9428fdfff4e48a2d9c1b2ca9f8a9f125ceb220ccda234",
+                      "size":  69441
                   },
                   {
                       "path":  "config/fancymenu/customization/modakbul_quick_guide.txt",
-                      "sha256":  "e4854fd956293c17a71f551b03f0609c05e2c334cacfcb57d30d26e4fcab3145",
-                      "size":  40764
+                      "sha256":  "e40f3700cdbc34fb3d0fb29e506ac19a250faf7e475727af77dccb09c50c2603",
+                      "size":  40894
                   },
                   {
                       "path":  "config/fancymenu/customization/modakbul_region_travel.txt",
-                      "sha256":  "bfa3fec00b0e09db2b6a3cce89478c5685d7ecd9fcc5deefbdb52f9429d1ca4b",
-                      "size":  46021
+                      "sha256":  "b8ab2f5ba364083aa47d9cf201fd41551aaad57cd3ebb21aaeaa4db4577ecc74",
+                      "size":  46151
                   },
                   {
                       "path":  "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget",
@@ -1405,8 +1405,8 @@
                   },
                   {
                       "path":  "mods/gcm-client-localization-1.0.0.jar",
-                      "sha256":  "a12e823bde6eb5f8cde5292f1abb595a5e531f5ccbf68999ebee03fcccac447e",
-                      "size":  6317
+                      "sha256":  "30cfd30631a18881169aeed3dfcb477cd25df2673b965a5eaa80996f2389b70b",
+                      "size":  785113
                   },
                   {
                       "path":  "mods/geckolib-fabric-1.21.1-4.8.4.jar",
