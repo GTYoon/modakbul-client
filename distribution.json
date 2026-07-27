@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.14",
+    "version":  "1.0.15",
     "rss":  "https://github.com/GTYoon/modakbul-launcher/releases.atom",
     "servers":  [
                     {
@@ -7,7 +7,7 @@
                         "name":  "모닥불 Season 1",
                         "description":  "Cobblemon 모닥불 Season 1 · Minecraft 1.21.1 · Fabric 0.19.3",
                         "icon":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/server-icon.png",
-                        "version":  "1.0.14",
+                        "version":  "1.0.15",
                         "address":  "116.126.112.66:25565",
                         "minecraftVersion":  "1.21.1",
                         "javaOptions":  {
@@ -122,7 +122,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-b09125a4aeeb6b4f:1.0.14",
+                                            "id":  "generated.file:file-b09125a4aeeb6b4f:1.0.15",
                                             "name":  "cobblemon-battle-extras.json",
                                             "type":  "File",
                                             "artifact":  {
@@ -342,7 +342,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-1af63cd2124549ee:1.0.14",
+                                            "id":  "generated.file:file-1af63cd2124549ee:1.0.15",
                                             "name":  "ko_kr.json",
                                             "type":  "File",
                                             "artifact":  {
@@ -1409,7 +1409,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-2c3e4b5398ca74dd:1.0.14",
+                                            "id":  "generated.file:file-2c3e4b5398ca74dd:1.0.15",
                                             "name":  "icon_arena.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1420,7 +1420,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-e01a82da30b1a424:1.0.14",
+                                            "id":  "generated.file:file-e01a82da30b1a424:1.0.15",
                                             "name":  "icon_casino.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1431,7 +1431,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-c172b5174c1b2dff:1.0.14",
+                                            "id":  "generated.file:file-c172b5174c1b2dff:1.0.15",
                                             "name":  "icon_compass.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1442,7 +1442,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-875253db10c2bbff:1.0.14",
+                                            "id":  "generated.file:file-875253db10c2bbff:1.0.15",
                                             "name":  "icon_exit.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1453,7 +1453,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-8de076ea8a9281cb:1.0.14",
+                                            "id":  "generated.file:file-8de076ea8a9281cb:1.0.15",
                                             "name":  "icon_home.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1464,7 +1464,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-866e5ac6b2239283:1.0.14",
+                                            "id":  "generated.file:file-866e5ac6b2239283:1.0.15",
                                             "name":  "icon_market.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1475,7 +1475,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-eee11a084e57171a:1.0.14",
+                                            "id":  "generated.file:file-eee11a084e57171a:1.0.15",
                                             "name":  "icon_pokemon.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1486,7 +1486,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-1143dbe81f2af7b9:1.0.14",
+                                            "id":  "generated.file:file-1143dbe81f2af7b9:1.0.15",
                                             "name":  "icon_settings.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1497,7 +1497,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-374385e72c9f991f:1.0.14",
+                                            "id":  "generated.file:file-374385e72c9f991f:1.0.15",
                                             "name":  "icon_village.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1563,7 +1563,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-2aed8b72318562d9:1.0.14",
+                                            "id":  "generated.file:file-2aed8b72318562d9:1.0.15",
                                             "name":  "ui_button.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1574,7 +1574,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-513d0e1f0966f246:1.0.14",
+                                            "id":  "generated.file:file-513d0e1f0966f246:1.0.15",
                                             "name":  "ui_button_hover.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1585,7 +1585,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-94141a81ee4b2163:1.0.14",
+                                            "id":  "generated.file:file-94141a81ee4b2163:1.0.15",
                                             "name":  "ui_button_inactive.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1596,7 +1596,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-7185cb724d7b6972:1.0.14",
+                                            "id":  "generated.file:file-7185cb724d7b6972:1.0.15",
                                             "name":  "ui_button_selected.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1607,7 +1607,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-0bbef690df43db03:1.0.14",
+                                            "id":  "generated.file:file-0bbef690df43db03:1.0.15",
                                             "name":  "ui_panel.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1618,7 +1618,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-0a17f76aca3b80c7:1.0.14",
+                                            "id":  "generated.file:file-0a17f76aca3b80c7:1.0.15",
                                             "name":  "ui_panel_soft.png",
                                             "type":  "File",
                                             "artifact":  {
@@ -1629,7 +1629,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-e8debb1ddd1c0e53:1.0.14",
+                                            "id":  "generated.file:file-e8debb1ddd1c0e53:1.0.15",
                                             "name":  "custom_gui_screens.txt",
                                             "type":  "File",
                                             "artifact":  {
@@ -1673,7 +1673,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-7c14d3174b825ec8:1.0.14",
+                                            "id":  "generated.file:file-7c14d3174b825ec8:1.0.15",
                                             "name":  "cobbleverse_pause_menu.txt",
                                             "type":  "File",
                                             "artifact":  {
@@ -1684,7 +1684,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-8b7d93f899238408:1.0.14",
+                                            "id":  "generated.file:file-8b7d93f899238408:1.0.15",
                                             "name":  "modakbul_quick_guide.txt",
                                             "type":  "File",
                                             "artifact":  {
@@ -1695,7 +1695,7 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.file:file-78f1f3150a2cf6fc:1.0.14",
+                                            "id":  "generated.file:file-78f1f3150a2cf6fc:1.0.15",
                                             "name":  "modakbul_region_travel.txt",
                                             "type":  "File",
                                             "artifact":  {
@@ -3059,12 +3059,12 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.fabricmod:mod-29af2c5ff06502f1:1.0.14@jar",
+                                            "id":  "generated.fabricmod:mod-29af2c5ff06502f1:1.0.15@jar",
                                             "name":  "gcm-client-localization-1.0.0.jar",
                                             "type":  "FabricMod",
                                             "artifact":  {
-                                                             "size":  785785,
-                                                             "MD5":  "566deee6e26ed31ef283727e1a8eb1bc",
+                                                             "size":  786110,
+                                                             "MD5":  "3bff3c87ab80f792a4833dbefaa08f1a",
                                                              "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/gcm-client-localization-1.0.0.jar",
                                                              "path":  "gcm-client-localization-1.0.0.jar"
                                                          }
