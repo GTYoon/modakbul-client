@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.15",
+    "version":  "1.0.16",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-27T11:02:47.7832040Z",
+    "generatedAt":  "2026-07-27T13:33:25.2384186Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -1198,6 +1198,11 @@
                       "url":  "https://edge.forgecdn.net/files/7302/40/CobbleFurnies-fabric-1.0.jar"
                   },
                   {
+                      "path":  "mods/cobblemon_battle_tower-fabric-1.10.22.jar",
+                      "sha256":  "043ee6625cfdb796ee3c0d4210428fb2b93151d38a9fc97a1478488eb1f86f95",
+                      "size":  52072177
+                  },
+                  {
                       "path":  "mods/cobblemon_quests-reloaded-[1.21.1]-fabric-1.3.5.jar",
                       "sha256":  "ba455539cdbbe7faef292acef6caae7fa350210ea1d8fca60cdd7d2832dac3c8",
                       "size":  108113,
@@ -1894,6 +1899,11 @@
                       "sha256":  "f08e2e630c567d1a082c5f8fadee61af0922e811aa4f05881618e02af0a87991",
                       "size":  898551,
                       "url":  "https://edge.forgecdn.net/files/7750/232/waystones-fabric-1.21.1-21.1.29.jar"
+                  },
+                  {
+                      "path":  "mods/wild_battle_api-fabric-1.1.2.jar",
+                      "sha256":  "c25fee08e90ed8d28d2a0051f892bae28e1d6d8522c523131bd7dcbef9bcd0a8",
+                      "size":  253029
                   },
                   {
                       "path":  "mods/xaerominimap-fabric-1.21.1-25.3.10.jar",
