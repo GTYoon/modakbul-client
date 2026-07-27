@@ -6,6 +6,7 @@
   "protectPistons": true,
   "protectFire": true,
   "protectFluidBoundaries": true,
+  "protectFarmlandTrampling": true,
   "allowedDimensions": [
     "gcmworlds:build_source_2"
   ],
