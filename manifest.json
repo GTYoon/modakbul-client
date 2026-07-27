@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.17",
+    "version":  "1.0.18",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-27T17:05:36.8762818Z",
+    "generatedAt":  "2026-07-27T17:20:24.9913771Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -1330,8 +1330,8 @@
                   },
                   {
                       "path":  "mods/gcm-client-localization-1.0.0.jar",
-                      "sha256":  "0d13580be4ea650facfb79a1c9ae905a0ff927494be8dbc719c138eae7a0226b",
-                      "size":  785785
+                      "sha256":  "608c0aba4b0b2543d40dbe5798c484b78a728ce8d21f1b40c6286a4d45f7e0c0",
+                      "size":  786110
                   },
                   {
                       "path":  "mods/geckolib-fabric-1.21.1-4.8.4.jar",
@@ -1903,7 +1903,7 @@
                       "path":  "resourcepacks/COBBLEVERSE Soundtrack.zip",
                       "sha256":  "d6f8f26668d440792b0b2f54931052f98c7a2dc6967202a1c2b0fe80da5bf46e",
                       "size":  155271075,
-                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.17/large-d6f8f26668d44079.zip"
+                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.18/large-d6f8f26668d44079.zip"
                   },
                   {
                       "path":  "resourcepacks/COBBLEVERSE-CCC.zip",
