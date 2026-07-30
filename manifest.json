@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.24",
+    "version":  "1.0.25",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-29T18:33:35.9281546Z",
+    "generatedAt":  "2026-07-30T14:30:34.7815104Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -1168,6 +1168,11 @@
                       "url":  "https://edge.forgecdn.net/files/7861/164/cobblemonraiddens-fabric-0.10.0%2b1.21.1.jar"
                   },
                   {
+                      "path":  "mods/cobblemon-trainer-battle-1.11.12+1.7.3.jar",
+                      "sha256":  "787ad86f5b685a0f0cd26928a1cbd990daee14c00e4e2e61d824cec6985f274a",
+                      "size":  12739072
+                  },
+                  {
                       "path":  "mods/cobblenav-fabric-2.3.2.jar",
                       "sha256":  "7ec2b92fb621d92a815c45324a84fc7009a45e99292b84819d0cf130eb0b9b11",
                       "size":  1078068,
@@ -1337,6 +1342,11 @@
                       "path":  "mods/gcm-client-localization-1.0.5.jar",
                       "sha256":  "d615b128797a3bd79e4b55289153c399711b4664a313eecc291448a53f99cb89",
                       "size":  799841
+                  },
+                  {
+                      "path":  "mods/gcverse-rct-team-preview-1.0.0.jar",
+                      "sha256":  "1df04d124d56d572aac4422b5976e80955b0c43147e61cdff38dac3cbcbd475d",
+                      "size":  30295
                   },
                   {
                       "path":  "mods/geckolib-fabric-1.21.1-4.8.4.jar",
@@ -1913,7 +1923,7 @@
                       "path":  "resourcepacks/COBBLEVERSE Soundtrack.zip",
                       "sha256":  "d6f8f26668d440792b0b2f54931052f98c7a2dc6967202a1c2b0fe80da5bf46e",
                       "size":  155271075,
-                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.21/large-d6f8f26668d44079.zip"
+                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.25/large-d6f8f26668d44079.zip"
                   },
                   {
                       "path":  "resourcepacks/COBBLEVERSE-CCC.zip",
