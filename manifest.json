@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "?????Season 1",
-    "version":  "1.0.37",
+    "version":  "1.0.38",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-31T21:42:52.309Z",
+    "generatedAt":  "2026-07-31T22:02:39.260Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -1237,6 +1237,11 @@
                       "url":  "https://edge.forgecdn.net/files/7861/164/cobblemonraiddens-fabric-0.10.0%2b1.21.1.jar"
                   },
                   {
+                      "path":  "mods/cobblemon-trainer-battle-1.11.12+1.7.3.jar",
+                      "sha256":  "787ad86f5b685a0f0cd26928a1cbd990daee14c00e4e2e61d824cec6985f274a",
+                      "size":  12739072
+                  },
+                  {
                       "path":  "mods/cobblenav-fabric-2.3.2.jar",
                       "sha256":  "7ec2b92fb621d92a815c45324a84fc7009a45e99292b84819d0cf130eb0b9b11",
                       "size":  1078068,
@@ -1405,6 +1410,17 @@
                       "path":  "mods/gcm-client-localization-1.0.5.jar",
                       "sha256":  "d615b128797a3bd79e4b55289153c399711b4664a313eecc291448a53f99cb89",
                       "size":  799841
+                  },
+                  {
+                      "path":  "mods/gcm-gym-skins-1.0.3.jar",
+                      "sha256":  "e72055a96aa72a0ad32d9575286fd68b1257722636c0d3491f218b65586f9d26",
+                      "size":  24991
+                  },
+                  {
+                      "path":  "mods/gcverse-rct-team-preview-1.0.7.jar",
+                      "sha256":  "3c96556cbf61bba704e4c5964b203d3cc7320eb3bf4b28814386d67d0a7767c5",
+                      "size":  6382848,
+                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.31/gcverse-rct-team-preview-1.0.7.jar"
                   },
                   {
                       "path":  "mods/geckolib-fabric-1.21.1-4.8.4.jar",
@@ -10142,22 +10158,6 @@
                       "sha256":  "5cbf4d99bc7ce4f0df5c15974d276e0949bf6974d48d88a77d5e307b0b9be8af",
                       "size":  522973,
                       "url":  "https://edge.forgecdn.net/files/7574/260/ComplementaryUnbound_r5.7.1.zip"
-                  },
-                  {
-                      "path":  "mods/cobblemon-trainer-battle-1.11.12+1.7.3.jar",
-                      "sha256":  "787ad86f5b685a0f0cd26928a1cbd990daee14c00e4e2e61d824cec6985f274a",
-                      "size":  12739072
-                  },
-                  {
-                      "path":  "mods/gcverse-rct-team-preview-1.0.7.jar",
-                      "sha256":  "3c96556cbf61bba704e4c5964b203d3cc7320eb3bf4b28814386d67d0a7767c5",
-                      "size":  6382848,
-                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.31/gcverse-rct-team-preview-1.0.7.jar"
-                  },
-                  {
-                      "path":  "mods/gcm-gym-skins-1.0.0.jar",
-                      "sha256":  "25e956d113744f4537fa455e43d7e72fbc23a0e9f53d0c48df5415d2ab8f6346",
-                      "size":  26785
                   }
               ]
 }
