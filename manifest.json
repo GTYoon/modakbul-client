@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "?????Season 1",
-    "version":  "1.0.39",
+    "version":  "1.0.40",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-31T22:14:50.133Z",
+    "generatedAt":  "2026-07-31T22:21:57.083Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -1948,12 +1948,6 @@
                       "url":  "https://edge.forgecdn.net/files/6105/672/-1.21.2%20Fresh%20Moves%20v3.1%20(With%20Animated%20Eyes).zip"
                   },
                   {
-                      "path":  "resourcepacks/Cobblemon 3D Pok? Rods 1.0.zip",
-                      "sha256":  "c93e9c866658bb752976c44414ca0e04fa90246060f114a183599abe1de4ca9e",
-                      "size":  167546,
-                      "url":  "https://edge.forgecdn.net/files/6060/565/Cobblemon%203D%20Pok%c3%a9%20Rods%201.0.zip"
-                  },
-                  {
                       "path":  "resourcepacks/Cobblemon Classic Grass Pack v1.0 MC1.21.1.zip",
                       "sha256":  "82682159ca0132b3fe0f2b24d37324bac1bbd40e2f0c08b592af9073b0df8c92",
                       "size":  7538,
@@ -1980,6 +1974,11 @@
                       "path":  "resourcepacks/Cobblemon Interface v1.6.0.zip.rpo",
                       "sha256":  "cd23a448bda028590c96b9b2b7ecfb4f0456d6aad02b934283ffe47d4d88046f",
                       "size":  75
+                  },
+                  {
+                      "path":  "resourcepacks/Cobblemon-3D-Poke-Rods-1.0.zip",
+                      "sha256":  "c93e9c866658bb752976c44414ca0e04fa90246060f114a183599abe1de4ca9e",
+                      "size":  167546
                   },
                   {
                       "path":  "resourcepacks/COBBLEVERSE RCTmod RP.zip",
