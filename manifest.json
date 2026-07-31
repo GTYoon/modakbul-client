@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "?????Season 1",
-    "version":  "1.0.38",
+    "version":  "1.0.39",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-31T22:02:39.260Z",
+    "generatedAt":  "2026-07-31T22:14:50.133Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
