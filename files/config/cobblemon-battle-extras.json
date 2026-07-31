@@ -75,7 +75,7 @@
     "enableWeaknessTooltip":  true,
     "enableBattleLogColoring":  true,
     "enableBattleLogRecording":  false,
-    "enableSpeedRange":  false,
+    "enableSpeedRange":  true,
     "hideBattleTiles":  false,
     "enableCustomTopBattleTiles":  false,
     "enableClassicTopTileAttachments":  false,
