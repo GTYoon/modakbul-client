@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.25",
+    "version":  "1.0.26",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-31T09:11:16.5670558Z",
+    "generatedAt":  "2026-07-31T10:33:24.8656608Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -1206,8 +1206,7 @@
                   {
                       "path":  "mods/cobblemon_ranked-v1.4.2.jar",
                       "sha256":  "3b219c670ba24b729cfef58873e62f9347c4b7ebdc03110128051101ba69b9ef",
-                      "size":  22022105,
-                      "url":  "https://edge.forgecdn.net/files/7929/510/cobblemon_ranked-v1.4.2.jar"
+                      "size":  22022105
                   },
                   {
                       "path":  "mods/cobblemon-additions-4.1.6.jar",
@@ -1694,14 +1693,12 @@
                   {
                       "path":  "mods/rctapi-fabric-1.21.1-0.15.0-beta.jar",
                       "sha256":  "65adeb9355b6bea23ddfe2cbdfdbd0af3072e8cb3ec5ba3e6fef176ad6475cc7",
-                      "size":  233126,
-                      "url":  "https://edge.forgecdn.net/files/7791/654/rctapi-fabric-1.21.1-0.15.0-beta.jar"
+                      "size":  233126
                   },
                   {
                       "path":  "mods/rctmod-fabric-1.21.1-0.17.7-beta.jar",
                       "sha256":  "95d9398d8fc96c37602282a48fb6e3ca56abbed439a42d93565e1ab2a6b252fe",
-                      "size":  4762456,
-                      "url":  "https://edge.forgecdn.net/files/7780/713/rctmod-fabric-1.21.1-0.17.7-beta.jar"
+                      "size":  4762456
                   },
                   {
                       "path":  "mods/rechiseled-1.2.4-fabric-mc1.21.jar",
@@ -10151,6 +10148,21 @@
                       "sha256":  "5cbf4d99bc7ce4f0df5c15974d276e0949bf6974d48d88a77d5e307b0b9be8af",
                       "size":  522973,
                       "url":  "https://edge.forgecdn.net/files/7574/260/ComplementaryUnbound_r5.7.1.zip"
+                  },
+                  {
+                      "path":  "mods/cobblemon-trainer-battle-1.11.12+1.7.3.jar",
+                      "sha256":  "787ad86f5b685a0f0cd26928a1cbd990daee14c00e4e2e61d824cec6985f274a",
+                      "size":  12739072
+                  },
+                  {
+                      "path":  "mods/gcverse-rct-team-preview-1.0.1.jar",
+                      "sha256":  "7043da55a2606ec73d49a722be321d996eed34924dc6019969d307cf89523260",
+                      "size":  21035996
+                  },
+                  {
+                      "path":  "mods/gcm-gym-skins-1.0.0.jar",
+                      "sha256":  "ead89758b29c193cb8f695712563a92ed771ebe23cbc8995967f022b91c92ee1",
+                      "size":  9516
                   }
               ]
 }
