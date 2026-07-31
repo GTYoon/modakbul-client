@@ -1,5 +1,5 @@
 {
-    "version":  "1.0.25",
+    "version":  "1.0.27",
     "rss":  "https://github.com/GTYoon/modakbul-launcher/releases.atom",
     "servers":  [
                     {
@@ -7,7 +7,7 @@
                         "name":  "모닥불 Season 1",
                         "description":  "Cobblemon 모닥불 Season 1 · Minecraft 1.21.1 · Fabric 0.19.3",
                         "icon":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/server-icon.png",
-                        "version":  "1.0.25",
+                        "version":  "1.0.27",
                         "address":  "116.126.112.66:25565",
                         "minecraftVersion":  "1.21.1",
                         "javaOptions":  {
@@ -2520,17 +2520,6 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.fabricmod:mod-a71d6640fd6c56c9:1.0.24@jar",
-                                            "name":  "cobblemon_ranked-v1.4.2.jar",
-                                            "type":  "FabricMod",
-                                            "artifact":  {
-                                                             "size":  22022105,
-                                                             "MD5":  "2ae12fa791d0f10846961a23d51498fe",
-                                                             "url":  "https://edge.forgecdn.net/files/7929/510/cobblemon_ranked-v1.4.2.jar",
-                                                             "path":  "cobblemon_ranked-v1.4.2.jar"
-                                                         }
-                                        },
-                                        {
                                             "id":  "generated.fabricmod:mod-c101886059bd5943:1.0.24@jar",
                                             "name":  "cobblemon-additions-4.1.6.jar",
                                             "type":  "FabricMod",
@@ -2594,17 +2583,6 @@
                                                              "MD5":  "3ce6c02cef8779430f144371c478bb1e",
                                                              "url":  "https://edge.forgecdn.net/files/7857/464/cobblenav-fabric-2.3.2.jar",
                                                              "path":  "cobblenav-fabric-2.3.2.jar"
-                                                         }
-                                        },
-                                        {
-                                            "id":  "generated.fabricmod:mod-ef083bdd488cdf9e:1.0.24@jar",
-                                            "name":  "CobbleSpawnAlertReforged-2.8.0.jar",
-                                            "type":  "FabricMod",
-                                            "artifact":  {
-                                                             "size":  3880822,
-                                                             "MD5":  "660e00c244df66d9de10e876fe80ca95",
-                                                             "url":  "https://edge.forgecdn.net/files/8342/265/CobbleSpawnAlertReforged-2.8.0.jar",
-                                                             "path":  "CobbleSpawnAlertReforged-2.8.0.jar"
                                                          }
                                         },
                                         {
@@ -2880,28 +2858,6 @@
                                                              "MD5":  "dcedb9014b228c01941b2ef4f2743f19",
                                                              "url":  "https://edge.forgecdn.net/files/7568/948/fzzy_config-0.7.6%2b1.21.jar",
                                                              "path":  "fzzy_config-0.7.6+1.21.jar"
-                                                         }
-                                        },
-                                        {
-                                            "id":  "generated.fabricmod:mod-6c84251e90b69b31:1.0.24@jar",
-                                            "name":  "gcm-claims-1.1.0.jar",
-                                            "type":  "FabricMod",
-                                            "artifact":  {
-                                                             "size":  43996,
-                                                             "MD5":  "764d2015d96923fd3724f98ed83e110f",
-                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/gcm-claims-1.1.0.jar",
-                                                             "path":  "gcm-claims-1.1.0.jar"
-                                                         }
-                                        },
-                                        {
-                                            "id":  "generated.fabricmod:mod-affb8776b6813088:1.0.24@jar",
-                                            "name":  "gcm-client-localization-1.0.5.jar",
-                                            "type":  "FabricMod",
-                                            "artifact":  {
-                                                             "size":  799841,
-                                                             "MD5":  "a6453a0c4b1461e3727bfcc63ca54904",
-                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/gcm-client-localization-1.0.5.jar",
-                                                             "path":  "gcm-client-localization-1.0.5.jar"
                                                          }
                                         },
                                         {
@@ -3419,28 +3375,6 @@
                                                              "MD5":  "a576344a9af471b67b47437adcdd2a63",
                                                              "url":  "https://edge.forgecdn.net/files/6376/530/pokeblocks-1.4.0-1.21.1.jar",
                                                              "path":  "pokeblocks-1.4.0-1.21.1.jar"
-                                                         }
-                                        },
-                                        {
-                                            "id":  "generated.fabricmod:mod-80832bbc9fed7b09:1.0.24@jar",
-                                            "name":  "rctapi-fabric-1.21.1-0.15.0-beta.jar",
-                                            "type":  "FabricMod",
-                                            "artifact":  {
-                                                             "size":  233126,
-                                                             "MD5":  "e5b864174e0a4b7eb1b887b5165df3f7",
-                                                             "url":  "https://edge.forgecdn.net/files/7791/654/rctapi-fabric-1.21.1-0.15.0-beta.jar",
-                                                             "path":  "rctapi-fabric-1.21.1-0.15.0-beta.jar"
-                                                         }
-                                        },
-                                        {
-                                            "id":  "generated.fabricmod:mod-aeb96db374ef1042:1.0.24@jar",
-                                            "name":  "rctmod-fabric-1.21.1-0.17.7-beta.jar",
-                                            "type":  "FabricMod",
-                                            "artifact":  {
-                                                             "size":  4762456,
-                                                             "MD5":  "615dfb5e74e0b1c077d5af6d9dee4955",
-                                                             "url":  "https://edge.forgecdn.net/files/7780/713/rctmod-fabric-1.21.1-0.17.7-beta.jar",
-                                                             "path":  "rctmod-fabric-1.21.1-0.17.7-beta.jar"
                                                          }
                                         },
                                         {
@@ -22089,14 +22023,102 @@
                                                          }
                                         },
                                         {
-                                            "id":  "generated.fabricmod:mod-29af2c5ff06502f1:1.0.25@jar",
-                                            "name":  "gcm-client-localization-1.0.0.jar",
+                                            "id":  "generated.fabricmod:mod-affb8776b6813088:1.0.27@jar",
+                                            "name":  "gcm-client-localization-1.0.5.jar",
                                             "type":  "FabricMod",
                                             "artifact":  {
-                                                             "size":  786106,
-                                                             "MD5":  "b6e41a00091d53c42ada24c84396b33d",
-                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/gcm-client-localization-1.0.0.jar",
-                                                             "path":  "gcm-client-localization-1.0.0.jar"
+                                                             "size":  799841,
+                                                             "MD5":  "a6453a0c4b1461e3727bfcc63ca54904",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/gcm-client-localization-1.0.5.jar",
+                                                             "path":  "gcm-client-localization-1.0.5.jar"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.fabricmod:mod-c50b39fb5b5deba6:1.0.27@jar",
+                                            "name":  "cobblemon-trainer-battle-1.11.12+1.7.3.jar",
+                                            "type":  "FabricMod",
+                                            "artifact":  {
+                                                             "size":  12739072,
+                                                             "MD5":  "2e8332357d82af3861df896fe4524aa3",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/cobblemon-trainer-battle-1.11.12%2B1.7.3.jar",
+                                                             "path":  "cobblemon-trainer-battle-1.11.12+1.7.3.jar"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.fabricmod:mod-80832bbc9fed7b09:1.0.27@jar",
+                                            "name":  "rctapi-fabric-1.21.1-0.15.0-beta.jar",
+                                            "type":  "FabricMod",
+                                            "artifact":  {
+                                                             "size":  233126,
+                                                             "MD5":  "e5b864174e0a4b7eb1b887b5165df3f7",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/rctapi-fabric-1.21.1-0.15.0-beta.jar",
+                                                             "path":  "rctapi-fabric-1.21.1-0.15.0-beta.jar"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.fabricmod:mod-aeb96db374ef1042:1.0.27@jar",
+                                            "name":  "rctmod-fabric-1.21.1-0.17.7-beta.jar",
+                                            "type":  "FabricMod",
+                                            "artifact":  {
+                                                             "size":  4762456,
+                                                             "MD5":  "615dfb5e74e0b1c077d5af6d9dee4955",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/rctmod-fabric-1.21.1-0.17.7-beta.jar",
+                                                             "path":  "rctmod-fabric-1.21.1-0.17.7-beta.jar"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.fabricmod:mod-ef083bdd488cdf9e:1.0.27@jar",
+                                            "name":  "CobbleSpawnAlertReforged-2.8.0.jar",
+                                            "type":  "FabricMod",
+                                            "artifact":  {
+                                                             "size":  3845698,
+                                                             "MD5":  "22c5dda4d8bba0792ad1695c4ebb2752",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/CobbleSpawnAlertReforged-2.8.0.jar",
+                                                             "path":  "CobbleSpawnAlertReforged-2.8.0.jar"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.fabricmod:mod-6c84251e90b69b31:1.0.27@jar",
+                                            "name":  "gcm-claims-1.1.0.jar",
+                                            "type":  "FabricMod",
+                                            "artifact":  {
+                                                             "size":  45742,
+                                                             "MD5":  "e42879984abab376c53f057b3c78c63e",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/gcm-claims-1.1.0.jar",
+                                                             "path":  "gcm-claims-1.1.0.jar"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.fabricmod:mod-a71d6640fd6c56c9:1.0.27@jar",
+                                            "name":  "cobblemon_ranked-v1.4.2.jar",
+                                            "type":  "FabricMod",
+                                            "artifact":  {
+                                                             "size":  22022105,
+                                                             "MD5":  "2ae12fa791d0f10846961a23d51498fe",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/cobblemon_ranked-v1.4.2.jar",
+                                                             "path":  "cobblemon_ranked-v1.4.2.jar"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.fabricmod:mod-013afc947c1de49a:1.0.27@jar",
+                                            "name":  "gcverse-rct-team-preview-1.0.1.jar",
+                                            "type":  "FabricMod",
+                                            "artifact":  {
+                                                             "size":  21035996,
+                                                             "MD5":  "8ed99a530ae05e268a9d74335f029977",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/gcverse-rct-team-preview-1.0.1.jar",
+                                                             "path":  "gcverse-rct-team-preview-1.0.1.jar"
+                                                         }
+                                        },
+                                        {
+                                            "id":  "generated.fabricmod:mod-71f6e44d45ddeab6:1.0.27@jar",
+                                            "name":  "gcm-gym-skins-1.0.0.jar",
+                                            "type":  "FabricMod",
+                                            "artifact":  {
+                                                             "size":  9516,
+                                                             "MD5":  "36411d6d90b3c38b15f0db78c1081d2e",
+                                                             "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/gcm-gym-skins-1.0.0.jar",
+                                                             "path":  "gcm-gym-skins-1.0.0.jar"
                                                          }
                                         }
                                     ]
