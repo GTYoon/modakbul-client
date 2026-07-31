@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.26",
+    "version":  "1.0.27",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-31T10:33:24.8656608Z",
+    "generatedAt":  "2026-07-31T10:45:24.6039865Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -1244,9 +1244,8 @@
                   },
                   {
                       "path":  "mods/CobbleSpawnAlertReforged-2.8.0.jar",
-                      "sha256":  "1b92e536fe5a99f5a708df7397e80f986d2eadfda03caff6dd4a80956cfbbefe",
-                      "size":  3880822,
-                      "url":  "https://edge.forgecdn.net/files/8342/265/CobbleSpawnAlertReforged-2.8.0.jar"
+                      "sha256":  "1c6ad2f63ffd49d035b5fc10b35aa25c197f4a9a1719fb18f09fa36419dbaa26",
+                      "size":  3845698
                   },
                   {
                       "path":  "mods/CobbleverseBadges-1.3.jar",
@@ -1399,13 +1398,8 @@
                   },
                   {
                       "path":  "mods/gcm-claims-1.1.0.jar",
-                      "sha256":  "e0c9241e9efa190c95b4b3b84875a6cda5b98cb4234bf8608e17cd13722fa9a9",
-                      "size":  43996
-                  },
-                  {
-                      "path":  "mods/gcm-client-localization-1.0.0.jar",
-                      "sha256":  "ede90960eec1dc3f29c09b74e9dd15f160df6b585b25e5ac2f7e9653676cb6f8",
-                      "size":  786106
+                      "sha256":  "19f518782983402dcf13f8fff6e43865b56c39411c36a870497903614b127604",
+                      "size":  45742
                   },
                   {
                       "path":  "mods/gcm-client-localization-1.0.5.jar",
