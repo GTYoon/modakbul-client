@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "?????Season 1",
-    "version":  "1.0.41",
+    "version":  "1.0.42",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-31T22:25:50.4938833Z",
+    "generatedAt":  "2026-07-31T22:49:04.6874287Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -1418,9 +1418,9 @@
                   },
                   {
                       "path":  "mods/gcverse-rct-team-preview-1.0.7.jar",
-                      "sha256":  "3c96556cbf61bba704e4c5964b203d3cc7320eb3bf4b28814386d67d0a7767c5",
-                      "size":  6382848,
-                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.31/gcverse-rct-team-preview-1.0.7.jar"
+                      "sha256":  "410c96a1dea2ce99a144bc36f0a89aaffe1e35a73faa2e4cb021f583a4010f4c",
+                      "size":  6387416,
+                      "url":  "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/mods/gcverse-rct-team-preview-1.0.7.jar"
                   },
                   {
                       "path":  "mods/geckolib-fabric-1.21.1-4.8.4.jar",
