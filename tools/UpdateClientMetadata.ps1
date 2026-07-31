@@ -1,1 +1,185 @@
-W0NtZGxldEJpbmRpbmcoKV0KcGFyYW0oCiAgICBbUGFyYW1ldGVyKE1hbmRhdG9yeSA9ICR0cnVlKV0KICAgIFtzdHJpbmddJFZlcnNpb24KKQoKJEVycm9yQWN0aW9uUHJlZmVyZW5jZSA9ICJTdG9wIgoKJFJlcG9zaXRvcnlSb290ID0gW0lPLlBhdGhdOjpHZXRGdWxsUGF0aCgoU3BsaXQtUGF0aCAtUGFyZW50ICRQU1NjcmlwdFJvb3QpKQokRmlsZXNSb290ID0gSm9pbi1QYXRoICRSZXBvc2l0b3J5Um9vdCAiZmlsZXMiCiRNYW5pZmVzdFBhdGggPSBKb2luLVBhdGggJFJlcG9zaXRvcnlSb290ICJtYW5pZmVzdC5qc29uIgokRGlzdHJpYnV0aW9uUGF0aCA9IEpvaW4tUGF0aCAkUmVwb3NpdG9yeVJvb3QgImRpc3RyaWJ1dGlvbi5qc29uIgokVXRmOE5vQm9tID0gW1RleHQuVVRGOEVuY29kaW5nXTo6bmV3KCRmYWxzZSkKCiRNYW5hZ2VkUGF0aHMgPSBAKAogICAgImNvbmZpZy9jb2JibGVtb24tYmF0dGxlLWV4dHJhcy5qc29uIiwKICAgICJjb25maWcvY29iYmxldmVyc2UvYXNzZXRzL2NvYmJsZW1vbi1iYXR0bGUtZXh0cmFzL2xhbmcva29fa3IuanNvbiIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvaWNvbl9hcmVuYS5wbmciLAogICAgImNvbmZpZy9mYW5jeW1lbnUvYXNzZXRzL2ljb25fY2FzaW5vLnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvaWNvbl9jb21wYXNzLnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvaWNvbl9leGl0LnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvaWNvbl9ob21lLnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvaWNvbl9tYXJrZXQucG5nIiwKICAgICJjb25maWcvZmFuY3ltZW51L2Fzc2V0cy9pY29uX3Bva2Vtb24ucG5nIiwKICAgICJjb25maWcvZmFuY3ltZW51L2Fzc2V0cy9pY29uX3NldHRpbmdzLnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvaWNvbl92aWxsYWdlLnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvdWlfYnV0dG9uLnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvdWlfYnV0dG9uX2hvdmVyLnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvdWlfYnV0dG9uX2luYWN0aXZlLnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvdWlfYnV0dG9uX3NlbGVjdGVkLnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9hc3NldHMvdWlfcGFuZWwucG5nIiwKICAgICJjb25maWcvZmFuY3ltZW51L2Fzc2V0cy91aV9wYW5lbF9zb2Z0LnBuZyIsCiAgICAiY29uZmlnL2ZhbmN5bWVudS9jdXN0b21fZ3VpX3NjcmVlbnMudHh0IiwKICAgICJjb25maWcvZmFuY3ltZW51L2N1c3RvbWl6YXRpb24vY29iYmxldmVyc2VfcGF1c2VfbWVudS50eHQiLAogICAgImNvbmZpZy9mYW5jeW1lbnUvY3VzdG9taXphdGlvbi9tb2Rha2J1bF9xdWlja19ndWlkZS50eHQiLAogICAgImNvbmZpZy9mYW5jeW1lbnUvY3VzdG9taXphdGlvbi9tb2Rha2J1bF9yZWdpb25fdHJhdmVsLnR4dCIsCiAgICAibW9kcy9nY20tY2xpZW50LWxvY2FsaXphdGlvbi0xLjAuMC5qYXIiLAogICAgIm1vZHMvd2lsZF9iYXR0bGVfYXBpLWZhYnJpYy0xLjEuMi5qYXIiCikKCiMgRmlsZXMgaW50ZW50aW9uYWxseSByZXRpcmVkIGZyb20gdGhlIHBhY2suICBLZWVwaW5nIHRoaXMgbGlzdCBsZXRzIHRoZQojIGdlbmVyYXRlZCBtYW5pZmVzdCBvbWl0IHRoZW0gYW5kIGxldHMgdGhlIGNsaWVudC1zaWRlIHVwZGF0ZXIgcmVtb3ZlIHRoZQojIHByaW9yLCBoYXNoLXZlcmlmaWVkIGNvcHkgb24gdGhlIG5leHQgdXBkYXRlLgokUmVtb3ZlZFBhdGhzID0gQCgKICAgICJtb2RzL2NvYmJsZW1vbl9iYXR0bGVfdG93ZXItZmFicmljLTEuMTAuMjIuamFyIgopCgpmdW5jdGlvbiBHZXQtVGV4dFNoYTFQcmVmaXggewogICAgcGFyYW0oW3N0cmluZ10kVGV4dCkKCiAgICAkc2hhMSA9IFtTZWN1cml0eS5DcnlwdG9ncmFwaHkuU0hBMV06OkNyZWF0ZSgpCiAgICB0cnkgewogICAgICAgICRieXRlcyA9IFtUZXh0LkVuY29kaW5nXTo6VVRGOC5HZXRCeXRlcygkVGV4dCkKICAgICAgICAkaGFzaCA9ICRzaGExLkNvbXB1dGVIYXNoKCRieXRlcykKICAgICAgICAkaGV4ID0gLWpvaW4gKCRoYXNoIHwgRm9yRWFjaC1PYmplY3QgeyAkXy5Ub1N0cmluZygieDIiKSB9KQogICAgICAgIHJldHVybiAkaGV4LlN1YnN0cmluZygwLCAxNikKICAgIH0gZmluYWxseSB7CiAgICAgICAgJHNoYTEuRGlzcG9zZSgpCiAgICB9Cn0KCmZ1bmN0aW9uIEdldC1Tb3VyY2VGaWxlIHsKICAgIHBhcmFtKFtzdHJpbmddJFJlbGF0aXZlUGF0aCkKCiAgICAkY2FuZGlkYXRlID0gW0lPLlBhdGhdOjpHZXRGdWxsUGF0aCgoSm9pbi1QYXRoICRGaWxlc1Jvb3QgJFJlbGF0aXZlUGF0aC5SZXBsYWNlKCIvIiwgIlwiKSkpCiAgICAkYWxsb3dlZFJvb3QgPSAkRmlsZXNSb290LlRyaW1FbmQoIlwiKSArICJcIgogICAgaWYgKC1ub3QgJGNhbmRpZGF0ZS5TdGFydHNXaXRoKCRhbGxvd2VkUm9vdCwgW1N0cmluZ0NvbXBhcmlzb25dOjpPcmRpbmFsSWdub3JlQ2FzZSkpIHsKICAgICAgICB0aHJvdyAiTWFuYWdlZCBwYXRoIGVzY2FwZWQgdGhlIGZpbGVzIHJvb3Q6ICRSZWxhdGl2ZVBhdGgiCiAgICB9CiAgICBpZiAoLW5vdCAoVGVzdC1QYXRoIC1MaXRlcmFsUGF0aCAkY2FuZGlkYXRlIC1QYXRoVHlwZSBMZWFmKSkgewogICAgICAgIHRocm93ICJNYW5hZ2VkIGNsaWVudCBmaWxlIGRvZXMgbm90IGV4aXN0OiAkUmVsYXRpdmVQYXRoIgogICAgfQogICAgcmV0dXJuIEdldC1JdGVtIC1MaXRlcmFsUGF0aCAkY2FuZGlkYXRlCn0KCiRtYW5pZmVzdCA9IEdldC1Db250ZW50IC1MaXRlcmFsUGF0aCAkTWFuaWZlc3RQYXRoIC1SYXcgLUVuY29kaW5nIFVURjggfCBDb252ZXJ0RnJvbS1Kc29uCiRtYW5pZmVzdC52ZXJzaW9uID0gJFZlcnNpb24KJG1hbmlmZXN0LmdlbmVyYXRlZEF0ID0gKEdldC1EYXRlKS5Ub1VuaXZlcnNhbFRpbWUoKS5Ub1N0cmluZygibyIpCiRtYW5pZmVzdEZpbGVzID0gW1N5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3RdOjpuZXcoKQpmb3JlYWNoICgkZW50cnkgaW4gQCgkbWFuaWZlc3QuZmlsZXMpKSB7CiAgICBpZiAoJFJlbW92ZWRQYXRocyAtbm90Y29udGFpbnMgW3N0cmluZ10kZW50cnkucGF0aCkgewogICAgICAgIFt2b2lkXSRtYW5pZmVzdEZpbGVzLkFkZCgkZW50cnkpCiAgICB9Cn0KCmZvcmVhY2ggKCRyZWxhdGl2ZVBhdGggaW4gJE1hbmFnZWRQYXRocykgewogICAgJHNvdXJjZSA9IEdldC1Tb3VyY2VGaWxlIC1SZWxhdGl2ZVBhdGggJHJlbGF0aXZlUGF0aAogICAgJHNoYTI1NiA9IChHZXQtRmlsZUhhc2ggLUFsZ29yaXRobSBTSEEyNTYgLUxpdGVyYWxQYXRoICRzb3VyY2UuRnVsbE5hbWUpLkhhc2guVG9Mb3dlckludmFyaWFudCgpCiAgICAkZW50cnkgPSBAKCRtYW5pZmVzdEZpbGVzIHwgV2hlcmUtT2JqZWN0IHsgW3N0cmluZ10kXy5wYXRoIC1lcSAkcmVsYXRpdmVQYXRoIH0gfCBTZWxlY3QtT2JqZWN0IC1GaXJzdCAxKQogICAgaWYgKCRlbnRyeS5Db3VudCAtZXEgMCkgewogICAgICAgIFt2b2lkXSRtYW5pZmVzdEZpbGVzLkFkZChbcHNjdXN0b21vYmplY3RdW29yZGVyZWRdQHsKICAgICAgICAgICAgcGF0aCA9ICRyZWxhdGl2ZVBhdGgKICAgICAgICAgICAgc2hhMjU2ID0gJHNoYTI1NgogICAgICAgICAgICBzaXplID0gW2xvbmddJHNvdXJjZS5MZW5ndGgKICAgICAgICB9KQogICAgfSBlbHNlIHsKICAgICAgICAkZW50cnlbMF0uc2hhMjU2ID0gJHNoYTI1NgogICAgICAgICRlbnRyeVswXS5zaXplID0gW2xvbmddJHNvdXJjZS5MZW5ndGgKICAgIH0KfQokbWFuaWZlc3QuZmlsZXMgPSBAKCRtYW5pZmVzdEZpbGVzIHwgU29ydC1PYmplY3QgeyBbc3RyaW5nXSRfLnBhdGggfSkKW0lPLkZpbGVdOjpXcml0ZUFsbFRleHQoCiAgICAkTWFuaWZlc3RQYXRoLAogICAgKCRtYW5pZmVzdCB8IENvbnZlcnRUby1Kc29uIC1EZXB0aCAxMDApLAogICAgJFV0ZjhOb0JvbQopCgokZGlzdHJpYnV0aW9uID0gR2V0LUNvbnRlbnQgLUxpdGVyYWxQYXRoICREaXN0cmlidXRpb25QYXRoIC1SYXcgLUVuY29kaW5nIFVURjggfCBDb252ZXJ0RnJvbS1Kc29uCiRkaXN0cmlidXRpb24udmVyc2lvbiA9ICRWZXJzaW9uCmZvcmVhY2ggKCRzZXJ2ZXIgaW4gQCgkZGlzdHJpYnV0aW9uLnNlcnZlcnMpKSB7CiAgICAkc2VydmVyLnZlcnNpb24gPSAkVmVyc2lvbgogICAgJG1vZHVsZXMgPSBbU3lzdGVtLkNvbGxlY3Rpb25zLkFycmF5TGlzdF06Om5ldygpCiAgICBmb3JlYWNoICgkbW9kdWxlIGluIEAoJHNlcnZlci5tb2R1bGVzKSkgewogICAgICAgICRpc1JldGlyZWQgPSAkZmFsc2UKICAgICAgICBmb3JlYWNoICgkcmVtb3ZlZFBhdGggaW4gJFJlbW92ZWRQYXRocykgewogICAgICAgICAgICAkcmVtb3ZlZEFydGlmYWN0UGF0aCA9IFtJTy5QYXRoXTo6R2V0RmlsZU5hbWUoJHJlbW92ZWRQYXRoKQogICAgICAgICAgICBpZiAoJG51bGwgLW5lICRtb2R1bGUuYXJ0aWZhY3QgLWFuZCAoCiAgICAgICAgICAgICAgICBbc3RyaW5nXSRtb2R1bGUuYXJ0aWZhY3QucGF0aCAtZXEgJHJlbW92ZWRQYXRoIC1vcgogICAgICAgICAgICAgICAgW3N0cmluZ10kbW9kdWxlLmFydGlmYWN0LnBhdGggLWVxICRyZW1vdmVkQXJ0aWZhY3RQYXRoCiAgICAgICAgICAgICkpIHsKICAgICAgICAgICAgICAgICRpc1JldGlyZWQgPSAkdHJ1ZQogICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBpZiAoLW5vdCAkaXNSZXRpcmVkKSB7CiAgICAgICAgICAgIFt2b2lkXSRtb2R1bGVzLkFkZCgkbW9kdWxlKQogICAgICAgIH0KICAgIH0KCiAgICBmb3JlYWNoICgkcmVsYXRpdmVQYXRoIGluICRNYW5hZ2VkUGF0aHMpIHsKICAgICAgICAkc291cmNlID0gR2V0LVNvdXJjZUZpbGUgLVJlbGF0aXZlUGF0aCAkcmVsYXRpdmVQYXRoCiAgICAgICAgJG1kNSA9IChHZXQtRmlsZUhhc2ggLUFsZ29yaXRobSBNRDUgLUxpdGVyYWxQYXRoICRzb3VyY2UuRnVsbE5hbWUpLkhhc2guVG9Mb3dlckludmFyaWFudCgpCiAgICAgICAgJGlzRmFicmljTW9kID0gJHJlbGF0aXZlUGF0aC5TdGFydHNXaXRoKCJtb2RzLyIsIFtTdHJpbmdDb21wYXJpc29uXTo6T3JkaW5hbElnbm9yZUNhc2UpCiAgICAgICAgJG1vZHVsZUlkID0gaWYgKCRpc0ZhYnJpY01vZCkgewogICAgICAgICAgICAiZ2VuZXJhdGVkLmZhYnJpY21vZDptb2QtJChHZXQtVGV4dFNoYTFQcmVmaXggLVRleHQgJHJlbGF0aXZlUGF0aCk6JFZlcnNpb25AamFyIgogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICJnZW5lcmF0ZWQuZmlsZTpmaWxlLSQoR2V0LVRleHRTaGExUHJlZml4IC1UZXh0ICRyZWxhdGl2ZVBhdGgpOiRWZXJzaW9uIgogICAgICAgIH0KICAgICAgICAkYXJ0aWZhY3RQYXRoID0gaWYgKCRpc0ZhYnJpY01vZCkgewogICAgICAgICAgICBbSU8uUGF0aF06OkdldEZpbGVOYW1lKCRyZWxhdGl2ZVBhdGgpCiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgJHJlbGF0aXZlUGF0aAogICAgICAgIH0KICAgICAgICAkcmF3VXJsID0gImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9HVFlvb24vbW9kYWtidWwtY2xpZW50L21haW4vZmlsZXMvJHJlbGF0aXZlUGF0aCIKICAgICAgICAkbWF0Y2hpbmcgPSBAKCRtb2R1bGVzIHwgV2hlcmUtT2JqZWN0IHsKICAgICAgICAgICAgJG51bGwgLW5lICRfLmFydGlmYWN0IC1hbmQgKAogICAgICAgICAgICAgICAgW3N0cmluZ10kXy5hcnRpZmFjdC5wYXRoIC1lcSAkcmVsYXRpdmVQYXRoIC1vciAoCiAgICAgICAgICAgICAgICAgICAgJGlzRmFicmljTW9kIC1hbmQKICAgICAgICAgICAgICAgICAgICBbc3RyaW5nXSRfLnR5cGUgLWVxICJGYWJyaWNNb2QiIC1hbmQKICAgICAgICAgICAgICAgICAgICBbc3RyaW5nXSRfLmFydGlmYWN0LnBhdGggLWVxICRhcnRpZmFjdFBhdGgKICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgKQogICAgICAgIH0gfCBTZWxlY3QtT2JqZWN0IC1GaXJzdCAxKQoKICAgICAgICBpZiAoJG1hdGNoaW5nLkNvdW50IC1lcSAwKSB7CiAgICAgICAgICAgIFt2b2lkXSRtb2R1bGVzLkFkZChbcHNjdXN0b21vYmplY3RdW29yZGVyZWRdQHsKICAgICAgICAgICAgICAgIGlkID0gJG1vZHVsZUlkCiAgICAgICAgICAgICAgICBuYW1lID0gW0lPLlBhdGhdOjpHZXRGaWxlTmFtZSgkcmVsYXRpdmVQYXRoKQogICAgICAgICAgICAgICAgdHlwZSA9IGlmICgkaXNGYWJyaWNNb2QpIHsgIkZhYnJpY01vZCIgfSBlbHNlIHsgIkZpbGUiIH0KICAgICAgICAgICAgICAgIGFydGlmYWN0ID0gW3BzY3VzdG9tb2JqZWN0XVtvcmRlcmVkXUB7CiAgICAgICAgICAgICAgICAgICAgc2l6ZSA9IFtsb25nXSRzb3VyY2UuTGVuZ3RoCiAgICAgICAgICAgICAgICAgICAgTUQ1ID0gJG1kNQogICAgICAgICAgICAgICAgICAgIHVybCA9ICRyYXdVcmwKICAgICAgICAgICAgICAgICAgICBwYXRoID0gJGFydGlmYWN0UGF0aAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9KQogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICRtYXRjaGluZ1swXS5pZCA9ICRtb2R1bGVJZAogICAgICAgICAgICAkbWF0Y2hpbmdbMF0ubmFtZSA9IFtJTy5QYXRoXTo6R2V0RmlsZU5hbWUoJHJlbGF0aXZlUGF0aCkKICAgICAgICAgICAgJG1hdGNoaW5nWzBdLnR5cGUgPSBpZiAoJGlzRmFicmljTW9kKSB7ICJGYWJyaWNNb2QiIH0gZWxzZSB7ICJGaWxlIiB9CiAgICAgICAgICAgICRtYXRjaGluZ1swXS5hcnRpZmFjdC5zaXplID0gW2xvbmddJHNvdXJjZS5MZW5ndGgKICAgICAgICAgICAgJG1hdGNoaW5nWzBdLmFydGlmYWN0Lk1ENSA9ICRtZDUKICAgICAgICAgICAgJG1hdGNoaW5nWzBdLmFydGlmYWN0LnVybCA9ICRyYXdVcmwKICAgICAgICAgICAgJG1hdGNoaW5nWzBdLmFydGlmYWN0LnBhdGggPSAkYXJ0aWZhY3RQYXRoCiAgICAgICAgfQogICAgfQogICAgJHNlcnZlci5tb2R1bGVzID0gQCgkbW9kdWxlcykKfQpbSU8uRmlsZV06OldyaXRlQWxsVGV4dCgKICAgICREaXN0cmlidXRpb25QYXRoLAogICAgKCRkaXN0cmlidXRpb24gfCBDb252ZXJ0VG8tSnNvbiAtRGVwdGggMTAwKSwKICAgICRVdGY4Tm9Cb20KKQoKV3JpdGUtSG9zdCAiVXBkYXRlZCBtYW5pZmVzdC5qc29uIGFuZCBkaXN0cmlidXRpb24uanNvbiB0byAkVmVyc2lvbiIK
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory = $true)]
+    [string]$Version
+)
+
+$ErrorActionPreference = "Stop"
+
+$RepositoryRoot = [IO.Path]::GetFullPath((Split-Path -Parent $PSScriptRoot))
+$FilesRoot = Join-Path $RepositoryRoot "files"
+$ManifestPath = Join-Path $RepositoryRoot "manifest.json"
+$DistributionPath = Join-Path $RepositoryRoot "distribution.json"
+$Utf8NoBom = [Text.UTF8Encoding]::new($false)
+
+$ManagedPaths = @(
+    "config/cobblemon-battle-extras.json",
+    "config/cobbleverse/assets/cobblemon-battle-extras/lang/ko_kr.json",
+    "config/fancymenu/assets/icon_arena.png",
+    "config/fancymenu/assets/icon_casino.png",
+    "config/fancymenu/assets/icon_compass.png",
+    "config/fancymenu/assets/icon_exit.png",
+    "config/fancymenu/assets/icon_home.png",
+    "config/fancymenu/assets/icon_market.png",
+    "config/fancymenu/assets/icon_pokemon.png",
+    "config/fancymenu/assets/icon_settings.png",
+    "config/fancymenu/assets/icon_village.png",
+    "config/fancymenu/assets/ui_button.png",
+    "config/fancymenu/assets/ui_button_hover.png",
+    "config/fancymenu/assets/ui_button_inactive.png",
+    "config/fancymenu/assets/ui_button_selected.png",
+    "config/fancymenu/assets/ui_panel.png",
+    "config/fancymenu/assets/ui_panel_soft.png",
+    "config/fancymenu/custom_gui_screens.txt",
+    "config/fancymenu/customization/cobbleverse_pause_menu.txt",
+    "config/fancymenu/customization/modakbul_quick_guide.txt",
+    "config/fancymenu/customization/modakbul_region_travel.txt",
+    "mods/gcm-client-localization-1.0.0.jar",
+    "mods/wild_battle_api-fabric-1.1.2.jar"
+)
+
+# Files intentionally retired from the pack.  Keeping this list lets the
+# generated manifest omit them and lets the client-side updater remove the
+# prior, hash-verified copy on the next update.
+$RemovedPaths = @(
+    "mods/cobblemon_battle_tower-fabric-1.10.22.jar"
+)
+
+function Get-TextSha1Prefix {
+    param([string]$Text)
+
+    $sha1 = [Security.Cryptography.SHA1]::Create()
+    try {
+        $bytes = [Text.Encoding]::UTF8.GetBytes($Text)
+        $hash = $sha1.ComputeHash($bytes)
+        $hex = -join ($hash | ForEach-Object { $_.ToString("x2") })
+        return $hex.Substring(0, 16)
+    } finally {
+        $sha1.Dispose()
+    }
+}
+
+function Get-SourceFile {
+    param([string]$RelativePath)
+
+    $candidate = [IO.Path]::GetFullPath((Join-Path $FilesRoot $RelativePath.Replace("/", "\")))
+    $allowedRoot = $FilesRoot.TrimEnd("\") + "\"
+    if (-not $candidate.StartsWith($allowedRoot, [StringComparison]::OrdinalIgnoreCase)) {
+        throw "Managed path escaped the files root: $RelativePath"
+    }
+    if (-not (Test-Path -LiteralPath $candidate -PathType Leaf)) {
+        throw "Managed client file does not exist: $RelativePath"
+    }
+    return Get-Item -LiteralPath $candidate
+}
+
+$manifest = Get-Content -LiteralPath $ManifestPath -Raw -Encoding UTF8 | ConvertFrom-Json
+$manifest.version = $Version
+$manifest.generatedAt = (Get-Date).ToUniversalTime().ToString("o")
+$manifestFiles = [System.Collections.ArrayList]::new()
+foreach ($entry in @($manifest.files)) {
+    if ($RemovedPaths -notcontains [string]$entry.path) {
+        [void]$manifestFiles.Add($entry)
+    }
+}
+
+foreach ($relativePath in $ManagedPaths) {
+    $source = Get-SourceFile -RelativePath $relativePath
+    $sha256 = (Get-FileHash -Algorithm SHA256 -LiteralPath $source.FullName).Hash.ToLowerInvariant()
+    $entry = @($manifestFiles | Where-Object { [string]$_.path -eq $relativePath } | Select-Object -First 1)
+    if ($entry.Count -eq 0) {
+        [void]$manifestFiles.Add([pscustomobject][ordered]@{
+            path = $relativePath
+            sha256 = $sha256
+            size = [long]$source.Length
+        })
+    } else {
+        $entry[0].sha256 = $sha256
+        $entry[0].size = [long]$source.Length
+    }
+}
+$manifest.files = @($manifestFiles | Sort-Object { [string]$_.path })
+[IO.File]::WriteAllText(
+    $ManifestPath,
+    ($manifest | ConvertTo-Json -Depth 100),
+    $Utf8NoBom
+)
+
+$distribution = Get-Content -LiteralPath $DistributionPath -Raw -Encoding UTF8 | ConvertFrom-Json
+$distribution.version = $Version
+foreach ($server in @($distribution.servers)) {
+    $server.version = $Version
+    $modules = [System.Collections.ArrayList]::new()
+    foreach ($module in @($server.modules)) {
+        $isRetired = $false
+        foreach ($removedPath in $RemovedPaths) {
+            $removedArtifactPath = [IO.Path]::GetFileName($removedPath)
+            if ($null -ne $module.artifact -and (
+                [string]$module.artifact.path -eq $removedPath -or
+                [string]$module.artifact.path -eq $removedArtifactPath
+            )) {
+                $isRetired = $true
+                break
+            }
+        }
+        if (-not $isRetired) {
+            [void]$modules.Add($module)
+        }
+    }
+
+    foreach ($relativePath in $ManagedPaths) {
+        $source = Get-SourceFile -RelativePath $relativePath
+        $md5 = (Get-FileHash -Algorithm MD5 -LiteralPath $source.FullName).Hash.ToLowerInvariant()
+        $isFabricMod = $relativePath.StartsWith("mods/", [StringComparison]::OrdinalIgnoreCase)
+        $moduleId = if ($isFabricMod) {
+            "generated.fabricmod:mod-$(Get-TextSha1Prefix -Text $relativePath):$Version@jar"
+        } else {
+            "generated.file:file-$(Get-TextSha1Prefix -Text $relativePath):$Version"
+        }
+        $artifactPath = if ($isFabricMod) {
+            [IO.Path]::GetFileName($relativePath)
+        } else {
+            $relativePath
+        }
+        $rawUrl = "https://raw.githubusercontent.com/GTYoon/modakbul-client/main/files/$relativePath"
+        $matching = @($modules | Where-Object {
+            $null -ne $_.artifact -and (
+                [string]$_.artifact.path -eq $relativePath -or (
+                    $isFabricMod -and
+                    [string]$_.type -eq "FabricMod" -and
+                    [string]$_.artifact.path -eq $artifactPath
+                )
+            )
+        } | Select-Object -First 1)
+
+        if ($matching.Count -eq 0) {
+            [void]$modules.Add([pscustomobject][ordered]@{
+                id = $moduleId
+                name = [IO.Path]::GetFileName($relativePath)
+                type = if ($isFabricMod) { "FabricMod" } else { "File" }
+                artifact = [pscustomobject][ordered]@{
+                    size = [long]$source.Length
+                    MD5 = $md5
+                    url = $rawUrl
+                    path = $artifactPath
+                }
+            })
+        } else {
+            $matching[0].id = $moduleId
+            $matching[0].name = [IO.Path]::GetFileName($relativePath)
+            $matching[0].type = if ($isFabricMod) { "FabricMod" } else { "File" }
+            $matching[0].artifact.size = [long]$source.Length
+            $matching[0].artifact.MD5 = $md5
+            $matching[0].artifact.url = $rawUrl
+            $matching[0].artifact.path = $artifactPath
+        }
+    }
+    $server.modules = @($modules)
+}
+[IO.File]::WriteAllText(
+    $DistributionPath,
+    ($distribution | ConvertTo-Json -Depth 100),
+    $Utf8NoBom
+)
+
+Write-Host "Updated manifest.json and distribution.json to $Version"
