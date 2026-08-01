@@ -33,6 +33,7 @@ key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
 key_key.brb.pin:key.keyboard.unknown
+key_key.ftbquests.quests:key.keyboard.o
 key_accessories.key.open_accessories_screen:key.keyboard.h
 key_key.catchindicator.open_config:key.keyboard.unknown
 key_key.catchrate.toggle_hud:key.keyboard.unknown
@@ -87,6 +88,9 @@ key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
 key_keybind.sophisticatedstorage.sort:key.keyboard.unknown
 key_soundsbegone.config:key.keyboard.unknown
 key_key.toms_storage.open_terminal:key.keyboard.unknown
+key_key.trashslot.toggle:key.keyboard.t
+key_key.trashslot.toggle_lock:key.keyboard.unknown
+key_key.trashslot.delete:key.keyboard.unknown
 key_gui.xaero_minimap_settings:key.keyboard.i
 key_gui.xaero_minimap_server_profiles:key.keyboard.unknown
 key_gui.xaero_zoom_in:key.keyboard.unknown

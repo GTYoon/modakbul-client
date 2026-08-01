@@ -1,11 +1,11 @@
 {
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
-    "displayName":  "?????Season 1",
-    "version":  "1.0.42",
+    "displayName":  "모닥불 Season 1",
+    "version":  "1.0.43",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-07-31T22:49:04.6874287Z",
+    "generatedAt":  "2026-08-01T01:26:21.2015273Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -549,8 +549,8 @@
                   },
                   {
                       "path":  "config/defaultoptions/keybindings.txt",
-                      "sha256":  "144235d6b1e78a8d54d4392474b52827dc941d405d1d247d973e0e409eed01f6",
-                      "size":  6209
+                      "sha256":  "d05709f09b44a7bd29ba3738638474cc17dbbe59a6cf5e00788cb7c264d99af9",
+                      "size":  6381
                   },
                   {
                       "path":  "config/defaultoptions/options.txt",
