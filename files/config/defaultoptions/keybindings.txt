@@ -86,11 +86,15 @@ key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
 key_keybind.sophisticatedstorage.sort:key.keyboard.unknown
+key_key.sophisticatedsorter.sort:key.keyboard.unknown
+key_key.sophisticatedsorter.disable:key.keyboard.unknown
 key_soundsbegone.config:key.keyboard.unknown
 key_key.toms_storage.open_terminal:key.keyboard.unknown
 key_key.trashslot.toggle:key.keyboard.t
 key_key.trashslot.toggle_lock:key.keyboard.unknown
 key_key.trashslot.delete:key.keyboard.unknown
+key_key.koreanpatch.toggle_ime:key.keyboard.unknown
+key_key.koreanpatch.toggle_langtype:key.keyboard.unknown
 key_gui.xaero_minimap_settings:key.keyboard.i
 key_gui.xaero_minimap_server_profiles:key.keyboard.unknown
 key_gui.xaero_zoom_in:key.keyboard.unknown

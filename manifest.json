@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.43",
+    "version":  "1.0.44",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-08-01T01:26:21.2015273Z",
+    "generatedAt":  "2026-08-01T04:45:23.2890721Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -549,13 +549,13 @@
                   },
                   {
                       "path":  "config/defaultoptions/keybindings.txt",
-                      "sha256":  "d05709f09b44a7bd29ba3738638474cc17dbbe59a6cf5e00788cb7c264d99af9",
-                      "size":  6381
+                      "sha256":  "2f20317ec7c89c54c63b445dac8976a613c77fd148e465c0c74c9f5ef6a3ff66",
+                      "size":  6635
                   },
                   {
                       "path":  "config/defaultoptions/options.txt",
-                      "sha256":  "d71a4f4243fc4a683a16eb1425b7d2d249c9e1fe362bbede4eaf47f5eedf1861",
-                      "size":  9908
+                      "sha256":  "b0bcdf17dc14295f402ad981e2e363694998aca60a8f397a87717112d161c9b3",
+                      "size":  10104
                   },
                   {
                       "path":  "config/defaultoptions/servers.dat",
@@ -1408,8 +1408,8 @@
                   },
                   {
                       "path":  "mods/gcm-client-localization-1.0.5.jar",
-                      "sha256":  "d615b128797a3bd79e4b55289153c399711b4664a313eecc291448a53f99cb89",
-                      "size":  799841
+                      "sha256":  "e5b9852d44d7f6db876cb3bf78836dbd96e194e8c2cc4c91c503ad7e0dfc2d93",
+                      "size":  807639
                   },
                   {
                       "path":  "mods/gcm-gym-skins-1.0.3.jar",
