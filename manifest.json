@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.54",
+    "version":  "1.0.55",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-08-02T21:28:24.7791009Z",
+    "generatedAt":  "2026-08-02T22:46:28.7656017Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -1418,8 +1418,8 @@
                   },
                   {
                       "path":  "mods/gcm-client-localization-1.0.5.jar",
-                      "sha256":  "6759c8f1f2160b60a677b2ddab704bf824fc35af56d659f017f4328933148190",
-                      "size":  811417
+                      "sha256":  "fc277c68b530a5402d4d1525abacefcee44abc5fce878df400f9f02c81a233d1",
+                      "size":  814281
                   },
                   {
                       "path":  "mods/gcm-gym-skins-1.0.3.jar",
@@ -1428,8 +1428,8 @@
                   },
                   {
                       "path":  "mods/gcverse-rct-team-preview-1.0.7.jar",
-                      "sha256":  "480b3261a840357777024638a3dc0393c1c1a661b23f976151e0d3dd4b23e92f",
-                      "size":  6408351
+                      "sha256":  "03f3e7abca3446b0f3f2359e9fdb82a4509e7b6a898ac97c2a6bec1404223db2",
+                      "size":  6412609
                   },
                   {
                       "path":  "mods/geckolib-fabric-1.21.1-4.8.4.jar",
@@ -2003,7 +2003,7 @@
                       "path":  "resourcepacks/COBBLEVERSE Soundtrack.zip",
                       "sha256":  "d6f8f26668d440792b0b2f54931052f98c7a2dc6967202a1c2b0fe80da5bf46e",
                       "size":  155271075,
-                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.54/large-d6f8f26668d44079.zip"
+                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.55/large-d6f8f26668d44079.zip"
                   },
                   {
                       "path":  "resourcepacks/COBBLEVERSE-CCC.zip",
