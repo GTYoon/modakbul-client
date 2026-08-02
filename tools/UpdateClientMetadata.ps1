@@ -34,7 +34,8 @@ $ManagedPaths = @(
     "config/fancymenu/customization/cobbleverse_pause_menu.txt",
     "config/fancymenu/customization/modakbul_quick_guide.txt",
     "config/fancymenu/customization/modakbul_region_travel.txt",
-    "mods/gcm-client-localization-1.0.0.jar",
+    "mods/gcm-client-localization-1.0.5.jar",
+    "mods/gcverse-rct-team-preview-1.0.7.jar",
     "mods/wild_battle_api-fabric-1.1.2.jar"
 )
 
@@ -178,7 +179,7 @@ foreach ($server in @($distribution.servers)) {
 }
 [IO.File]::WriteAllText(
     $DistributionPath,
-    ($distribution | ConvertTo-Json -Depth 100),
+    ($distribution | ConvertTo-Json -Depth 100 -Compress),
     $Utf8NoBom
 )
 
