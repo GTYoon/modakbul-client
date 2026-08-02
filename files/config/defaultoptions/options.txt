@@ -48,7 +48,7 @@ mouseSensitivity:0.5
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:false
-resourcePacks:["vanilla","fabric","cobbreeding:pasturefix","highlight:highlight_extended","betterbeds:fancyconnectedbeds","continuity:default","continuity:glass_pane_culling_fix","cobbreeding:coloredeggs","file/Comforts Modernized - V1.1.zip","file/Cobblemon Classic Grass Pack v1.0 MC1.21.1.zip","file/Cobblemon 3D Pok? Rods 1.0.zip","file/Cobblemon Interface v1.6.0.zip","file/Cobblemon Interface Modded v1.9.4.zip","vanillabackport:freshly_animated","cobblemon:gyaradosjump","cobblemon:uniqueshinyforms","mega_showdown:gyaradosjumpingmega","cobblemon:regionbiasforms","mega_showdown:regionbiasmsd","file/Fully Hisuian Starters 1.1.1.zip","file/COBBLEVERSE-CCC.zip","file/CurseForge RP.zip","file/FreshAnimations_v1.10.4.zip","file/-1.21.2 Fresh Moves v3.1 (With Animated Eyes).zip","file/Icon Fresh 0.4.zip","file/E19 Cobblemon Minimap Icons.zip","file/COBBLEVERSE Soundtrack.zip","file/COBBLEVERSE RCTmod RP.zip","file/COBBLEVERSE RP [CF].zip","file/!Cobbleverse Questsbook Resourcepack.zip","file/Modakbul-Korean-v1.2.zip"]
+resourcePacks:["vanilla","fabric","cobbreeding:pasturefix","highlight:highlight_extended","betterbeds:fancyconnectedbeds","continuity:default","continuity:glass_pane_culling_fix","cobbreeding:coloredeggs","file/Comforts Modernized - V1.1.zip","file/Cobblemon Classic Grass Pack v1.0 MC1.21.1.zip","file/Cobblemon 3D Poké Rods 1.0.zip","file/Cobblemon Interface v1.6.0.zip","file/Cobblemon Interface Modded v1.9.4.zip","vanillabackport:freshly_animated","cobblemon:gyaradosjump","cobblemon:uniqueshinyforms","mega_showdown:gyaradosjumpingmega","cobblemon:regionbiasforms","mega_showdown:regionbiasmsd","file/Fully Hisuian Starters 1.1.1.zip","file/COBBLEVERSE-CCC.zip","file/CurseForge RP.zip","file/FreshAnimations_v1.10.4.zip","file/-1.21.2 Fresh Moves v3.1 (With Animated Eyes).zip","file/Icon Fresh 0.4.zip","file/E19 Cobblemon Minimap Icons.zip","file/COBBLEVERSE Soundtrack.zip","file/COBBLEVERSE RCTmod RP.zip","file/COBBLEVERSE RP [CF].zip","file/!Cobbleverse Questsbook Resourcepack.zip","file/Modakbul-Korean-v1.2.zip"]
 incompatibleResourcePacks:[]
 lastServer:211.107.123.109
 lang:ko_kr
@@ -88,6 +88,23 @@ debugifyTelemetry:0
 telemetryOptInExtra:false
 onboardAccessibility:false
 menuBackgroundBlurriness:5
+soundCategory_master:0.19926836466817516
+soundCategory_music:0.024444322183098752
+soundCategory_record:1.0
+soundCategory_weather:0.04302712286227126
+soundCategory_block:1.0
+soundCategory_hostile:1.0
+soundCategory_neutral:1.0
+soundCategory_player:1.0
+soundCategory_ambient:1.0
+soundCategory_voice:1.0
+modelPart_cape:false
+modelPart_jacket:true
+modelPart_left_sleeve:true
+modelPart_right_sleeve:true
+modelPart_left_pants_leg:true
+modelPart_right_pants_leg:true
+modelPart_hat:true
 key_key.attack:key.mouse.left
 key_key.use:key.mouse.right
 key_key.forward:key.keyboard.w
@@ -221,20 +238,3 @@ key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.shaderPackSelection:key.keyboard.unknown
 key_iris.keybind.wireframe:key.keyboard.unknown
-soundCategory_master:0.19926836466817516
-soundCategory_music:0.024444322183098752
-soundCategory_record:1.0
-soundCategory_weather:0.04302712286227126
-soundCategory_block:1.0
-soundCategory_hostile:1.0
-soundCategory_neutral:1.0
-soundCategory_player:1.0
-soundCategory_ambient:1.0
-soundCategory_voice:1.0
-modelPart_cape:false
-modelPart_jacket:true
-modelPart_left_sleeve:true
-modelPart_right_sleeve:true
-modelPart_left_pants_leg:true
-modelPart_right_pants_leg:true
-modelPart_hat:true
