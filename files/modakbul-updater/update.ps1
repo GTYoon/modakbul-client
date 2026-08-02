@@ -49,6 +49,62 @@ function Get-FileSha256 {
     return (Get-FileHash -Algorithm SHA256 -LiteralPath $Path).Hash.ToLowerInvariant()
 }
 
+function Set-XaeroPokemonPortraitsAlwaysVisible {
+    param([string]$Root)
+
+    $minimapConfigRoot = Join-Path $Root "config\xaero\minimap"
+    if (-not (Test-Path -LiteralPath $minimapConfigRoot -PathType Container)) {
+        return 0
+    }
+
+    $candidatePaths = [Collections.Generic.List[string]]::new()
+    $defaultCategories = Join-Path $minimapConfigRoot "default_radar_categories_client.json"
+    if (Test-Path -LiteralPath $defaultCategories -PathType Leaf) {
+        [void]$candidatePaths.Add($defaultCategories)
+    }
+
+    $profileCategoryRoot = Join-Path $minimapConfigRoot "profiles\entity_radar_categories"
+    if (Test-Path -LiteralPath $profileCategoryRoot -PathType Container) {
+        Get-ChildItem -LiteralPath $profileCategoryRoot -Filter "*.json" -File | ForEach-Object {
+            [void]$candidatePaths.Add($_.FullName)
+        }
+    }
+
+    $changedFiles = 0
+    foreach ($path in $candidatePaths) {
+        try {
+            $categories = Get-Content -LiteralPath $path -Raw -Encoding UTF8 | ConvertFrom-Json
+            if ($null -eq $categories.settingOverrides) {
+                continue
+            }
+
+            $changed = $false
+            if ($null -eq $categories.settingOverrides.icons -or
+                [double]$categories.settingOverrides.icons -ne 2.0) {
+                $categories.settingOverrides | Add-Member -NotePropertyName "icons" -NotePropertyValue 2.0 -Force
+                $changed = $true
+            }
+            if ($null -eq $categories.settingOverrides.renderOverMinimapFrame -or
+                [double]$categories.settingOverrides.renderOverMinimapFrame -ne 2.0) {
+                $categories.settingOverrides | Add-Member -NotePropertyName "renderOverMinimapFrame" -NotePropertyValue 2.0 -Force
+                $changed = $true
+            }
+
+            if ($changed) {
+                [IO.File]::WriteAllText(
+                    $path,
+                    ($categories | ConvertTo-Json -Depth 100),
+                    [Text.UTF8Encoding]::new($false)
+                )
+                $changedFiles++
+            }
+        } catch {
+            Write-UpdateLog "Xaero 초상화 설정 유지 실패(파일 보존): $path - $($_.Exception.Message)"
+        }
+    }
+    return $changedFiles
+}
+
 function Resolve-DownloadUri {
     param(
         [uri]$ManifestUri,
@@ -156,6 +212,14 @@ try {
         New-Item -ItemType Directory -Force -Path $targetParent | Out-Null
         Move-Item -LiteralPath $tempPath -Destination $target -Force
         $changed++
+    }
+
+    # 기존 설치는 Xaero 설정이 업데이트 목록에 없던 기간의 값(1=접속 유저 목록 키를
+    # 누를 때만 표시)을 유지할 수 있다. 개인 카테고리 구성은 보존하고 두 필드만
+    # 2(항상 표시)로 마이그레이션한다.
+    $xaeroChanged = Set-XaeroPokemonPortraitsAlwaysVisible -Root $GameDir
+    if ($xaeroChanged -gt 0) {
+        Write-UpdateLog "Xaero 포켓몬 초상화 항상 표시 설정 적용: $xaeroChanged개 파일"
     }
 
     $removed = 0

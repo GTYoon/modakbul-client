@@ -2,10 +2,10 @@
     "schemaVersion":  1,
     "packId":  "modakbul-season-1",
     "displayName":  "모닥불 Season 1",
-    "version":  "1.0.50",
+    "version":  "1.0.53",
     "minecraft":  "1.21.1",
     "fabricLoader":  "0.19.3",
-    "generatedAt":  "2026-08-02T12:50:32.2237856Z",
+    "generatedAt":  "2026-08-02T20:54:07.6370566Z",
     "files":  [
                   {
                       "path":  "config/cobblemon_ranked/messages.json",
@@ -993,6 +993,16 @@
                       "size":  7152
                   },
                   {
+                      "path":  "config/xaero/minimap/default_radar_categories_client.json",
+                      "sha256":  "f6a887db33ad9acef80b3227db4c55a746613ae13be3dccc9980f25f84c1b600",
+                      "size":  5643
+                  },
+                  {
+                      "path":  "config/xaero/minimap/profiles/entity_radar_categories/cobbleverse.cfg.json",
+                      "sha256":  "6851ac094f2fa02f84d3fea83c7395c8dddc1c829c220d47aaca750b337ad5bd",
+                      "size":  5642
+                  },
+                  {
                       "path":  "datapacks/COBBLEVERSE - No Ender Dragon.zip",
                       "sha256":  "f5cdae688e55951f36f22a4b13ec73f33da1ebb1368f55335d8b9d2cca8190af",
                       "size":  9062
@@ -1044,8 +1054,8 @@
                   },
                   {
                       "path":  "modakbul-updater/update.ps1",
-                      "sha256":  "ce43abfebc045e2803e3e1817234ab868be565d776f63a1c39b0f48dcec98751",
-                      "size":  7971
+                      "sha256":  "6475d084b43ef7d79392ed21d623df0c94f3d9ce9e61860ca37b7c0e229df73f",
+                      "size":  10723
                   },
                   {
                       "path":  "mods/accessories_compat_layer-fabric-0.1.12+1.21.1.jar",
@@ -1408,8 +1418,8 @@
                   },
                   {
                       "path":  "mods/gcm-client-localization-1.0.5.jar",
-                      "sha256":  "bcb7e1b5169f1017f6a6fa58591dcc4880993a903a9a125ef13ab3d3f729da2f",
-                      "size":  809217
+                      "sha256":  "6759c8f1f2160b60a677b2ddab704bf824fc35af56d659f017f4328933148190",
+                      "size":  811417
                   },
                   {
                       "path":  "mods/gcm-gym-skins-1.0.3.jar",
@@ -1418,8 +1428,8 @@
                   },
                   {
                       "path":  "mods/gcverse-rct-team-preview-1.0.7.jar",
-                      "sha256":  "e3826b5578b4fe9e151cafb23e347055f6d6b7f6d0e772a3da38f587efdb27b9",
-                      "size":  6394879
+                      "sha256":  "520f34e6fa6322b1d8454a835e4eead4bb0fe6d5d557b378ecfba2fcd767eb3d",
+                      "size":  6406410
                   },
                   {
                       "path":  "mods/geckolib-fabric-1.21.1-4.8.4.jar",
@@ -1993,7 +2003,7 @@
                       "path":  "resourcepacks/COBBLEVERSE Soundtrack.zip",
                       "sha256":  "d6f8f26668d440792b0b2f54931052f98c7a2dc6967202a1c2b0fe80da5bf46e",
                       "size":  155271075,
-                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.50/large-d6f8f26668d44079.zip"
+                      "url":  "https://github.com/GTYoon/modakbul-client/releases/download/client-v1.0.53/large-d6f8f26668d44079.zip"
                   },
                   {
                       "path":  "resourcepacks/COBBLEVERSE-CCC.zip",
